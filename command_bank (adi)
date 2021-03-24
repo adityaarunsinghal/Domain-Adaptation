@@ -5,7 +5,7 @@ python extract_domain_specific_samples.py \
 
 
 
-python run_qa.py \
+python /scratch/as11919/transformers/examples/question-answering/run_qa.py \
   --model_name_or_path ~/Domain-Adaptation/models/movie_roberta \
   --dataset_name squad_v2 \
   --do_eval \
@@ -17,7 +17,7 @@ python run_qa.py \
   --doc_stride 128 \
   --output_dir /scratch/as11919/Domain-Adaptation/models/movie_roberta/eval_on_squadv2
 
-python run_qa.py \
+python /scratch/as11919/transformers/examples/question-answering/run_qa.py \
   --model_name_or_path ~/Domain-Adaptation/models/movie_roberta \
   --dataset_name squad_v2 \
   --do_eval \

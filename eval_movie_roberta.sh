@@ -20,7 +20,7 @@ singularity exec --nv --overlay $SCRATCH/overlay-50G-10M.ext3:ro /scratch/work/p
 source /ext3/env.sh
 conda activate
 
-python run_qa.py \
+python /scratch/as11919/transformers/examples/question-answering/run_qa.py \
   --model_name_or_path ~/Domain-Adaptation/models/movie_roberta \
   --dataset_name squad_v2 \
   --do_eval \
