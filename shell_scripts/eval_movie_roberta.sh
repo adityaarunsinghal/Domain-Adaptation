@@ -20,6 +20,8 @@ singularity exec --nv --overlay $SCRATCH/overlay-50G-10M.ext3:ro /scratch/work/p
 source /ext3/env.sh
 conda activate
 
+# on squad
+
 python /scratch/as11919/transformers/examples/question-answering/run_qa.py \
   --model_name_or_path ~/Domain-Adaptation/models/movie_roberta \
   --dataset_name squad_v2 \
@@ -31,6 +33,20 @@ python /scratch/as11919/transformers/examples/question-answering/run_qa.py \
   --max_seq_length 384 \
   --doc_stride 128 \
   --output_dir /scratch/as11919/Domain-Adaptation/models/movie_roberta/eval_on_squadv2
+
+# on MoviesQA
+
+# python $SCRATCH/transformers/examples/question-answering/run_qa.py \
+#   --model_name_or_path ~/Domain-Adaptation/models/movie_roberta \
+#   --train_file $SCRATCH/Domain-Adaptation/data/squad.film.train.json \
+#   --validation_file $SCRATCH/Domain-Adaptation/data/squad.film.dev.json \
+#   --do_eval \
+#   --do_predict \
+#   --version_2_with_negative True\
+#   --per_device_train_batch_size 12 \
+#   --max_seq_length 384 \
+#   --doc_stride 128 \
+#   --output_dir $SCRATCH/Domain-Adaptation/models/movie_roberta/eval_on_moviesQA
 
 echo "Done!"
 "

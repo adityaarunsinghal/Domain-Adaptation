@@ -28,13 +28,5 @@ python /scratch/as11919/transformers/examples/language-modeling/run_mlm.py \
     --do_eval \
     --output_dir /scratch/as11919/Domain-Adaptation/models/movie_roberta
 
-# python $SCRATCH/transformers/examples/language-modeling/run_mlm.py \
-#     --model_name_or_path roberta-base \
-#     --train_file $SCRATCH/Domain-Adaptation/movie_roberta/data/full_qa_train.csv \
-#     --validation_file $SCRATCH/Domain-Adaptation/movie_roberta/data/full_qa_dev.csv \
-#     --do_train \
-#     --do_eval \
-#     --output_dir $SCRATCH/Domain-Adaptation/models/movie_roberta
-
 echo "Done!"
 "
