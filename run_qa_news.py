@@ -255,8 +255,12 @@ def main():
     # In distributed training, the load_dataset function guarantee that only one local process can concurrently
     # download the dataset.
     if data_args.dataset_name is not None:
-        # Downloading and loading a dataset from the hub.
-        datasets = load_dataset(data_args.dataset_name, data_args.dataset_config_name)
+        if data_args.dataset_name == "newsqa":
+            datasets = load_dataset(data_args.dataset_name,
+            data_dir="$SCRATCH/newsqa_data/")
+        else:
+            # Downloading and loading a dataset from the hub.
+            datasets = load_dataset(data_args.dataset_name, data_args.dataset_config_name)
     else:
         data_files = {}
         if data_args.train_file is not None:
