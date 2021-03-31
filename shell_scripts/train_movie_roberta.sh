@@ -20,12 +20,22 @@ singularity exec --nv --overlay $SCRATCH/overlay-50G-10M.ext3:ro /scratch/work/p
 source /ext3/env.sh
 conda activate
 
-python DAPT_movies.py
+# this was mlm continued on roberta
+python /scratch/as11919/transformers/examples/language-modeling/run_mlm.py \
+    --model_name_or_path roberta-base \
+    --train_file /scratch/as11919/Domain-Adaptation/data/simple_movie_text_MLM/ALL_DATA.txt \
+    --do_train \
+    --overwrite_output_dir \
+    --line_by_line \
+    --output_dir /scratch/as11919/Domain-Adaptation/movie_roberta/roberta_DAPT_movies_model
 
 echo "Done!"
 "
-# this was wiki_movies roberta
 
+# this was movie_roberta from scratch
+# python DAPT_movies_scratch.py
+
+# this was wiki_movies roberta
 # python /scratch/as11919/transformers/examples/language-modeling/run_mlm.py \
 #     --model_name_or_path roberta-base \
 #     --train_file /scratch/as11919/Domain-Adaptation/movie_roberta/data/full_qa_train.csv \
