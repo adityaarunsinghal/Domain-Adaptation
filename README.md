@@ -26,16 +26,30 @@ Alex, David and Adi will handle training and evaluation for the Bio, News and Mo
 
 References
 [1] Danescu-Niculescu-Mizil, C., & Lee, L. (2011). Chameleons in imagined conversations: A new approach to understanding coordination of linguistic style in dialogs. https://www.cs.cornell.edu/~cristian/papers/chameleons.pdf
+
 [2] Gururangan, S., Marasović, A., Swayamdipta, S., Lo, K., Beltagy, I., Downey, D., Smith, N., & Allen. (2020). Don’t Stop Pretraining: Adapt Language Models to Domains and Tasks (pp. 8342–8360). https://www.aclweb.org/anthology/2020.acl-main.740.pdf
+
 [3] Lee, J., Yoon, W., Kim, S., Kim, D., Kim, S., So, C. H., & Kang, J. (2019). BioBERT: a pre-trained biomedical language representation model for biomedical text mining. Bioinformatics. https://doi.org/10.1093/bioinformatics/btz682
+
 [4] Liu, J., Pasupat, P., Wang, Y., Cyphers, S., & Glass, J. (2013). Query Understanding Enhanced By Hierarchical Parsing Structures. https://groups.csail.mit.edu/sls/publications/2013/Liu_ASRU_2013.pdf
+
 [5] Liu, Y., Ott, M., Goyal, N., Du, J., Joshi, M., Chen, D., Levy, O., Lewis, M., Zettlemoyer, L., & Stoyanov, V. (2019). RoBERTa: A Robustly Optimized BERT Pretraining Approach. ArXiv.org. https://arxiv.org/abs/1907.11692
+
 [6] Maas, A., Daly, R., Pham, P., Huang, D., Ng, A., & Potts, C. (2011). Learning Word Vectors for Sentiment Analysis. https://ai.stanford.edu/~amaas/papers/wvSent_acl2011.pdf
+
 [7] Pang, B., Lee, L., & Vaithyanathan, S. (2019). Thumbs up? Sentiment Classification using Machine Learning Techniques. ArXiv.org. https://arxiv.org/abs/cs/0205070
+
 [8] Rajpurkar, P., Jia, R., & Liang, P. (2018). Know What You Don’t Know: Unanswerable Questions for SQuAD (pp. 784–789). https://www.aclweb.org/anthology/P18-2124.pdf
+
 [9] Reddy, R., Iyer, B., Arafat, M., Zhang, R., Sil, A., Castelli, V., Florian, R., & Roukos, S. (2020). End-to-End QA on COVID-19: Domain Adaptation with Synthetic Training. https://arxiv.org/pdf/2012.01414.pdf
+
 [10] Tjong Kim Sang, E. F., & De Meulder, F. (2003). Introduction to the CoNLL-2003 shared task. Proceedings of the Seventh Conference on Natural Language Learning at HLT-NAACL 2003 -. https://doi.org/10.3115/1119176.1119195
-[11] Trischler, A., Wang, T., Yuan, X., Harris, J., Sordoni, A., Bachman, P., & Suleman, K. (2017). NewsQA: A Machine Comprehension Dataset (pp. 191–200). Association for Computational Linguistics. https://www.aclweb.org/anthology/W17-2623.pdf
+
+[11] Trischler, A., Wang, T., Yuan, X., Harris, J., Sordoni, A., Bachman, P., & Suleman, K. (2017). NewsQA: A Machine Comprehension Dataset (pp. 191–200). 
+Association for Computational Linguistics. https://www.aclweb.org/anthology/W17-2623.pdf
+
 [12] Xu, Y., Zhong, X., Yepes, A. J. J., & Lau, J. H. (2020). Forget Me Not: Reducing Catastrophic Forgetting for Domain Adaptation in Reading Comprehension. ArXiv:1911.00202 [Cs]. https://arxiv.org/abs/1911.00202
+
 [13] Zellers, R., Holtzman, A., Rashkin, H., Bisk, Y., Farhadi, A., Roesner, F., Choi, Y., & Allen, P. (2019). Defending Against Neural Fake News. https://arxiv.org/pdf/1905.12616.pdf
+
 
