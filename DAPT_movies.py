@@ -3,17 +3,24 @@
 from pathlib import Path
 from tokenizers import ByteLevelBPETokenizer
 import pandas as pd
+import os.path
+from os import path
 
 print("-------------ALL IMPORTED------------")
 
 paths = [str(x) for x in Path("./data/simple_movie_text_MLM/").glob("**/*.txt")]
 
-alldata = open("data/simple_movie_text_MLM/ALL_DATA.txt", "w")
-for each_path in paths:
-    f = open(each_path, "r")
-    alldata.write(f.read() + "\n")
+if(!path.exists("data/simple_movie_text_MLM/ALL_DATA.txt")):
+    alldata = open("data/simple_movie_text_MLM/ALL_DATA.txt", "w")
+    for each_path in paths:
+        f = open(each_path, "r")
+        alldata.write(f.read() + "\n")
+    print("-------------Big Data Text File Made------------")
 
-print("-------------Big Data Text File Made------------")
+else:
+    print("-------------Big Data Text File WAS ALREADY MADE------------")
+
+Path("movie_roberta/roberta_DAPT_movies_model").mkdir(parents=True, exist_ok=True)
 
 tokenizer = ByteLevelBPETokenizer()
 

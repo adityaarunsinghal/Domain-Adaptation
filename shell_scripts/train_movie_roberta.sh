@@ -10,7 +10,7 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=128GB
 #SBATCH --time=3-00:00:00
-#SBATCH --gres=gpu:2
+#SBATCH --gres=gpu:4
 #SBATCH --mail-type=ALL
 #SBATCH -c 8
 #SBATCH --mail-user=adis@nyu.edu
@@ -20,13 +20,16 @@ singularity exec --nv --overlay $SCRATCH/overlay-50G-10M.ext3:ro /scratch/work/p
 source /ext3/env.sh
 conda activate
 
-python /scratch/as11919/transformers/examples/language-modeling/run_mlm.py \
-    --model_name_or_path roberta-base \
-    --train_file /scratch/as11919/Domain-Adaptation/movie_roberta/data/full_qa_train.csv \
-    --validation_file /scratch/as11919/Domain-Adaptation/movie_roberta/data/full_qa_dev.csv \
-    --do_train \
-    --do_eval \
-    --output_dir /scratch/as11919/Domain-Adaptation/models/movie_roberta
+python DAPT_movies.py
 
 echo "Done!"
 "
+# this was wiki_movies roberta
+
+# python /scratch/as11919/transformers/examples/language-modeling/run_mlm.py \
+#     --model_name_or_path roberta-base \
+#     --train_file /scratch/as11919/Domain-Adaptation/movie_roberta/data/full_qa_train.csv \
+#     --validation_file /scratch/as11919/Domain-Adaptation/movie_roberta/data/full_qa_dev.csv \
+#     --do_train \
+#     --do_eval \
+#     --output_dir /scratch/as11919/Domain-Adaptation/models/movie_roberta
