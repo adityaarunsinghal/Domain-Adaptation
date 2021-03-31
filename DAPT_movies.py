@@ -10,7 +10,7 @@ print("-------------ALL IMPORTED------------")
 
 paths = [str(x) for x in Path("./data/simple_movie_text_MLM/").glob("**/*.txt")]
 
-if(!path.exists("data/simple_movie_text_MLM/ALL_DATA.txt")):
+if( not (path.exists("data/simple_movie_text_MLM/ALL_DATA.txt"))):
     alldata = open("data/simple_movie_text_MLM/ALL_DATA.txt", "w")
     for each_path in paths:
         f = open(each_path, "r")
