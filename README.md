@@ -4,10 +4,10 @@ This is the Spring 2021 collaboration project between a few NYU Data Science stu
 
 ## Using Same-Domain Labelled Data to Improve Pretrained Language Model Performance on Question Answering
 
-Aditya Singhal
-David Shimshoni
-Alex Sheng
-Avi Sil
+Aditya Singhal, 
+David Shimshoni, 
+Alex Sheng, 
+Avi Sil, 
 Sara Rosenthal
 
 ### Motivation
