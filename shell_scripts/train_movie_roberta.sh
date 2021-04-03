@@ -30,6 +30,7 @@ python /scratch/as11919/transformers/examples/language-modeling/run_mlm.py \
     --validation_file $SCRATCH/Domain-Adaptation/data/simple_movie_text_MLM/ALL_DATA_test.txt \
     --do_train \
     --do_eval \
+    --line_by_line \
     --output_dir $SCRATCH/Domain-Adaptation/movie_roberta/roberta_DAPT_movies_model_withEVAL
 
 echo "Done!"
