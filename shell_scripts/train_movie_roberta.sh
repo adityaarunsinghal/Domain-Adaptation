@@ -22,15 +22,12 @@ conda activate
 
 # this was mlm continued on roberta
 
-export TRAIN_FILE=$SCRATCH/Domain-Adaptation/data/simple_movie_text_MLM/ALL_DATA_train.txt
-export TEST_FILE=$SCRATCH/Domain-Adaptation/data/simple_movie_text_MLM/ALL_DATA_test.txt
-
 python $SCRATCH/Domain-Adaptation/make_movies_dataset.py
 
 python /scratch/as11919/transformers/examples/language-modeling/run_mlm.py \
     --model_name_or_path roberta-base \
-    --train_file $TRAIN_FILE \
-    --validation_file $TEST_FILE \
+    --train_file $SCRATCH/Domain-Adaptation/data/simple_movie_text_MLM/ALL_DATA_train.txt \
+    --validation_file $SCRATCH/Domain-Adaptation/data/simple_movie_text_MLM/ALL_DATA_test.txt \
     --do_train \
     --do_eval \
     --output_dir $SCRATCH/Domain-Adaptation/movie_roberta/roberta_DAPT_movies_model_withEVAL
