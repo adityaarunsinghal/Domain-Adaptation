@@ -36,7 +36,7 @@ python /scratch/as11919/transformers/examples/language-modeling/run_mlm.py \
 echo "Done!"
 "
 
-# default_metrics =   "attention_probs_dropout_prob": 0.1,
+# default_metrics =     "attention_probs_dropout_prob": 0.1,
 #   "bos_token_id": 0,
 #   "eos_token_id": 2,
 #   "gradient_checkpointing": false,
