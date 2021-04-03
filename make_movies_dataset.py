@@ -31,4 +31,4 @@ if( not (path.exists("data/simple_movie_text_MLM/ALL_DATA_test.txt"))):
 else:
     print("-------------Big Data Test Text File WAS ALREADY MADE------------")
 
-Path("movie_roberta/roberta_DAPT_movies_model").mkdir(parents=True, exist_ok=True)
+Path("movie_roberta/roberta_DAPT_movies_model_withEVAL").mkdir(parents=True, exist_ok=True)

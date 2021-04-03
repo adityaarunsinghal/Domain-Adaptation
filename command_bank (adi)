@@ -1,7 +1,9 @@
+# make ForgetMeNot data 
 python extract_domain_specific_samples.py \
 --marco /scratch/as11919/Domain-Adaptation/data/train_v2.1.json \
 --out_dir /scratch/as11919/Domain-Adaptation/data \
 --lookup_table lookup_table.json
+
 
 git pull https://github.com/adityaarunsinghal/Domain-Adaptation.git
 
@@ -28,3 +30,14 @@ python $SCRATCH/transformers/examples/question-answering/run_qa.py \
   --max_seq_length 384 \
   --doc_stride 128 \
   --output_dir $SCRATCH/Domain-Adaptation/models/movie_roberta/eval_on_moviesQA
+
+# legacy LM run file // does not work - max_len issue
+python run_language_modeling_HF.py \
+    --output_dir=/scratch/as11919/Domain-Adaptation/movie_roberta/roberta_DAPT_movies_model \
+    --model_type=roberta \
+    --model_name_or_path=roberta-base \
+    --do_train \
+    --train_data_file=$TRAIN_FILE \
+    --do_eval \
+    --eval_data_file=$TEST_FILE \
+    --mlm

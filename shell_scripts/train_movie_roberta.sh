@@ -25,15 +25,15 @@ conda activate
 export TRAIN_FILE=/scratch/as11919/Domain-Adaptation/data/simple_movie_text_MLM/ALL_DATA_train.txt
 export TEST_FILE=/scratch/as11919/Domain-Adaptation/data/simple_movie_text_MLM/ALL_DATA_test.txt
 
-python run_language_modeling_HF.py \
-    --output_dir=/scratch/as11919/Domain-Adaptation/movie_roberta/roberta_DAPT_movies_model \
-    --model_type=roberta \
-    --model_name_or_path=roberta-base \
+python make_movies_dataset.py
+
+python /scratch/as11919/transformers/examples/language-modeling/run_mlm.py \
+    --model_name_or_path roberta-base \
+    --train_file $TRAIN_FILE \
+    --validation_file $TEST_FILE \
     --do_train \
-    --train_data_file=$TRAIN_FILE \
     --do_eval \
-    --eval_data_file=$TEST_FILE \
-    --mlm
+    --output_dir /scratch/as11919/Domain-Adaptation/movie_roberta/roberta_DAPT_movies_model_withEVAL
 
 echo "Done!"
 "
