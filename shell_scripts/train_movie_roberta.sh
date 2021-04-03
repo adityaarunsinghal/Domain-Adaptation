@@ -25,7 +25,7 @@ conda activate
 export TRAIN_FILE=$SCRATCH/Domain-Adaptation/data/simple_movie_text_MLM/ALL_DATA_train.txt
 export TEST_FILE=$SCRATCH/Domain-Adaptation/data/simple_movie_text_MLM/ALL_DATA_test.txt
 
-python make_movies_dataset.py
+python $SCRATCH/Domain-Adaptation/make_movies_dataset.py
 
 python $SCRATCH/Domain-Adaptation/run_mlm_HF.py \
     --model_name_or_path roberta-base \
