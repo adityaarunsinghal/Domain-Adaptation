@@ -27,7 +27,7 @@ export TEST_FILE=$SCRATCH/Domain-Adaptation/data/simple_movie_text_MLM/ALL_DATA_
 
 python $SCRATCH/Domain-Adaptation/make_movies_dataset.py
 
-python $SCRATCH/Domain-Adaptation/run_mlm_HF.py \
+python /scratch/as11919/transformers/examples/language-modeling/run_mlm.py \
     --model_name_or_path roberta-base \
     --train_file $TRAIN_FILE \
     --validation_file $TEST_FILE \
