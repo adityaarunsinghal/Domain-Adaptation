@@ -5,3 +5,4 @@ data/simple_movie_text_MLM/ALL_DATA.txt
 data/simple_movie_text_MLM/ALL_DATA_train.txt
 data/simple_movie_text_MLM/ALL_DATA_test.txt
 domain-specific-QA
+data/data_for_inspection(scp-ed)
