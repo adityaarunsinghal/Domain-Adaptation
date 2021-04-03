@@ -21,13 +21,19 @@ source /ext3/env.sh
 conda activate
 
 # this was mlm continued on roberta
-python /scratch/as11919/transformers/examples/language-modeling/run_mlm.py \
-    --model_name_or_path roberta-base \
-    --train_file /scratch/as11919/Domain-Adaptation/data/simple_movie_text_MLM/ALL_DATA.txt \
+
+export TRAIN_FILE=/scratch/as11919/Domain-Adaptation/data/simple_movie_text_MLM/ALL_DATA_train.txt
+export TEST_FILE=/scratch/as11919/Domain-Adaptation/data/simple_movie_text_MLM/ALL_DATA_test.txt
+
+python run_language_modeling_HF.py \
+    --output_dir=/scratch/as11919/Domain-Adaptation/movie_roberta/roberta_DAPT_movies_model \
+    --model_type=roberta \
+    --model_name_or_path=roberta-base \
     --do_train \
-    --overwrite_output_dir \
-    --line_by_line \
-    --output_dir /scratch/as11919/Domain-Adaptation/movie_roberta/roberta_DAPT_movies_model
+    --train_data_file=$TRAIN_FILE \
+    --do_eval \
+    --eval_data_file=$TEST_FILE \
+    --mlm
 
 echo "Done!"
 "
