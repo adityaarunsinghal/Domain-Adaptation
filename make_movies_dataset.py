@@ -11,8 +11,8 @@ train_test_split = round(len(paths)*0.8)
 train_paths = paths[:train_test_split]
 test_paths = paths[train_test_split:]
 
-if( not (path.exists("$SCRATCH/Domain-Adaptation/data/simple_movie_text_MLM/ALL_DATA_train.txt"))):
-    alldata = open("$SCRATCH/Domain-Adaptation/data/simple_movie_text_MLM/ALL_DATA_train.txt", "w")
+if( not (path.exists("/scratch/as11919/Domain-Adaptation/data/simple_movie_text_MLM/ALL_DATA_train.txt"))):
+    alldata = open("/scratch/as11919/Domain-Adaptation/data/simple_movie_text_MLM/ALL_DATA_train.txt", "w")
     for each_path in train_paths:
         f = open(each_path, "r")
         alldata.write(f.read() + "\n")
@@ -21,8 +21,8 @@ if( not (path.exists("$SCRATCH/Domain-Adaptation/data/simple_movie_text_MLM/ALL_
 else:
     print("-------------Big Data Train Text File WAS ALREADY MADE------------")
 
-if( not (path.exists("$SCRATCH/Domain-Adaptation/data/simple_movie_text_MLM/ALL_DATA_test.txt"))):
-    alldata = open("$SCRATCH/Domain-Adaptation/data/simple_movie_text_MLM/ALL_DATA_test.txt", "w")
+if( not (path.exists("/scratch/as11919/Domain-Adaptation/data/simple_movie_text_MLM/ALL_DATA_test.txt"))):
+    alldata = open("/scratch/as11919/Domain-Adaptation/data/simple_movie_text_MLM/ALL_DATA_test.txt", "w")
     for each_path in test_paths:
         f = open(each_path, "r")
         alldata.write(f.read() + "\n")
@@ -31,4 +31,4 @@ if( not (path.exists("$SCRATCH/Domain-Adaptation/data/simple_movie_text_MLM/ALL_
 else:
     print("-------------Big Data Test Text File WAS ALREADY MADE------------")
 
-Path("$SCRATCH/Domain-Adaptation/movie_roberta/roberta_DAPT_movies_model_withEVAL").mkdir(parents=True, exist_ok=True)
+Path("/scratch/as11919/Domain-Adaptation/movie_roberta/roberta_DAPT_movies_model_withEVAL").mkdir(parents=True, exist_ok=True)
