@@ -24,7 +24,7 @@ conda activate
 python $SCRATCH/transformers/examples/question-answering/run_qa.py \
   --model_name_or_path roberta-base \
   --dataset_name squad \
-  --validation_file $SCRATCH/Domain-Adaptation/data/squad.film.train.json \
+  --validation_file $SCRATCH/Domain-Adaptation/data/squad.film.all.json \
   --do_train \
   --do_eval \
   --per_device_train_batch_size 12 \
