@@ -19,17 +19,32 @@ singularity exec --nv --overlay $SCRATCH/overlay-50G-10M.ext3:ro /scratch/work/p
 source /ext3/env.sh
 conda activate
 
+# squadv1 trial 
+
 python $SCRATCH/transformers/examples/question-answering/run_qa.py \
   --model_name_or_path roberta-base \
-  --dataset_name squad_v2 \
+  --dataset_name squad \
   --validation_file $SCRATCH/Domain-Adaptation/data/squad.film.train.json \
   --do_train \
   --do_eval \
-  --version_2_with_negative True \
   --per_device_train_batch_size 12 \
   --max_seq_length 384 \
   --doc_stride 128 \
-  --output_dir $SCRATCH/Domain-Adaptation/models/movie_roberta/eval_on_moviesQA/roberta_base_plain
+  --output_dir $SCRATCH/Domain-Adaptation/models/movie_roberta/eval_on_moviesQA/roberta_base_plain_squadv1
+
+# squad v2 gives error because of "no ans probability" 
+
+# python $SCRATCH/transformers/examples/question-answering/run_qa.py \
+#   --model_name_or_path roberta-base \
+#   --dataset_name squad_v2 \
+#   --validation_file $SCRATCH/Domain-Adaptation/data/squad.film.train.json \
+#   --do_train \
+#   --do_eval \
+#   --version_2_with_negative True \
+#   --per_device_train_batch_size 12 \
+#   --max_seq_length 384 \
+#   --doc_stride 128 \
+#   --output_dir $SCRATCH/Domain-Adaptation/models/movie_roberta/eval_on_moviesQA/roberta_base_plain
 
 echo "Done!"
 "
