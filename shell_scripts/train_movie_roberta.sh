@@ -30,13 +30,15 @@ python /scratch/as11919/transformers/examples/language-modeling/run_mlm.py \
     --validation_file $SCRATCH/Domain-Adaptation/data/simple_movie_text_MLM/ALL_DATA_test.txt \
     --do_train \
     --do_eval \
+    --save_steps 75000 \
+    --eval_steps 5000 \
     --line_by_line \
     --output_dir $SCRATCH/Domain-Adaptation/movie_roberta/roberta_DAPT_movies_model_withEVAL
 
 echo "Done!"
 "
 
-# default_metrics =     "attention_probs_dropout_prob": 0.1,
+# default_config =     "attention_probs_dropout_prob": 0.1,
 #   "bos_token_id": 0,
 #   "eos_token_id": 2,
 #   "gradient_checkpointing": false,
