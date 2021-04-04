@@ -1,5 +1,5 @@
 # make ForgetMeNot data 
-python extract_domain_specific_samples.py \
+python FMN_extract_domain_specific_samples_nosplit.py \
 --marco /scratch/as11919/Domain-Adaptation/data/train_v2.1.json \
 --out_dir /scratch/as11919/Domain-Adaptation/data \
 --lookup_table lookup_table.json
