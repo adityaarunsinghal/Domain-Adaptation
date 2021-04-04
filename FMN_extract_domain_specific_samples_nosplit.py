@@ -66,5 +66,5 @@ for split in domain_table[domain]:
 # Save
 if not os.path.exists(args.out_dir):
     os.makedirs(args.out_dir)
-with open(os.path.join(args.out_dir, 'squad.film.all.json', 'w')) as fp:
+with open(os.path.join(args.out_dir, 'squad.film.all.json'), 'w') as fp:
     json.dump({'data': domains[domain]["train"]}, fp)

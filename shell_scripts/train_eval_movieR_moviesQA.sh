@@ -30,6 +30,7 @@ python $SCRATCH/transformers/examples/question-answering/run_qa.py \
   --per_device_train_batch_size 12 \
   --max_seq_length 384 \
   --doc_stride 128 \
+  --overwrite_output_dir \
   --output_dir $SCRATCH/Domain-Adaptation/models/movie_roberta/eval_on_moviesQA/roberta_base_plain_squadv1
 
 # squad v2 gives error because of "no ans probability" 
