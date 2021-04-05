@@ -9,7 +9,7 @@
 # #SBATCH --cpus-per-task=8 
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=128GB
-#SBATCH --time=3-00:00:00
+#SBATCH --time=4-00:00:00
 #SBATCH --gres=gpu:2
 #SBATCH --mail-type=ALL
 #SBATCH -c 8
@@ -30,8 +30,8 @@ python /scratch/as11919/transformers/examples/language-modeling/run_mlm.py \
     --validation_file $SCRATCH/Domain-Adaptation/data/simple_movie_text_MLM/ALL_DATA_test.txt \
     --do_train \
     --do_eval \
-    --save_steps 75000 \
-    --eval_steps 5000 \
+    --save_steps 7500 \
+    --eval_steps 500 \
     --line_by_line \
     --output_dir $SCRATCH/Domain-Adaptation/movie_roberta/roberta_DAPT_movies_model_withEVAL
 
