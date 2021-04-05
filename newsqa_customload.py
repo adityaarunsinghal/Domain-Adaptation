@@ -153,7 +153,7 @@ class Newsqa(datasets.GeneratorBasedBuilder):
                 {
                     "id": datasets.Value("string"),
                     "story_id": datasets.Value("string"),
-                    "story_text": datasets.Value("string"),
+                    "context": datasets.Value("string"),
                     "question": datasets.Value("string"),
                     "answer_token_ranges": datasets.Value("string"),
                     "answers": datasets.features.Sequence(
@@ -335,7 +335,7 @@ class Newsqa(datasets.GeneratorBasedBuilder):
                         yield row[0], {
                             "id": row[0],
                             "story_id": row[1],
-                            "story_text": row[2],
+                            "context": row[2],
                             "question": row[3],
                             "answer_token_ranges": row[4],
                             "answers": {

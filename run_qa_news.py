@@ -321,7 +321,7 @@ def main():
     else:
         column_names = datasets["test"].column_names
     question_column_name = "question" if "question" in column_names else column_names[3]
-    context_column_name = "story_text" if "story_text" in column_names else column_names[2]
+    context_column_name = "context" if "context" in column_names else column_names[2]
     answer_column_name = "answers" if "answers" in column_names else column_names[5]
 
     # Padding side determines if we do (question|context) or (context|question).
