@@ -256,7 +256,7 @@ def main():
     # download the dataset.
     if data_args.dataset_name is not None:
         if data_args.dataset_name == "newsqa":
-            datasets = load_dataset("/newsqa_custom_load.py",
+            datasets = load_dataset("dataloader/newsqa_custom_load.py",
             data_dir="/scratch/ds5396/newsqa_data/")
         else:
             # Downloading and loading a dataset from the hub.
