@@ -25,13 +25,14 @@ conda activate
 python /scratch/as11919/transformers/examples/question-answering/run_qa.py \
   --model_name_or_path $SCRATCH/Domain-Adaptation/models/movie_roberta/eval_on_moviesQA/movieR_checkpoint607500_withEVAL_squadv1 \
   --dataset_name squad \
-  --do_eval \
+  --test_file $SCRATCH/Domain-Adaptation/data/squad.film.all.json \
+  --do_predict \
   --per_device_train_batch_size 12 \
   --learning_rate 3e-5 \
   --num_train_epochs 2 \
   --max_seq_length 384 \
   --doc_stride 128 \
-  --output_dir /scratch/as11919/Domain-Adaptation/models/movie_roberta/eval_on_squadv1/checkpoint607500_movieR_trained_on_squadv1
+  --output_dir /scratch/as11919/Domain-Adaptation/models/movie_roberta/eval_on_moviesQA/checkpoint607500_movieR_trained_on_squadv1
 
 echo "Done! This was the checkpoint607500_movieR_trained_on_squadv1 evaluated on squadv1"
 "

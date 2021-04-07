@@ -1,0 +1,389 @@
+.
+├── data
+│   ├── MIT_movie_NER
+│   │   ├── dict_structure
+│   │   ├── nested_lists
+│   │   └── original_files
+│   ├── simple_movie_text_MLM
+│   │   └── imdb
+│   │       ├── test
+│   │       │   ├── neg
+│   │       │   └── pos
+│   │       └── train
+│   │           ├── neg
+│   │           ├── pos
+│   │           └── unsup
+│   └── wiki_movies_data
+├── important_slurm_logs
+├── models
+│   └── movie_roberta
+│       ├── eval_on_moviesQA
+│       │   ├── movieR_checkpoint607500_withEVAL_squadv1
+│       │   │   ├── checkpoint-1000
+│       │   │   ├── checkpoint-10000
+│       │   │   ├── checkpoint-10500
+│       │   │   ├── checkpoint-11000
+│       │   │   ├── checkpoint-1500
+│       │   │   ├── checkpoint-2000
+│       │   │   ├── checkpoint-2500
+│       │   │   ├── checkpoint-3000
+│       │   │   ├── checkpoint-3500
+│       │   │   ├── checkpoint-4000
+│       │   │   ├── checkpoint-4500
+│       │   │   ├── checkpoint-500
+│       │   │   ├── checkpoint-5000
+│       │   │   ├── checkpoint-5500
+│       │   │   ├── checkpoint-6000
+│       │   │   ├── checkpoint-6500
+│       │   │   ├── checkpoint-7000
+│       │   │   ├── checkpoint-7500
+│       │   │   ├── checkpoint-8000
+│       │   │   ├── checkpoint-8500
+│       │   │   ├── checkpoint-9000
+│       │   │   └── checkpoint-9500
+│       │   ├── movieR_withoutEVALversion_squadv1
+│       │   │   ├── checkpoint-1000
+│       │   │   ├── checkpoint-10000
+│       │   │   ├── checkpoint-10500
+│       │   │   ├── checkpoint-11000
+│       │   │   ├── checkpoint-1500
+│       │   │   ├── checkpoint-2000
+│       │   │   ├── checkpoint-2500
+│       │   │   ├── checkpoint-3000
+│       │   │   ├── checkpoint-3500
+│       │   │   ├── checkpoint-4000
+│       │   │   ├── checkpoint-4500
+│       │   │   ├── checkpoint-500
+│       │   │   ├── checkpoint-5000
+│       │   │   ├── checkpoint-5500
+│       │   │   ├── checkpoint-6000
+│       │   │   ├── checkpoint-6500
+│       │   │   ├── checkpoint-7000
+│       │   │   ├── checkpoint-7500
+│       │   │   ├── checkpoint-8000
+│       │   │   ├── checkpoint-8500
+│       │   │   ├── checkpoint-9000
+│       │   │   └── checkpoint-9500
+│       │   ├── roberta_base_plain_squadv1
+│       │   │   ├── checkpoint-1000
+│       │   │   ├── checkpoint-10000
+│       │   │   ├── checkpoint-10500
+│       │   │   ├── checkpoint-11000
+│       │   │   ├── checkpoint-1500
+│       │   │   ├── checkpoint-2000
+│       │   │   ├── checkpoint-2500
+│       │   │   ├── checkpoint-3000
+│       │   │   ├── checkpoint-3500
+│       │   │   ├── checkpoint-4000
+│       │   │   ├── checkpoint-4500
+│       │   │   ├── checkpoint-500
+│       │   │   ├── checkpoint-5000
+│       │   │   ├── checkpoint-5500
+│       │   │   ├── checkpoint-6000
+│       │   │   ├── checkpoint-6500
+│       │   │   ├── checkpoint-7000
+│       │   │   ├── checkpoint-7500
+│       │   │   ├── checkpoint-8000
+│       │   │   ├── checkpoint-8500
+│       │   │   ├── checkpoint-9000
+│       │   │   └── checkpoint-9500
+│       │   ├── roberta_base_plain_squadv2
+│       │   │   ├── checkpoint-1000
+│       │   │   ├── checkpoint-10000
+│       │   │   ├── checkpoint-10500
+│       │   │   ├── checkpoint-11000
+│       │   │   ├── checkpoint-11500
+│       │   │   ├── checkpoint-12000
+│       │   │   ├── checkpoint-12500
+│       │   │   ├── checkpoint-13000
+│       │   │   ├── checkpoint-13500
+│       │   │   ├── checkpoint-14000
+│       │   │   ├── checkpoint-14500
+│       │   │   ├── checkpoint-1500
+│       │   │   ├── checkpoint-15000
+│       │   │   ├── checkpoint-15500
+│       │   │   ├── checkpoint-16000
+│       │   │   ├── checkpoint-2000
+│       │   │   ├── checkpoint-2500
+│       │   │   ├── checkpoint-3000
+│       │   │   ├── checkpoint-3500
+│       │   │   ├── checkpoint-4000
+│       │   │   ├── checkpoint-4500
+│       │   │   ├── checkpoint-500
+│       │   │   ├── checkpoint-5000
+│       │   │   ├── checkpoint-5500
+│       │   │   ├── checkpoint-6000
+│       │   │   ├── checkpoint-6500
+│       │   │   ├── checkpoint-7000
+│       │   │   ├── checkpoint-7500
+│       │   │   ├── checkpoint-8000
+│       │   │   ├── checkpoint-8500
+│       │   │   ├── checkpoint-9000
+│       │   │   └── checkpoint-9500
+│       │   └── saved_checkpoint_moviesR_withoutEval
+│       ├── eval_on_squadv1
+│       │   └── checkpoint607500_movieR_trained_on_squadv1
+│       ├── eval_on_squadv2
+│       └── roberta-base-wikimovies
+├── movie_roberta
+│   ├── roberta_DAPT_movies_model
+│   ├── roberta_DAPT_movies_model_withEVAL
+│   │   ├── checkpoint-1000
+│   │   ├── checkpoint-10000
+│   │   ├── checkpoint-10500
+│   │   ├── checkpoint-11000
+│   │   ├── checkpoint-11500
+│   │   ├── checkpoint-12000
+│   │   ├── checkpoint-12500
+│   │   ├── checkpoint-13000
+│   │   ├── checkpoint-13500
+│   │   ├── checkpoint-14000
+│   │   ├── checkpoint-14500
+│   │   ├── checkpoint-1500
+│   │   ├── checkpoint-15000
+│   │   ├── checkpoint-150000
+│   │   ├── checkpoint-15500
+│   │   ├── checkpoint-157500
+│   │   ├── checkpoint-16000
+│   │   ├── checkpoint-16500
+│   │   ├── checkpoint-165000
+│   │   ├── checkpoint-17000
+│   │   ├── checkpoint-172500
+│   │   ├── checkpoint-17500
+│   │   ├── checkpoint-18000
+│   │   ├── checkpoint-180000
+│   │   ├── checkpoint-18500
+│   │   ├── checkpoint-187500
+│   │   ├── checkpoint-19000
+│   │   ├── checkpoint-19500
+│   │   ├── checkpoint-195000
+│   │   ├── checkpoint-2000
+│   │   ├── checkpoint-20000
+│   │   ├── checkpoint-202500
+│   │   ├── checkpoint-20500
+│   │   ├── checkpoint-21000
+│   │   ├── checkpoint-210000
+│   │   ├── checkpoint-21500
+│   │   ├── checkpoint-217500
+│   │   ├── checkpoint-22000
+│   │   ├── checkpoint-22500
+│   │   ├── checkpoint-225000
+│   │   ├── checkpoint-23000
+│   │   ├── checkpoint-232500
+│   │   ├── checkpoint-23500
+│   │   ├── checkpoint-24000
+│   │   ├── checkpoint-240000
+│   │   ├── checkpoint-24500
+│   │   ├── checkpoint-247500
+│   │   ├── checkpoint-2500
+│   │   ├── checkpoint-25000
+│   │   ├── checkpoint-25500
+│   │   ├── checkpoint-255000
+│   │   ├── checkpoint-26000
+│   │   ├── checkpoint-262500
+│   │   ├── checkpoint-26500
+│   │   ├── checkpoint-27000
+│   │   ├── checkpoint-270000
+│   │   ├── checkpoint-27500
+│   │   ├── checkpoint-277500
+│   │   ├── checkpoint-28000
+│   │   ├── checkpoint-28500
+│   │   ├── checkpoint-285000
+│   │   ├── checkpoint-29000
+│   │   ├── checkpoint-292500
+│   │   ├── checkpoint-29500
+│   │   ├── checkpoint-3000
+│   │   ├── checkpoint-30000
+│   │   ├── checkpoint-300000
+│   │   ├── checkpoint-30500
+│   │   ├── checkpoint-307500
+│   │   ├── checkpoint-31000
+│   │   ├── checkpoint-31500
+│   │   ├── checkpoint-315000
+│   │   ├── checkpoint-32000
+│   │   ├── checkpoint-322500
+│   │   ├── checkpoint-32500
+│   │   ├── checkpoint-33000
+│   │   ├── checkpoint-330000
+│   │   ├── checkpoint-33500
+│   │   ├── checkpoint-337500
+│   │   ├── checkpoint-34000
+│   │   ├── checkpoint-34500
+│   │   ├── checkpoint-345000
+│   │   ├── checkpoint-3500
+│   │   ├── checkpoint-35000
+│   │   ├── checkpoint-352500
+│   │   ├── checkpoint-35500
+│   │   ├── checkpoint-36000
+│   │   ├── checkpoint-360000
+│   │   ├── checkpoint-36500
+│   │   ├── checkpoint-367500
+│   │   ├── checkpoint-37000
+│   │   ├── checkpoint-37500
+│   │   ├── checkpoint-375000
+│   │   ├── checkpoint-38000
+│   │   ├── checkpoint-382500
+│   │   ├── checkpoint-38500
+│   │   ├── checkpoint-39000
+│   │   ├── checkpoint-390000
+│   │   ├── checkpoint-39500
+│   │   ├── checkpoint-397500
+│   │   ├── checkpoint-4000
+│   │   ├── checkpoint-40000
+│   │   ├── checkpoint-40500
+│   │   ├── checkpoint-405000
+│   │   ├── checkpoint-41000
+│   │   ├── checkpoint-412500
+│   │   ├── checkpoint-41500
+│   │   ├── checkpoint-42000
+│   │   ├── checkpoint-420000
+│   │   ├── checkpoint-42500
+│   │   ├── checkpoint-427500
+│   │   ├── checkpoint-43000
+│   │   ├── checkpoint-43500
+│   │   ├── checkpoint-435000
+│   │   ├── checkpoint-44000
+│   │   ├── checkpoint-442500
+│   │   ├── checkpoint-44500
+│   │   ├── checkpoint-4500
+│   │   ├── checkpoint-45000
+│   │   ├── checkpoint-450000
+│   │   ├── checkpoint-45500
+│   │   ├── checkpoint-457500
+│   │   ├── checkpoint-46000
+│   │   ├── checkpoint-46500
+│   │   ├── checkpoint-465000
+│   │   ├── checkpoint-47000
+│   │   ├── checkpoint-472500
+│   │   ├── checkpoint-47500
+│   │   ├── checkpoint-48000
+│   │   ├── checkpoint-480000
+│   │   ├── checkpoint-48500
+│   │   ├── checkpoint-487500
+│   │   ├── checkpoint-49000
+│   │   ├── checkpoint-49500
+│   │   ├── checkpoint-495000
+│   │   ├── checkpoint-500
+│   │   ├── checkpoint-5000
+│   │   ├── checkpoint-50000
+│   │   ├── checkpoint-502500
+│   │   ├── checkpoint-50500
+│   │   ├── checkpoint-51000
+│   │   ├── checkpoint-510000
+│   │   ├── checkpoint-51500
+│   │   ├── checkpoint-517500
+│   │   ├── checkpoint-52000
+│   │   ├── checkpoint-52500
+│   │   ├── checkpoint-525000
+│   │   ├── checkpoint-53000
+│   │   ├── checkpoint-532500
+│   │   ├── checkpoint-53500
+│   │   ├── checkpoint-54000
+│   │   ├── checkpoint-540000
+│   │   ├── checkpoint-54500
+│   │   ├── checkpoint-547500
+│   │   ├── checkpoint-5500
+│   │   ├── checkpoint-55000
+│   │   ├── checkpoint-55500
+│   │   ├── checkpoint-555000
+│   │   ├── checkpoint-56000
+│   │   ├── checkpoint-562500
+│   │   ├── checkpoint-56500
+│   │   ├── checkpoint-57000
+│   │   ├── checkpoint-570000
+│   │   ├── checkpoint-57500
+│   │   ├── checkpoint-577500
+│   │   ├── checkpoint-58000
+│   │   ├── checkpoint-58500
+│   │   ├── checkpoint-585000
+│   │   ├── checkpoint-59000
+│   │   ├── checkpoint-592500
+│   │   ├── checkpoint-59500
+│   │   ├── checkpoint-6000
+│   │   ├── checkpoint-60000
+│   │   ├── checkpoint-600000
+│   │   ├── checkpoint-60500
+│   │   ├── checkpoint-607500
+│   │   ├── checkpoint-61000
+│   │   ├── checkpoint-61500
+│   │   ├── checkpoint-615000
+│   │   ├── checkpoint-62000
+│   │   ├── checkpoint-622500
+│   │   ├── checkpoint-62500
+│   │   ├── checkpoint-63000
+│   │   ├── checkpoint-630000
+│   │   ├── checkpoint-63500
+│   │   ├── checkpoint-637500
+│   │   ├── checkpoint-64000
+│   │   ├── checkpoint-64500
+│   │   ├── checkpoint-645000
+│   │   ├── checkpoint-6500
+│   │   ├── checkpoint-65000
+│   │   ├── checkpoint-652500
+│   │   ├── checkpoint-65500
+│   │   ├── checkpoint-66000
+│   │   ├── checkpoint-660000
+│   │   ├── checkpoint-66500
+│   │   ├── checkpoint-667500
+│   │   ├── checkpoint-67000
+│   │   ├── checkpoint-67500
+│   │   ├── checkpoint-675000
+│   │   ├── checkpoint-68000
+│   │   ├── checkpoint-682500
+│   │   ├── checkpoint-68500
+│   │   ├── checkpoint-69000
+│   │   ├── checkpoint-690000
+│   │   ├── checkpoint-69500
+│   │   ├── checkpoint-697500
+│   │   ├── checkpoint-7000
+│   │   ├── checkpoint-70000
+│   │   ├── checkpoint-70500
+│   │   ├── checkpoint-705000
+│   │   ├── checkpoint-71000
+│   │   ├── checkpoint-712500
+│   │   ├── checkpoint-71500
+│   │   ├── checkpoint-72000
+│   │   ├── checkpoint-720000
+│   │   ├── checkpoint-72500
+│   │   ├── checkpoint-727500
+│   │   ├── checkpoint-73000
+│   │   ├── checkpoint-73500
+│   │   ├── checkpoint-735000
+│   │   ├── checkpoint-74000
+│   │   ├── checkpoint-742500
+│   │   ├── checkpoint-74500
+│   │   ├── checkpoint-7500
+│   │   ├── checkpoint-75000
+│   │   ├── checkpoint-750000
+│   │   ├── checkpoint-75500
+│   │   ├── checkpoint-757500
+│   │   ├── checkpoint-76000
+│   │   ├── checkpoint-76500
+│   │   ├── checkpoint-765000
+│   │   ├── checkpoint-77000
+│   │   ├── checkpoint-772500
+│   │   ├── checkpoint-77500
+│   │   ├── checkpoint-78000
+│   │   ├── checkpoint-78500
+│   │   ├── checkpoint-79000
+│   │   ├── checkpoint-79500
+│   │   ├── checkpoint-8000
+│   │   ├── checkpoint-80000
+│   │   ├── checkpoint-80500
+│   │   ├── checkpoint-8500
+│   │   ├── checkpoint-9000
+│   │   └── checkpoint-9500
+│   ├── roberta_DAPT_movies_model_withoutEVAL
+│   │   ├── checkpoint-190000
+│   │   ├── checkpoint-190500
+│   │   ├── checkpoint-191000
+│   │   ├── checkpoint-191500
+│   │   ├── checkpoint-192000
+│   │   ├── checkpoint-192500
+│   │   ├── checkpoint-193000
+│   │   ├── checkpoint-193500
+│   │   ├── checkpoint-194000
+│   │   └── checkpoint-500
+│   └── saved_checkpoint_movieR_withEVAL
+├── __pycache__
+└── shell_scripts
