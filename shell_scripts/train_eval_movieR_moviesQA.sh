@@ -36,7 +36,7 @@ conda activate
 # squadv1 trial with bad movieroberta-noEVALversion (just trying)
 
 python $SCRATCH/transformers/examples/question-answering/run_qa.py \
-  --model_name_or_path ~/Domain-Adaptation/movie_roberta/saved_checkpoint_movieR_withoutEVAL \
+  --model_name_or_path ~/Domain-Adaptation/movie_roberta/saved_checkpoint_movieR_withEVAL \
   --dataset_name squad \
   --validation_file $SCRATCH/Domain-Adaptation/data/squad.film.all.json \
   --do_train \
@@ -45,7 +45,7 @@ python $SCRATCH/transformers/examples/question-answering/run_qa.py \
   --max_seq_length 384 \
   --doc_stride 128 \
   --overwrite_output_dir \
-  --output_dir $SCRATCH/Domain-Adaptation/models/movie_roberta/eval_on_moviesQA/movieR_withoutEVALversion_squadv1
+  --output_dir $SCRATCH/Domain-Adaptation/models/movie_roberta/eval_on_moviesQA/movieR_checkpoint607500_withEVAL_squadv1
 
 # squad v2 gives error because of "no ans probability" 
 
