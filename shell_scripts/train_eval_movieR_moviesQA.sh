@@ -63,3 +63,11 @@ python $SCRATCH/transformers/examples/question-answering/run_qa.py \
 
 echo "Done!"
 "
+
+python $SCRATCH/transformers/examples/question-answering/run_qa.py \
+  --model_name_or_path $SCRATCH/Domain-Adaptation/models/movie_roberta/eval_on_moviesQA/movieR_checkpoint607500_withEVAL_squadv1 \
+  --validation_file squad \
+  --do_eval \
+  --per_device_train_batch_size 12 \
+  --max_seq_length 384 \
+  --doc_stride 128 \

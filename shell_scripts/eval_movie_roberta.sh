@@ -23,42 +23,15 @@ conda activate
 # on squad
 
 python /scratch/as11919/transformers/examples/question-answering/run_qa.py \
-  --model_name_or_path ~/Domain-Adaptation/models/movie_roberta \
-  --dataset_name squad_v2 \
+  --model_name_or_path $SCRATCH/Domain-Adaptation/models/movie_roberta/eval_on_moviesQA/movieR_checkpoint607500_withEVAL_squadv1 \
+  --dataset_name squad \
   --do_eval \
-  --version_2_with_negative True\
   --per_device_train_batch_size 12 \
   --learning_rate 3e-5 \
   --num_train_epochs 2 \
   --max_seq_length 384 \
   --doc_stride 128 \
-  --output_dir /scratch/as11919/Domain-Adaptation/models/movie_roberta/eval_on_squadv2
+  --output_dir /scratch/as11919/Domain-Adaptation/models/movie_roberta/eval_on_squadv1/checkpoint607500_movieR_trained_on_squadv1
 
-# on MoviesQA
-
-# python $SCRATCH/transformers/examples/question-answering/run_qa.py \
-#   --model_name_or_path ~/Domain-Adaptation/models/movie_roberta \
-#   --train_file $SCRATCH/Domain-Adaptation/data/squad.film.train.json \
-#   --validation_file $SCRATCH/Domain-Adaptation/data/squad.film.dev.json \
-#   --do_eval \
-#   --do_predict \
-#   --version_2_with_negative True\
-#   --per_device_train_batch_size 12 \
-#   --max_seq_length 384 \
-#   --doc_stride 128 \
-#   --output_dir $SCRATCH/Domain-Adaptation/models/movie_roberta/eval_on_moviesQA
-
-
-python $SCRATCH/transformers/examples/question-answering/run_qa.py \
-  --model_name_or_path ~/Domain-Adaptation/models/movie_roberta \
-  --train_file $SCRATCH/Domain-Adaptation/data/squad.film.train.json \
-  --validation_file $SCRATCH/Domain-Adaptation/data/squad.film.dev.json \
-  --do_eval \
-  --overwrite_cache \
-  --per_device_train_batch_size 12 \
-  --max_seq_length 384 \
-  --doc_stride 128 \
-  --output_dir $SCRATCH/Domain-Adaptation/models/movie_roberta/eval_on_moviesQA
-
-echo "Done!"
+echo "Done! This was the checkpoint607500_movieR_trained_on_squadv1 evaluated on squadv1"
 "
