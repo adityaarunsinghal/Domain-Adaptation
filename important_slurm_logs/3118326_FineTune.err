@@ -1,0 +1,70 @@
+/ext3/miniconda3/lib/python3.8/site-packages/parlai/utils/fp16.py:487: UserWarning: This overload of add_ is deprecated:
+	add_(Number alpha, Tensor other)
+Consider using one of the following signatures instead:
+	add_(Tensor other, *, Number alpha) (Triggered internally at  /pytorch/torch/csrc/utils/python_arg_parser.cpp:882.)
+  exp_avg.mul_(beta1).add_(1 - beta1, grad)
+Traceback (most recent call last):
+  File "/ext3/miniconda3/lib/python3.8/site-packages/torch/serialization.py", line 372, in save
+    _save(obj, opened_zipfile, pickle_module, pickle_protocol)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/torch/serialization.py", line 493, in _save
+    zip_file.write_record(name, buf_value, len(buf_value))
+OSError: [Errno 28] No space left on device
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/ext3/miniconda3/bin/parlai", line 8, in <module>
+    sys.exit(main())
+  File "/ext3/miniconda3/lib/python3.8/site-packages/parlai/__main__.py", line 14, in main
+    superscript_main()
+  File "/ext3/miniconda3/lib/python3.8/site-packages/parlai/core/script.py", line 306, in superscript_main
+    return SCRIPT_REGISTRY[cmd].klass._run_from_parser_and_opt(opt, parser)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/parlai/core/script.py", line 89, in _run_from_parser_and_opt
+    return script.run()
+  File "/ext3/miniconda3/lib/python3.8/site-packages/parlai/scripts/train_model.py", line 789, in run
+    return self.train_loop.train()
+  File "/ext3/miniconda3/lib/python3.8/site-packages/parlai/scripts/train_model.py", line 742, in train
+    self.save_model('.checkpoint')
+  File "/ext3/miniconda3/lib/python3.8/site-packages/parlai/scripts/train_model.py", line 404, in save_model
+    self.agent.save(fn)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/parlai/core/torch_agent.py", line 1846, in save
+    atomic_save(states, path)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/parlai/utils/torch.py", line 58, in atomic_save
+    torch.save(state_dict, f)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/torch/serialization.py", line 373, in save
+    return
+  File "/ext3/miniconda3/lib/python3.8/site-packages/torch/serialization.py", line 259, in __exit__
+    self.file_like.write_end_of_file()
+RuntimeError: [enforce fail at inline_container.cc:274] . unexpected pos 27194066752 vs 27194066648
+terminate called after throwing an instance of 'c10::Error'
+  what():  [enforce fail at inline_container.cc:274] . unexpected pos 27194066752 vs 27194066648
+frame #0: c10::ThrowEnforceNotMet(char const*, int, char const*, std::string const&, void const*) + 0x47 (0x14bfbfbf46a7 in /ext3/miniconda3/lib/python3.8/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x1c99500 (0x14bffef5b500 in /ext3/miniconda3/lib/python3.8/site-packages/torch/lib/libtorch_cpu.so)
+frame #2: <unknown function> + 0x1c956d3 (0x14bffef576d3 in /ext3/miniconda3/lib/python3.8/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: caffe2::serialize::PyTorchStreamWriter::writeRecord(std::string const&, void const*, unsigned long, bool) + 0xa9 (0x14bffef5c609 in /ext3/miniconda3/lib/python3.8/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: caffe2::serialize::PyTorchStreamWriter::writeEndOfFile() + 0xe1 (0x14bffef5d141 in /ext3/miniconda3/lib/python3.8/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: caffe2::serialize::PyTorchStreamWriter::~PyTorchStreamWriter() + 0x115 (0x14bffef5d935 in /ext3/miniconda3/lib/python3.8/site-packages/torch/lib/libtorch_cpu.so)
+frame #6: <unknown function> + 0x654323 (0x14c00e62e323 in /ext3/miniconda3/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+frame #7: <unknown function> + 0x2c2b90 (0x14c00e29cb90 in /ext3/miniconda3/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+frame #8: <unknown function> + 0x2c3cfe (0x14c00e29dcfe in /ext3/miniconda3/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+frame #9: <unknown function> + 0x11c826 (0x55ae680f5826 in /ext3/miniconda3/bin/python)
+frame #10: <unknown function> + 0x128f06 (0x55ae68101f06 in /ext3/miniconda3/bin/python)
+frame #11: <unknown function> + 0x128ebc (0x55ae68101ebc in /ext3/miniconda3/bin/python)
+frame #12: <unknown function> + 0x128ebc (0x55ae68101ebc in /ext3/miniconda3/bin/python)
+frame #13: <unknown function> + 0x128ebc (0x55ae68101ebc in /ext3/miniconda3/bin/python)
+frame #14: <unknown function> + 0x128ebc (0x55ae68101ebc in /ext3/miniconda3/bin/python)
+frame #15: <unknown function> + 0x128ebc (0x55ae68101ebc in /ext3/miniconda3/bin/python)
+frame #16: <unknown function> + 0x128ebc (0x55ae68101ebc in /ext3/miniconda3/bin/python)
+frame #17: <unknown function> + 0x128ebc (0x55ae68101ebc in /ext3/miniconda3/bin/python)
+frame #18: <unknown function> + 0x128ebc (0x55ae68101ebc in /ext3/miniconda3/bin/python)
+frame #19: <unknown function> + 0x128ebc (0x55ae68101ebc in /ext3/miniconda3/bin/python)
+frame #20: PyDict_SetItem + 0x2ac (0x55ae6814a82c in /ext3/miniconda3/bin/python)
+frame #21: PyDict_SetItemString + 0x4f (0x55ae6814af1f in /ext3/miniconda3/bin/python)
+frame #22: PyImport_Cleanup + 0x9b (0x55ae682252db in /ext3/miniconda3/bin/python)
+frame #23: Py_FinalizeEx + 0x7d (0x55ae6822568d in /ext3/miniconda3/bin/python)
+frame #24: Py_RunMain + 0x110 (0x55ae68227b90 in /ext3/miniconda3/bin/python)
+frame #25: Py_BytesMain + 0x39 (0x55ae68227d19 in /ext3/miniconda3/bin/python)
+frame #26: __libc_start_main + 0xe7 (0x14c0123a5bf7 in /lib/x86_64-linux-gnu/libc.so.6)
+frame #27: <unknown function> + 0x1dee93 (0x55ae681b7e93 in /ext3/miniconda3/bin/python)
+
+/bin/bash: line 7: 1850359 Aborted                 (core dumped) parlai train_model -t empathic_conversations -mf zoo:blender/blender_3B/model -m transformer/generator -bs 128 -vtim 36000 -stim 3600 -nl 4 --optimizer adam -lr 0.0008 --history-size 3 --verbose

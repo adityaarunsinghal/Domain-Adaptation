@@ -1,0 +1,8 @@
+2021-03-13 20:21:25,296 INFO     | building dictionary first...
+2021-03-13 20:21:25,298 WARNING  | Overriding opt["beam_size"] to 1 (previously: 10)
+2021-03-13 20:21:25,300 WARNING  | your model is being loaded with opts that do not exist in the model you are initializing the weights with: download_path: None,verbose: False,datapath: /ext3/miniconda3/lib/python3.8/site-packages/data,load_from_checkpoint: True,interactive_mode: False
+2021-03-13 20:21:25,300 WARNING  | your model is being loaded with opts that differ from the model you are initializing the weights with. Add the following args to your run command to change this: 
+--num-epochs -1 --beam-size 10
+2021-03-13 20:21:25,301 INFO     | Using CUDA
+2021-03-13 20:21:25,301 INFO     | loading dictionary from /ext3/miniconda3/lib/python3.8/site-packages/data/models/blender/blender_3B/model.checkpoint.dict
+2021-03-13 20:21:25,312 INFO     | num words = 8008

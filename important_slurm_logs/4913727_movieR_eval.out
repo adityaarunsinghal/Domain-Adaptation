@@ -1,0 +1,51 @@
+04/06/2021 21:29:13 - WARNING - __main__ -   Process rank: -1, device: cuda:0, n_gpu: 2distributed training: False, 16-bits training: False
+04/06/2021 21:29:13 - INFO - __main__ -   Training/evaluation parameters TrainingArguments(output_dir=/scratch/as11919/Domain-Adaptation/models/movie_roberta/eval_on_moviesQA/movieR_checkpoint607500_withEVAL_squadv1, overwrite_output_dir=True, do_train=True, do_eval=True, do_predict=False, evaluation_strategy=IntervalStrategy.NO, prediction_loss_only=False, per_device_train_batch_size=12, per_device_eval_batch_size=8, gradient_accumulation_steps=1, eval_accumulation_steps=None, learning_rate=5e-05, weight_decay=0.0, adam_beta1=0.9, adam_beta2=0.999, adam_epsilon=1e-08, max_grad_norm=1.0, num_train_epochs=3.0, max_steps=-1, lr_scheduler_type=SchedulerType.LINEAR, warmup_ratio=0.0, warmup_steps=0, logging_dir=runs/Apr06_21-29-13_gr042.nyu.cluster, logging_strategy=IntervalStrategy.STEPS, logging_first_step=False, logging_steps=500, save_strategy=IntervalStrategy.STEPS, save_steps=500, save_total_limit=None, no_cuda=False, seed=42, fp16=False, fp16_opt_level=O1, fp16_backend=auto, fp16_full_eval=False, local_rank=-1, tpu_num_cores=None, tpu_metrics_debug=False, debug=False, dataloader_drop_last=False, eval_steps=500, dataloader_num_workers=0, past_index=-1, run_name=/scratch/as11919/Domain-Adaptation/models/movie_roberta/eval_on_moviesQA/movieR_checkpoint607500_withEVAL_squadv1, disable_tqdm=False, remove_unused_columns=True, label_names=None, load_best_model_at_end=False, metric_for_best_model=None, greater_is_better=None, ignore_data_skip=False, sharded_ddp=[], deepspeed=None, label_smoothing_factor=0.0, adafactor=False, group_by_length=False, report_to=['tensorboard', 'wandb'], ddp_find_unused_parameters=None, dataloader_pin_memory=True, skip_memory_metrics=False, _n_gpu=2)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 2.3661, 'learning_rate': 4.7742255937866886e-05, 'epoch': 0.14}
+{'loss': 1.5106, 'learning_rate': 4.548451187573377e-05, 'epoch': 0.27}
+{'loss': 1.3622, 'learning_rate': 4.322676781360065e-05, 'epoch': 0.41}
+{'loss': 1.2987, 'learning_rate': 4.0969023751467536e-05, 'epoch': 0.54}
+{'loss': 1.2436, 'learning_rate': 3.871127968933442e-05, 'epoch': 0.68}
+{'loss': 1.1946, 'learning_rate': 3.64535356272013e-05, 'epoch': 0.81}
+{'loss': 1.1644, 'learning_rate': 3.4195791565068186e-05, 'epoch': 0.95}
+{'loss': 0.9851, 'learning_rate': 3.193804750293507e-05, 'epoch': 1.08}
+{'loss': 0.9066, 'learning_rate': 2.9680303440801956e-05, 'epoch': 1.22}
+{'loss': 0.9217, 'learning_rate': 2.7422559378668832e-05, 'epoch': 1.35}
+{'loss': 0.8962, 'learning_rate': 2.5164815316535715e-05, 'epoch': 1.49}
+{'loss': 0.8864, 'learning_rate': 2.2907071254402602e-05, 'epoch': 1.63}
+{'loss': 0.8753, 'learning_rate': 2.0649327192269485e-05, 'epoch': 1.76}
+{'loss': 0.8561, 'learning_rate': 1.839158313013637e-05, 'epoch': 1.9}
+{'loss': 0.7853, 'learning_rate': 1.6133839068003252e-05, 'epoch': 2.03}
+{'loss': 0.6411, 'learning_rate': 1.3876095005870135e-05, 'epoch': 2.17}
+{'loss': 0.6533, 'learning_rate': 1.1618350943737019e-05, 'epoch': 2.3}
+{'loss': 0.6353, 'learning_rate': 9.360606881603902e-06, 'epoch': 2.44}
+{'loss': 0.637, 'learning_rate': 7.1028628194707844e-06, 'epoch': 2.57}
+{'loss': 0.6121, 'learning_rate': 4.845118757337668e-06, 'epoch': 2.71}
+{'loss': 0.6342, 'learning_rate': 2.5873746952045515e-06, 'epoch': 2.84}
+{'loss': 0.6254, 'learning_rate': 3.2963063307143504e-07, 'epoch': 2.98}
+{'train_runtime': 5155.2945, 'train_samples_per_second': 2.148, 'epoch': 3.0}
+
+04/06/2021 22:55:59 - INFO - __main__ -   *** Evaluate ***
+04/06/2021 22:57:26 - INFO - utils_qa -   Post-processing 10570 example predictions split into 10790 features.
+04/06/2021 22:57:45 - INFO - utils_qa -   Saving predictions to /scratch/as11919/Domain-Adaptation/models/movie_roberta/eval_on_moviesQA/movieR_checkpoint607500_withEVAL_squadv1/predictions.json.
+04/06/2021 22:57:45 - INFO - utils_qa -   Saving nbest_preds to /scratch/as11919/Domain-Adaptation/models/movie_roberta/eval_on_moviesQA/movieR_checkpoint607500_withEVAL_squadv1/nbest_predictions.json.
+

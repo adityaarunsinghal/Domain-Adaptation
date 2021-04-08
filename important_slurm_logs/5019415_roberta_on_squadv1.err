@@ -1,0 +1,71 @@
+2021-04-08 11:22:47.204693: W tensorflow/stream_executor/platform/default/dso_loader.cc:60] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/nvidia/lib:/usr/local/nvidia/lib64:/.singularity.d/libs
+2021-04-08 11:22:47.204788: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+Reusing dataset squad (/home/as11919/.cache/huggingface/datasets/squad/plain_text/1.0.0/1244d044b266a5e4dbd4174d23cb995eead372fbca31a03edc3f8a132787af41)
+[INFO|configuration_utils.py:490] 2021-04-08 11:23:00,786 >> loading configuration file https://huggingface.co/roberta-base/resolve/main/config.json from cache at /home/as11919/.cache/huggingface/transformers/733bade19e5f0ce98e6531021dd5180994bb2f7b8bd7e80c7968805834ba351e.35205c6cfc956461d8515139f0f8dd5d207a2f336c0c3a83b4bc8dca3518e37b
+[INFO|configuration_utils.py:526] 2021-04-08 11:23:00,787 >> Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.6.0.dev0",
+  "type_vocab_size": 1,
+  "use_cache": true,
+  "vocab_size": 50265
+}
+
+[INFO|configuration_utils.py:490] 2021-04-08 11:23:00,818 >> loading configuration file https://huggingface.co/roberta-base/resolve/main/config.json from cache at /home/as11919/.cache/huggingface/transformers/733bade19e5f0ce98e6531021dd5180994bb2f7b8bd7e80c7968805834ba351e.35205c6cfc956461d8515139f0f8dd5d207a2f336c0c3a83b4bc8dca3518e37b
+[INFO|configuration_utils.py:526] 2021-04-08 11:23:00,818 >> Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.6.0.dev0",
+  "type_vocab_size": 1,
+  "use_cache": true,
+  "vocab_size": 50265
+}
+
+[INFO|tokenization_utils_base.py:1713] 2021-04-08 11:23:01,034 >> loading file https://huggingface.co/roberta-base/resolve/main/vocab.json from cache at /home/as11919/.cache/huggingface/transformers/d3ccdbfeb9aaa747ef20432d4976c32ee3fa69663b379deb253ccfce2bb1fdc5.d67d6b367eb24ab43b08ad55e014cf254076934f71d832bbab9ad35644a375ab
+[INFO|tokenization_utils_base.py:1713] 2021-04-08 11:23:01,034 >> loading file https://huggingface.co/roberta-base/resolve/main/merges.txt from cache at /home/as11919/.cache/huggingface/transformers/cafdecc90fcab17011e12ac813dd574b4b3fea39da6dd817813efa010262ff3f.5d12962c5ee615a4c803841266e9c3be9a691a924f72d395d3a6c6c81157788b
+[INFO|tokenization_utils_base.py:1713] 2021-04-08 11:23:01,034 >> loading file https://huggingface.co/roberta-base/resolve/main/tokenizer.json from cache at /home/as11919/.cache/huggingface/transformers/d53fc0fa09b8342651efd4073d75e19617b3e51287c2a535becda5808a8db287.fc9576039592f026ad76a1c231b89aee8668488c671dfbe6616bab2ed298d730
+[INFO|tokenization_utils_base.py:1713] 2021-04-08 11:23:01,034 >> loading file https://huggingface.co/roberta-base/resolve/main/added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:1713] 2021-04-08 11:23:01,034 >> loading file https://huggingface.co/roberta-base/resolve/main/special_tokens_map.json from cache at None
+[INFO|tokenization_utils_base.py:1713] 2021-04-08 11:23:01,036 >> loading file https://huggingface.co/roberta-base/resolve/main/tokenizer_config.json from cache at None
+[INFO|modeling_utils.py:1052] 2021-04-08 11:23:01,165 >> loading weights file https://huggingface.co/roberta-base/resolve/main/pytorch_model.bin from cache at /home/as11919/.cache/huggingface/transformers/51ba668f7ff34e7cdfa9561e8361747738113878850a7d717dbc69de8683aaad.c7efaa30a0d80b2958b876969faa180e485944a849deee4ad482332de65365a7
+[WARNING|modeling_utils.py:1159] 2021-04-08 11:23:04,644 >> Some weights of the model checkpoint at roberta-base were not used when initializing RobertaForQuestionAnswering: ['lm_head.bias', 'lm_head.dense.weight', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.layer_norm.bias', 'lm_head.decoder.weight']
+- This IS expected if you are initializing RobertaForQuestionAnswering from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing RobertaForQuestionAnswering from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[WARNING|modeling_utils.py:1170] 2021-04-08 11:23:04,644 >> Some weights of RobertaForQuestionAnswering were not initialized from the model checkpoint at roberta-base and are newly initialized: ['qa_outputs.weight', 'qa_outputs.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+  0%|          | 0/88 [00:00<?, ?ba/s]  1%|          | 1/88 [00:00<00:26,  3.28ba/s]  2%|▏         | 2/88 [00:00<00:24,  3.55ba/s]  3%|▎         | 3/88 [00:00<00:28,  3.03ba/s]  5%|▍         | 4/88 [00:01<00:24,  3.38ba/s]  6%|▌         | 5/88 [00:01<00:22,  3.65ba/s]  7%|▋         | 6/88 [00:01<00:21,  3.87ba/s]  8%|▊         | 7/88 [00:01<00:19,  4.05ba/s]  9%|▉         | 8/88 [00:02<00:18,  4.24ba/s] 10%|█         | 9/88 [00:02<00:21,  3.75ba/s] 11%|█▏        | 10/88 [00:02<00:19,  3.98ba/s] 12%|█▎        | 11/88 [00:02<00:18,  4.20ba/s] 14%|█▎        | 12/88 [00:03<00:17,  4.35ba/s] 15%|█▍        | 13/88 [00:03<00:16,  4.45ba/s] 16%|█▌        | 14/88 [00:03<00:16,  4.53ba/s] 17%|█▋        | 15/88 [00:03<00:15,  4.63ba/s] 18%|█▊        | 16/88 [00:03<00:17,  4.22ba/s] 19%|█▉        | 17/88 [00:04<00:16,  4.38ba/s] 20%|██        | 18/88 [00:04<00:15,  4.55ba/s] 22%|██▏       | 19/88 [00:04<00:15,  4.57ba/s] 23%|██▎       | 20/88 [00:04<00:14,  4.63ba/s] 24%|██▍       | 21/88 [00:05<00:14,  4.64ba/s] 25%|██▌       | 22/88 [00:05<00:15,  4.19ba/s] 26%|██▌       | 23/88 [00:05<00:14,  4.36ba/s] 27%|██▋       | 24/88 [00:05<00:14,  4.30ba/s] 28%|██▊       | 25/88 [00:05<00:14,  4.44ba/s] 30%|██▉       | 26/88 [00:06<00:13,  4.50ba/s] 31%|███       | 27/88 [00:06<00:13,  4.42ba/s] 32%|███▏      | 28/88 [00:06<00:15,  3.92ba/s] 33%|███▎      | 29/88 [00:06<00:14,  4.04ba/s] 34%|███▍      | 30/88 [00:07<00:14,  4.06ba/s] 35%|███▌      | 31/88 [00:07<00:13,  4.10ba/s] 36%|███▋      | 32/88 [00:07<00:13,  4.12ba/s] 38%|███▊      | 33/88 [00:07<00:13,  4.17ba/s] 39%|███▊      | 34/88 [00:08<00:14,  3.80ba/s] 40%|███▉      | 35/88 [00:08<00:13,  3.92ba/s] 41%|████      | 36/88 [00:08<00:13,  3.96ba/s] 42%|████▏     | 37/88 [00:08<00:12,  4.06ba/s] 43%|████▎     | 38/88 [00:09<00:12,  4.13ba/s] 44%|████▍     | 39/88 [00:09<00:11,  4.14ba/s] 45%|████▌     | 40/88 [00:09<00:13,  3.61ba/s] 47%|████▋     | 41/88 [00:10<00:12,  3.79ba/s] 48%|████▊     | 42/88 [00:10<00:11,  3.92ba/s] 49%|████▉     | 43/88 [00:10<00:11,  4.06ba/s] 50%|█████     | 44/88 [00:10<00:10,  4.16ba/s] 51%|█████     | 45/88 [00:10<00:10,  4.19ba/s] 52%|█████▏    | 46/88 [00:11<00:11,  3.72ba/s] 53%|█████▎    | 47/88 [00:11<00:10,  3.84ba/s] 55%|█████▍    | 48/88 [00:11<00:09,  4.01ba/s] 56%|█████▌    | 49/88 [00:11<00:09,  4.10ba/s] 57%|█████▋    | 50/88 [00:12<00:09,  4.15ba/s] 58%|█████▊    | 51/88 [00:12<00:08,  4.20ba/s] 59%|█████▉    | 52/88 [00:12<00:09,  3.60ba/s] 60%|██████    | 53/88 [00:13<00:09,  3.79ba/s] 61%|██████▏   | 54/88 [00:13<00:08,  3.92ba/s] 62%|██████▎   | 55/88 [00:13<00:08,  4.00ba/s] 64%|██████▎   | 56/88 [00:13<00:07,  4.11ba/s] 65%|██████▍   | 57/88 [00:13<00:07,  4.16ba/s] 66%|██████▌   | 58/88 [00:14<00:08,  3.75ba/s] 67%|██████▋   | 59/88 [00:14<00:07,  3.82ba/s] 68%|██████▊   | 60/88 [00:14<00:07,  3.99ba/s] 69%|██████▉   | 61/88 [00:14<00:06,  4.10ba/s] 70%|███████   | 62/88 [00:15<00:06,  4.15ba/s] 72%|███████▏  | 63/88 [00:15<00:05,  4.20ba/s] 73%|███████▎  | 64/88 [00:15<00:06,  3.76ba/s] 74%|███████▍  | 65/88 [00:16<00:05,  3.89ba/s] 75%|███████▌  | 66/88 [00:16<00:05,  3.93ba/s] 76%|███████▌  | 67/88 [00:16<00:05,  4.04ba/s] 77%|███████▋  | 68/88 [00:16<00:04,  4.14ba/s] 78%|███████▊  | 69/88 [00:16<00:04,  4.18ba/s] 80%|███████▉  | 70/88 [00:17<00:04,  4.21ba/s] 81%|████████  | 71/88 [00:17<00:04,  3.65ba/s] 82%|████████▏ | 72/88 [00:17<00:04,  3.83ba/s] 83%|████████▎ | 73/88 [00:18<00:03,  3.98ba/s] 84%|████████▍ | 74/88 [00:18<00:03,  4.06ba/s] 85%|████████▌ | 75/88 [00:18<00:03,  4.14ba/s] 86%|████████▋ | 76/88 [00:18<00:02,  4.18ba/s] 88%|████████▊ | 77/88 [00:19<00:02,  3.83ba/s] 89%|████████▊ | 78/88 [00:19<00:02,  3.98ba/s] 90%|████████▉ | 79/88 [00:19<00:02,  4.06ba/s] 91%|█████████ | 80/88 [00:19<00:01,  4.13ba/s] 92%|█████████▏| 81/88 [00:19<00:01,  4.23ba/s] 93%|█████████▎| 82/88 [00:20<00:01,  4.27ba/s] 94%|█████████▍| 83/88 [00:20<00:01,  3.79ba/s] 95%|█████████▌| 84/88 [00:20<00:01,  3.92ba/s] 97%|█████████▋| 85/88 [00:20<00:00,  4.05ba/s] 98%|█████████▊| 86/88 [00:21<00:00,  4.16ba/s] 99%|█████████▉| 87/88 [00:21<00:00,  4.21ba/s]100%|██████████| 88/88 [00:21<00:00,  4.81ba/s]100%|██████████| 88/88 [00:21<00:00,  4.08ba/s]
+  0%|          | 0/11 [00:00<?, ?ba/s]  9%|▉         | 1/11 [00:00<00:09,  1.10ba/s] 18%|█▊        | 2/11 [00:01<00:08,  1.09ba/s] 27%|██▋       | 3/11 [00:02<00:06,  1.15ba/s] 36%|███▋      | 4/11 [00:03<00:06,  1.14ba/s] 45%|████▌     | 5/11 [00:04<00:05,  1.07ba/s] 55%|█████▍    | 6/11 [00:05<00:04,  1.07ba/s] 64%|██████▎   | 7/11 [00:06<00:03,  1.07ba/s] 73%|███████▎  | 8/11 [00:07<00:02,  1.07ba/s] 82%|████████▏ | 9/11 [00:08<00:01,  1.08ba/s] 91%|█████████ | 10/11 [00:09<00:00,  1.12ba/s]100%|██████████| 11/11 [00:09<00:00,  1.30ba/s]100%|██████████| 11/11 [00:09<00:00,  1.15ba/s]

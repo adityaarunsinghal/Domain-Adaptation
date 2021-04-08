@@ -1,0 +1,266 @@
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+== Status ==
+Memory usage on this node: 81.5/377.3 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 1/48 CPUs, 1/1 GPUs, 0.0/201.12 GiB heap, 0.0/62.21 GiB objects (0/1.0 accelerator_type:RTX)
+Result logdir: /home/as11919/ray_results/_inner_2021-03-25_02-30-27
+Number of trials: 1/6 (1 RUNNING)
++--------------------+----------+-------+-----------------+--------------------+-------------------------------+---------+
+| Trial name         | status   | loc   |   learning_rate |   num_train_epochs |   per_device_train_batch_size |    seed |
+|--------------------+----------+-------+-----------------+--------------------+-------------------------------+---------|
+| _inner_94b07_00000 | RUNNING  |       |     5.61152e-06 |                  2 |                             8 | 38.0779 |
++--------------------+----------+-------+-----------------+--------------------+-------------------------------+---------+
+
+
+[2m[36m(pid=2236020)[0m 
+[2m[36m(pid=2236020)[0m {'loss': 0.6569, 'learning_rate': 4.421627438376387e-06, 'epoch': 0.42}
+Result for _inner_94b07_00000:
+  {}
+  
+== Status ==
+Memory usage on this node: 81.5/377.3 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 0/48 CPUs, 0/1 GPUs, 0.0/201.12 GiB heap, 0.0/62.21 GiB objects (0/1.0 accelerator_type:RTX)
+Result logdir: /home/as11919/ray_results/_inner_2021-03-25_02-30-27
+Number of trials: 2/6 (1 ERROR, 1 PENDING)
++--------------------+----------+-------+-----------------+--------------------+-------------------------------+---------+
+| Trial name         | status   | loc   |   learning_rate |   num_train_epochs |   per_device_train_batch_size |    seed |
+|--------------------+----------+-------+-----------------+--------------------+-------------------------------+---------|
+| _inner_94b07_00001 | PENDING  |       |     2.91064e-05 |                  4 |                            32 | 24.3477 |
+| _inner_94b07_00000 | ERROR    |       |     5.61152e-06 |                  2 |                             8 | 38.0779 |
++--------------------+----------+-------+-----------------+--------------------+-------------------------------+---------+
+Number of errored trials: 1
++--------------------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Trial name         |   # failures | error file                                                                                                                                                                                    |
+|--------------------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| _inner_94b07_00000 |            1 | /home/as11919/ray_results/_inner_2021-03-25_02-30-27/_inner_94b07_00000_0_learning_rate=5.6115e-06,num_train_epochs=2,per_device_train_batch_size=8,seed=38.078_2021-03-25_02-30-27/error.txt |
++--------------------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+[2m[36m(pid=2235975)[0m 
+[2m[36m(pid=2235975)[0m {'eval_loss': 0.5383527874946594, 'eval_accuracy': 0.7406727828746177, 'eval_precision': 0.7646048109965635, 'eval_recall': 0.8557692307692307, 'eval_f1': 0.807622504537205, 'eval_runtime': 9.4562, 'eval_samples_per_second': 172.903, 'epoch': 1.0}
+Result for _inner_94b07_00001:
+  {}
+  
+== Status ==
+Memory usage on this node: 84.5/377.3 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 0/48 CPUs, 0/1 GPUs, 0.0/201.12 GiB heap, 0.0/62.21 GiB objects (0/1.0 accelerator_type:RTX)
+Result logdir: /home/as11919/ray_results/_inner_2021-03-25_02-30-27
+Number of trials: 3/6 (2 ERROR, 1 PENDING)
++--------------------+----------+-------+-----------------+--------------------+-------------------------------+----------+
+| Trial name         | status   | loc   |   learning_rate |   num_train_epochs |   per_device_train_batch_size |     seed |
+|--------------------+----------+-------+-----------------+--------------------+-------------------------------+----------|
+| _inner_94b07_00002 | PENDING  |       |     2.05134e-06 |                  5 |                             4 |  7.08379 |
+| _inner_94b07_00000 | ERROR    |       |     5.61152e-06 |                  2 |                             8 | 38.0779  |
+| _inner_94b07_00001 | ERROR    |       |     2.91064e-05 |                  4 |                            32 | 24.3477  |
++--------------------+----------+-------+-----------------+--------------------+-------------------------------+----------+
+Number of errored trials: 2
++--------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Trial name         |   # failures | error file                                                                                                                                                                                     |
+|--------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| _inner_94b07_00000 |            1 | /home/as11919/ray_results/_inner_2021-03-25_02-30-27/_inner_94b07_00000_0_learning_rate=5.6115e-06,num_train_epochs=2,per_device_train_batch_size=8,seed=38.078_2021-03-25_02-30-27/error.txt  |
+| _inner_94b07_00001 |            1 | /home/as11919/ray_results/_inner_2021-03-25_02-30-27/_inner_94b07_00001_1_learning_rate=2.9106e-05,num_train_epochs=4,per_device_train_batch_size=32,seed=24.348_2021-03-25_02-32-14/error.txt |
++--------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+[2m[36m(pid=2235967)[0m 
+[2m[36m(pid=2235967)[0m {'loss': 0.6757, 'learning_rate': 1.9643065166688082e-06, 'epoch': 0.21}
+Result for _inner_94b07_00002:
+  {}
+  
+== Status ==
+Memory usage on this node: 81.6/377.3 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 0/48 CPUs, 0/1 GPUs, 0.0/201.12 GiB heap, 0.0/62.21 GiB objects (0/1.0 accelerator_type:RTX)
+Result logdir: /home/as11919/ray_results/_inner_2021-03-25_02-30-27
+Number of trials: 4/6 (3 ERROR, 1 PENDING)
++--------------------+----------+-------+-----------------+--------------------+-------------------------------+----------+
+| Trial name         | status   | loc   |   learning_rate |   num_train_epochs |   per_device_train_batch_size |     seed |
+|--------------------+----------+-------+-----------------+--------------------+-------------------------------+----------|
+| _inner_94b07_00003 | PENDING  |       |     1.30667e-06 |                  3 |                             4 | 34.7809  |
+| _inner_94b07_00000 | ERROR    |       |     5.61152e-06 |                  2 |                             8 | 38.0779  |
+| _inner_94b07_00001 | ERROR    |       |     2.91064e-05 |                  4 |                            32 | 24.3477  |
+| _inner_94b07_00002 | ERROR    |       |     2.05134e-06 |                  5 |                             4 |  7.08379 |
++--------------------+----------+-------+-----------------+--------------------+-------------------------------+----------+
+Number of errored trials: 3
++--------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Trial name         |   # failures | error file                                                                                                                                                                                     |
+|--------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| _inner_94b07_00000 |            1 | /home/as11919/ray_results/_inner_2021-03-25_02-30-27/_inner_94b07_00000_0_learning_rate=5.6115e-06,num_train_epochs=2,per_device_train_batch_size=8,seed=38.078_2021-03-25_02-30-27/error.txt  |
+| _inner_94b07_00001 |            1 | /home/as11919/ray_results/_inner_2021-03-25_02-30-27/_inner_94b07_00001_1_learning_rate=2.9106e-05,num_train_epochs=4,per_device_train_batch_size=32,seed=24.348_2021-03-25_02-32-14/error.txt |
+| _inner_94b07_00002 |            1 | /home/as11919/ray_results/_inner_2021-03-25_02-30-27/_inner_94b07_00002_2_learning_rate=2.0513e-06,num_train_epochs=5,per_device_train_batch_size=4,seed=7.0838_2021-03-25_02-35-10/error.txt  |
++--------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+[2m[36m(pid=2235977)[0m 
+[2m[36m(pid=2235977)[0m {'loss': 0.6824, 'learning_rate': 1.2142772384846316e-06, 'epoch': 0.21}
+Result for _inner_94b07_00003:
+  {}
+  
+== Status ==
+Memory usage on this node: 81.5/377.3 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 0/48 CPUs, 0/1 GPUs, 0.0/201.12 GiB heap, 0.0/62.21 GiB objects (0/1.0 accelerator_type:RTX)
+Result logdir: /home/as11919/ray_results/_inner_2021-03-25_02-30-27
+Number of trials: 5/6 (4 ERROR, 1 PENDING)
++--------------------+----------+-------+-----------------+--------------------+-------------------------------+----------+
+| Trial name         | status   | loc   |   learning_rate |   num_train_epochs |   per_device_train_batch_size |     seed |
+|--------------------+----------+-------+-----------------+--------------------+-------------------------------+----------|
+| _inner_94b07_00004 | PENDING  |       |     1.59305e-05 |                  2 |                            16 | 28.6148  |
+| _inner_94b07_00000 | ERROR    |       |     5.61152e-06 |                  2 |                             8 | 38.0779  |
+| _inner_94b07_00001 | ERROR    |       |     2.91064e-05 |                  4 |                            32 | 24.3477  |
+| _inner_94b07_00002 | ERROR    |       |     2.05134e-06 |                  5 |                             4 |  7.08379 |
+| _inner_94b07_00003 | ERROR    |       |     1.30667e-06 |                  3 |                             4 | 34.7809  |
++--------------------+----------+-------+-----------------+--------------------+-------------------------------+----------+
+Number of errored trials: 4
++--------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Trial name         |   # failures | error file                                                                                                                                                                                     |
+|--------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| _inner_94b07_00000 |            1 | /home/as11919/ray_results/_inner_2021-03-25_02-30-27/_inner_94b07_00000_0_learning_rate=5.6115e-06,num_train_epochs=2,per_device_train_batch_size=8,seed=38.078_2021-03-25_02-30-27/error.txt  |
+| _inner_94b07_00001 |            1 | /home/as11919/ray_results/_inner_2021-03-25_02-30-27/_inner_94b07_00001_1_learning_rate=2.9106e-05,num_train_epochs=4,per_device_train_batch_size=32,seed=24.348_2021-03-25_02-32-14/error.txt |
+| _inner_94b07_00002 |            1 | /home/as11919/ray_results/_inner_2021-03-25_02-30-27/_inner_94b07_00002_2_learning_rate=2.0513e-06,num_train_epochs=5,per_device_train_batch_size=4,seed=7.0838_2021-03-25_02-35-10/error.txt  |
+| _inner_94b07_00003 |            1 | /home/as11919/ray_results/_inner_2021-03-25_02-30-27/_inner_94b07_00003_3_learning_rate=1.3067e-06,num_train_epochs=3,per_device_train_batch_size=4,seed=34.781_2021-03-25_02-36-25/error.txt  |
++--------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+[2m[36m(pid=2235980)[0m 
+[2m[36m(pid=2235980)[0m {'loss': 0.6453, 'learning_rate': 9.180301168681274e-06, 'epoch': 0.85}
+Result for _inner_94b07_00004:
+  {}
+  
+== Status ==
+Memory usage on this node: 81.7/377.3 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 0/48 CPUs, 0/1 GPUs, 0.0/201.12 GiB heap, 0.0/62.21 GiB objects (0/1.0 accelerator_type:RTX)
+Result logdir: /home/as11919/ray_results/_inner_2021-03-25_02-30-27
+Number of trials: 6/6 (5 ERROR, 1 PENDING)
++--------------------+----------+-------+-----------------+--------------------+-------------------------------+----------+
+| Trial name         | status   | loc   |   learning_rate |   num_train_epochs |   per_device_train_batch_size |     seed |
+|--------------------+----------+-------+-----------------+--------------------+-------------------------------+----------|
+| _inner_94b07_00005 | PENDING  |       |     1.09943e-06 |                  1 |                             4 | 38.8265  |
+| _inner_94b07_00000 | ERROR    |       |     5.61152e-06 |                  2 |                             8 | 38.0779  |
+| _inner_94b07_00001 | ERROR    |       |     2.91064e-05 |                  4 |                            32 | 24.3477  |
+| _inner_94b07_00002 | ERROR    |       |     2.05134e-06 |                  5 |                             4 |  7.08379 |
+| _inner_94b07_00003 | ERROR    |       |     1.30667e-06 |                  3 |                             4 | 34.7809  |
+| _inner_94b07_00004 | ERROR    |       |     1.59305e-05 |                  2 |                            16 | 28.6148  |
++--------------------+----------+-------+-----------------+--------------------+-------------------------------+----------+
+Number of errored trials: 5
++--------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Trial name         |   # failures | error file                                                                                                                                                                                     |
+|--------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| _inner_94b07_00000 |            1 | /home/as11919/ray_results/_inner_2021-03-25_02-30-27/_inner_94b07_00000_0_learning_rate=5.6115e-06,num_train_epochs=2,per_device_train_batch_size=8,seed=38.078_2021-03-25_02-30-27/error.txt  |
+| _inner_94b07_00001 |            1 | /home/as11919/ray_results/_inner_2021-03-25_02-30-27/_inner_94b07_00001_1_learning_rate=2.9106e-05,num_train_epochs=4,per_device_train_batch_size=32,seed=24.348_2021-03-25_02-32-14/error.txt |
+| _inner_94b07_00002 |            1 | /home/as11919/ray_results/_inner_2021-03-25_02-30-27/_inner_94b07_00002_2_learning_rate=2.0513e-06,num_train_epochs=5,per_device_train_batch_size=4,seed=7.0838_2021-03-25_02-35-10/error.txt  |
+| _inner_94b07_00003 |            1 | /home/as11919/ray_results/_inner_2021-03-25_02-30-27/_inner_94b07_00003_3_learning_rate=1.3067e-06,num_train_epochs=3,per_device_train_batch_size=4,seed=34.781_2021-03-25_02-36-25/error.txt  |
+| _inner_94b07_00004 |            1 | /home/as11919/ray_results/_inner_2021-03-25_02-30-27/_inner_94b07_00004_4_learning_rate=1.5931e-05,num_train_epochs=2,per_device_train_batch_size=16,seed=28.615_2021-03-25_02-37-41/error.txt |
++--------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+[2m[36m(pid=2235973)[0m 
+Result for _inner_94b07_00005:
+  {}
+  
+== Status ==
+Memory usage on this node: 84.7/377.3 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 0/48 CPUs, 0/1 GPUs, 0.0/201.12 GiB heap, 0.0/62.21 GiB objects (0/1.0 accelerator_type:RTX)
+Result logdir: /home/as11919/ray_results/_inner_2021-03-25_02-30-27
+Number of trials: 6/6 (6 ERROR)
++--------------------+----------+-------+-----------------+--------------------+-------------------------------+----------+
+| Trial name         | status   | loc   |   learning_rate |   num_train_epochs |   per_device_train_batch_size |     seed |
+|--------------------+----------+-------+-----------------+--------------------+-------------------------------+----------|
+| _inner_94b07_00000 | ERROR    |       |     5.61152e-06 |                  2 |                             8 | 38.0779  |
+| _inner_94b07_00001 | ERROR    |       |     2.91064e-05 |                  4 |                            32 | 24.3477  |
+| _inner_94b07_00002 | ERROR    |       |     2.05134e-06 |                  5 |                             4 |  7.08379 |
+| _inner_94b07_00003 | ERROR    |       |     1.30667e-06 |                  3 |                             4 | 34.7809  |
+| _inner_94b07_00004 | ERROR    |       |     1.59305e-05 |                  2 |                            16 | 28.6148  |
+| _inner_94b07_00005 | ERROR    |       |     1.09943e-06 |                  1 |                             4 | 38.8265  |
++--------------------+----------+-------+-----------------+--------------------+-------------------------------+----------+
+Number of errored trials: 6
++--------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Trial name         |   # failures | error file                                                                                                                                                                                     |
+|--------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| _inner_94b07_00000 |            1 | /home/as11919/ray_results/_inner_2021-03-25_02-30-27/_inner_94b07_00000_0_learning_rate=5.6115e-06,num_train_epochs=2,per_device_train_batch_size=8,seed=38.078_2021-03-25_02-30-27/error.txt  |
+| _inner_94b07_00001 |            1 | /home/as11919/ray_results/_inner_2021-03-25_02-30-27/_inner_94b07_00001_1_learning_rate=2.9106e-05,num_train_epochs=4,per_device_train_batch_size=32,seed=24.348_2021-03-25_02-32-14/error.txt |
+| _inner_94b07_00002 |            1 | /home/as11919/ray_results/_inner_2021-03-25_02-30-27/_inner_94b07_00002_2_learning_rate=2.0513e-06,num_train_epochs=5,per_device_train_batch_size=4,seed=7.0838_2021-03-25_02-35-10/error.txt  |
+| _inner_94b07_00003 |            1 | /home/as11919/ray_results/_inner_2021-03-25_02-30-27/_inner_94b07_00003_3_learning_rate=1.3067e-06,num_train_epochs=3,per_device_train_batch_size=4,seed=34.781_2021-03-25_02-36-25/error.txt  |
+| _inner_94b07_00004 |            1 | /home/as11919/ray_results/_inner_2021-03-25_02-30-27/_inner_94b07_00004_4_learning_rate=1.5931e-05,num_train_epochs=2,per_device_train_batch_size=16,seed=28.615_2021-03-25_02-37-41/error.txt |
+| _inner_94b07_00005 |            1 | /home/as11919/ray_results/_inner_2021-03-25_02-30-27/_inner_94b07_00005_5_learning_rate=1.0994e-06,num_train_epochs=1,per_device_train_batch_size=4,seed=38.826_2021-03-25_02-40-27/error.txt  |
++--------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+== Status ==
+Memory usage on this node: 84.7/377.3 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 0/48 CPUs, 0/1 GPUs, 0.0/201.12 GiB heap, 0.0/62.21 GiB objects (0/1.0 accelerator_type:RTX)
+Result logdir: /home/as11919/ray_results/_inner_2021-03-25_02-30-27
+Number of trials: 6/6 (6 ERROR)
++--------------------+----------+-------+-----------------+--------------------+-------------------------------+----------+
+| Trial name         | status   | loc   |   learning_rate |   num_train_epochs |   per_device_train_batch_size |     seed |
+|--------------------+----------+-------+-----------------+--------------------+-------------------------------+----------|
+| _inner_94b07_00000 | ERROR    |       |     5.61152e-06 |                  2 |                             8 | 38.0779  |
+| _inner_94b07_00001 | ERROR    |       |     2.91064e-05 |                  4 |                            32 | 24.3477  |
+| _inner_94b07_00002 | ERROR    |       |     2.05134e-06 |                  5 |                             4 |  7.08379 |
+| _inner_94b07_00003 | ERROR    |       |     1.30667e-06 |                  3 |                             4 | 34.7809  |
+| _inner_94b07_00004 | ERROR    |       |     1.59305e-05 |                  2 |                            16 | 28.6148  |
+| _inner_94b07_00005 | ERROR    |       |     1.09943e-06 |                  1 |                             4 | 38.8265  |
++--------------------+----------+-------+-----------------+--------------------+-------------------------------+----------+
+Number of errored trials: 6
++--------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Trial name         |   # failures | error file                                                                                                                                                                                     |
+|--------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| _inner_94b07_00000 |            1 | /home/as11919/ray_results/_inner_2021-03-25_02-30-27/_inner_94b07_00000_0_learning_rate=5.6115e-06,num_train_epochs=2,per_device_train_batch_size=8,seed=38.078_2021-03-25_02-30-27/error.txt  |
+| _inner_94b07_00001 |            1 | /home/as11919/ray_results/_inner_2021-03-25_02-30-27/_inner_94b07_00001_1_learning_rate=2.9106e-05,num_train_epochs=4,per_device_train_batch_size=32,seed=24.348_2021-03-25_02-32-14/error.txt |
+| _inner_94b07_00002 |            1 | /home/as11919/ray_results/_inner_2021-03-25_02-30-27/_inner_94b07_00002_2_learning_rate=2.0513e-06,num_train_epochs=5,per_device_train_batch_size=4,seed=7.0838_2021-03-25_02-35-10/error.txt  |
+| _inner_94b07_00003 |            1 | /home/as11919/ray_results/_inner_2021-03-25_02-30-27/_inner_94b07_00003_3_learning_rate=1.3067e-06,num_train_epochs=3,per_device_train_batch_size=4,seed=34.781_2021-03-25_02-36-25/error.txt  |
+| _inner_94b07_00004 |            1 | /home/as11919/ray_results/_inner_2021-03-25_02-30-27/_inner_94b07_00004_4_learning_rate=1.5931e-05,num_train_epochs=2,per_device_train_batch_size=16,seed=28.615_2021-03-25_02-37-41/error.txt |
+| _inner_94b07_00005 |            1 | /home/as11919/ray_results/_inner_2021-03-25_02-30-27/_inner_94b07_00005_5_learning_rate=1.0994e-06,num_train_epochs=1,per_device_train_batch_size=4,seed=38.826_2021-03-25_02-40-27/error.txt  |
++--------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Done!

@@ -1,0 +1,63 @@
+04/03/2021 19:24:55 - WARNING - __main__ -   Process rank: -1, device: cuda:0, n_gpu: 2distributed training: False, 16-bits training: False
+04/03/2021 19:24:55 - INFO - __main__ -   Training/evaluation parameters TrainingArguments(output_dir=/scratch/as11919/Domain-Adaptation/models/movie_roberta/eval_on_moviesQA/roberta_base_plain, overwrite_output_dir=True, do_train=True, do_eval=True, do_predict=False, evaluation_strategy=IntervalStrategy.NO, prediction_loss_only=False, per_device_train_batch_size=12, per_device_eval_batch_size=8, gradient_accumulation_steps=1, eval_accumulation_steps=None, learning_rate=5e-05, weight_decay=0.0, adam_beta1=0.9, adam_beta2=0.999, adam_epsilon=1e-08, max_grad_norm=1.0, num_train_epochs=3.0, max_steps=-1, lr_scheduler_type=SchedulerType.LINEAR, warmup_ratio=0.0, warmup_steps=0, logging_dir=runs/Apr03_19-24-55_gr006.nyu.cluster, logging_strategy=IntervalStrategy.STEPS, logging_first_step=False, logging_steps=500, save_strategy=IntervalStrategy.STEPS, save_steps=500, save_total_limit=None, no_cuda=False, seed=42, fp16=False, fp16_opt_level=O1, fp16_backend=auto, fp16_full_eval=False, local_rank=-1, tpu_num_cores=None, tpu_metrics_debug=False, debug=False, dataloader_drop_last=False, eval_steps=500, dataloader_num_workers=0, past_index=-1, run_name=/scratch/as11919/Domain-Adaptation/models/movie_roberta/eval_on_moviesQA/roberta_base_plain, disable_tqdm=False, remove_unused_columns=True, label_names=None, load_best_model_at_end=False, metric_for_best_model=None, greater_is_better=None, ignore_data_skip=False, sharded_ddp=[], deepspeed=None, label_smoothing_factor=0.0, adafactor=False, group_by_length=False, report_to=['tensorboard', 'wandb'], ddp_find_unused_parameters=None, dataloader_pin_memory=True, skip_memory_metrics=False, _n_gpu=2)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 1.7803, 'learning_rate': 4.848291765277019e-05, 'epoch': 0.09}
+{'loss': 1.2453, 'learning_rate': 4.696583530554038e-05, 'epoch': 0.18}
+{'loss': 1.1553, 'learning_rate': 4.544875295831058e-05, 'epoch': 0.27}
+{'loss': 1.0774, 'learning_rate': 4.393167061108077e-05, 'epoch': 0.36}
+{'loss': 1.0336, 'learning_rate': 4.2414588263850966e-05, 'epoch': 0.46}
+{'loss': 0.9943, 'learning_rate': 4.0897505916621156e-05, 'epoch': 0.55}
+{'loss': 1.0364, 'learning_rate': 3.938042356939135e-05, 'epoch': 0.64}
+{'loss': 0.9695, 'learning_rate': 3.786334122216154e-05, 'epoch': 0.73}
+{'loss': 0.9515, 'learning_rate': 3.634625887493173e-05, 'epoch': 0.82}
+{'loss': 0.9225, 'learning_rate': 3.482917652770192e-05, 'epoch': 0.91}
+{'loss': 0.909, 'learning_rate': 3.331209418047212e-05, 'epoch': 1.0}
+{'loss': 0.6793, 'learning_rate': 3.179501183324231e-05, 'epoch': 1.09}
+{'loss': 0.7131, 'learning_rate': 3.0277929486012502e-05, 'epoch': 1.18}
+{'loss': 0.6965, 'learning_rate': 2.8760847138782692e-05, 'epoch': 1.27}
+{'loss': 0.6953, 'learning_rate': 2.724376479155289e-05, 'epoch': 1.37}
+{'loss': 0.6794, 'learning_rate': 2.572668244432308e-05, 'epoch': 1.46}
+{'loss': 0.6692, 'learning_rate': 2.4209600097093272e-05, 'epoch': 1.55}
+{'loss': 0.6677, 'learning_rate': 2.2692517749863465e-05, 'epoch': 1.64}
+{'loss': 0.6533, 'learning_rate': 2.1175435402633655e-05, 'epoch': 1.73}
+{'loss': 0.6533, 'learning_rate': 1.965835305540385e-05, 'epoch': 1.82}
+{'loss': 0.6559, 'learning_rate': 1.8141270708174042e-05, 'epoch': 1.91}
+{'loss': 0.6249, 'learning_rate': 1.6624188360944232e-05, 'epoch': 2.0}
+{'loss': 0.4556, 'learning_rate': 1.5107106013714425e-05, 'epoch': 2.09}
+{'loss': 0.4424, 'learning_rate': 1.3590023666484617e-05, 'epoch': 2.18}
+{'loss': 0.4519, 'learning_rate': 1.207294131925481e-05, 'epoch': 2.28}
+{'loss': 0.4548, 'learning_rate': 1.0555858972025003e-05, 'epoch': 2.37}
+{'loss': 0.4366, 'learning_rate': 9.038776624795195e-06, 'epoch': 2.46}
+{'loss': 0.4542, 'learning_rate': 7.521694277565386e-06, 'epoch': 2.55}
+{'loss': 0.4244, 'learning_rate': 6.004611930335579e-06, 'epoch': 2.64}
+{'loss': 0.4378, 'learning_rate': 4.487529583105772e-06, 'epoch': 2.73}
+{'loss': 0.4396, 'learning_rate': 2.9704472358759633e-06, 'epoch': 2.82}
+{'loss': 0.4183, 'learning_rate': 1.4533648886461557e-06, 'epoch': 2.91}
+{'train_runtime': 7617.1786, 'train_samples_per_second': 2.163, 'epoch': 3.0}
+
+04/03/2021 21:32:39 - INFO - __main__ -   *** Evaluate ***
+04/03/2021 21:34:16 - INFO - utils_qa -   Post-processing 11873 example predictions split into 12165 features.
+04/03/2021 21:34:37 - INFO - utils_qa -   Saving predictions to /scratch/as11919/Domain-Adaptation/models/movie_roberta/eval_on_moviesQA/roberta_base_plain/predictions.json.
+04/03/2021 21:34:37 - INFO - utils_qa -   Saving nbest_preds to /scratch/as11919/Domain-Adaptation/models/movie_roberta/eval_on_moviesQA/roberta_base_plain/nbest_predictions.json.
+04/03/2021 21:34:39 - INFO - utils_qa -   Saving null_odds to /scratch/as11919/Domain-Adaptation/models/movie_roberta/eval_on_moviesQA/roberta_base_plain/null_odds.json.
+
+Done!

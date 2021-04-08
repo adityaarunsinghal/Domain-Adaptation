@@ -1,0 +1,872 @@
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+== Status ==
+Memory usage on this node: 32.0/377.3 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 1/48 CPUs, 2/2 GPUs, 0.0/236.57 GiB heap, 0.0/72.71 GiB objects (0/1.0 accelerator_type:RTX)
+Result logdir: /home/as11919/ray_results/_inner_2021-03-25_10-40-20
+Number of trials: 1/8 (1 RUNNING)
++-----------------+----------+-------+-----------------+
+| Trial name      | status   | loc   |   learning_rate |
+|-----------------+----------+-------+-----------------|
+| _inner_0630b74c | RUNNING  |       |     2.49816e-05 |
++-----------------+----------+-------+-----------------+
+
+
+[2m[36m(pid=3660661)[0m 
+[2m[36m(pid=3660661)[0m {'loss': 0.6369, 'learning_rate': 1.792465425844408e-05, 'epoch': 0.85}
+Result for _inner_0630b74c:
+  date: 2021-03-25_10-43-27
+  done: false
+  epoch: 1.0
+  eval_accuracy: 0.745565749235474
+  eval_f1: 0.7917917917917917
+  eval_loss: 0.5243760347366333
+  eval_precision: 0.795774647887324
+  eval_recall: 0.7878486055776892
+  eval_runtime: 9.9975
+  eval_samples_per_second: 163.541
+  experiment_id: ddbb062fee404165b6d139ec847fec2b
+  hostname: gr014.nyu.cluster
+  iterations_since_restore: 1
+  node_ip: 10.32.35.78
+  objective: 0.5243760347366333
+  pid: 3660661
+  time_since_restore: 186.5003468990326
+  time_this_iter_s: 186.5003468990326
+  time_total_s: 186.5003468990326
+  timestamp: 1616683407
+  timesteps_since_restore: 0
+  training_iteration: 1
+  trial_id: 0630b74c
+  
+[2m[36m(pid=3660661)[0m {'eval_loss': 0.5243760347366333, 'eval_accuracy': 0.745565749235474, 'eval_precision': 0.795774647887324, 'eval_recall': 0.7878486055776892, 'eval_f1': 0.7917917917917917, 'eval_runtime': 9.9975, 'eval_samples_per_second': 163.541, 'epoch': 1.0}
+== Status ==
+Memory usage on this node: 35.1/377.3 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 1/48 CPUs, 2/2 GPUs, 0.0/236.57 GiB heap, 0.0/72.71 GiB objects (0/1.0 accelerator_type:RTX)
+Result logdir: /home/as11919/ray_results/_inner_2021-03-25_10-40-20
+Number of trials: 2/8 (1 PENDING, 1 RUNNING)
++-----------------+----------+---------------------+-----------------+-------------+
+| Trial name      | status   | loc                 |   learning_rate |   objective |
+|-----------------+----------+---------------------+-----------------+-------------|
+| _inner_0630b74c | RUNNING  | 10.32.35.78:3660661 |     2.49816e-05 |    0.524376 |
+| _inner_0633a6aa | PENDING  |                     |     4.80286e-05 |             |
++-----------------+----------+---------------------+-----------------+-------------+
+
+
+[2m[36m(pid=3660661)[0m {'loss': 0.4861, 'learning_rate': 1.0867703762993653e-05, 'epoch': 1.69}
+Result for _inner_0630b74c:
+  date: 2021-03-25_10-46-22
+  done: false
+  epoch: 2.0
+  eval_accuracy: 0.7773700305810397
+  eval_f1: 0.8189054726368159
+  eval_loss: 0.49488845467567444
+  eval_precision: 0.8180914512922465
+  eval_recall: 0.8197211155378487
+  eval_runtime: 10.0402
+  eval_samples_per_second: 162.845
+  experiment_id: ddbb062fee404165b6d139ec847fec2b
+  hostname: gr014.nyu.cluster
+  iterations_since_restore: 2
+  node_ip: 10.32.35.78
+  objective: 0.49488845467567444
+  pid: 3660661
+  time_since_restore: 361.88856410980225
+  time_this_iter_s: 175.38821721076965
+  time_total_s: 361.88856410980225
+  timestamp: 1616683582
+  timesteps_since_restore: 0
+  training_iteration: 2
+  trial_id: 0630b74c
+  
+[2m[36m(pid=3660661)[0m {'eval_loss': 0.49488845467567444, 'eval_accuracy': 0.7773700305810397, 'eval_precision': 0.8180914512922465, 'eval_recall': 0.8197211155378487, 'eval_f1': 0.8189054726368159, 'eval_runtime': 10.0402, 'eval_samples_per_second': 162.845, 'epoch': 2.0}
+== Status ==
+Memory usage on this node: 35.3/377.3 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 1/48 CPUs, 2/2 GPUs, 0.0/236.57 GiB heap, 0.0/72.71 GiB objects (0/1.0 accelerator_type:RTX)
+Result logdir: /home/as11919/ray_results/_inner_2021-03-25_10-40-20
+Number of trials: 2/8 (1 PENDING, 1 RUNNING)
++-----------------+----------+---------------------+-----------------+-------------+
+| Trial name      | status   | loc                 |   learning_rate |   objective |
+|-----------------+----------+---------------------+-----------------+-------------|
+| _inner_0630b74c | RUNNING  | 10.32.35.78:3660661 |     2.49816e-05 |    0.494888 |
+| _inner_0633a6aa | PENDING  |                     |     4.80286e-05 |             |
++-----------------+----------+---------------------+-----------------+-------------+
+
+
+[2m[36m(pid=3660661)[0m {'loss': 0.3696, 'learning_rate': 3.8107532675432293e-06, 'epoch': 2.54}
+Result for _inner_0630b74c:
+  date: 2021-03-25_10-49-18
+  done: false
+  epoch: 3.0
+  eval_accuracy: 0.7896024464831805
+  eval_f1: 0.8267875125881169
+  eval_loss: 0.5637014508247375
+  eval_precision: 0.8360488798370672
+  eval_recall: 0.8177290836653387
+  eval_runtime: 9.9957
+  eval_samples_per_second: 163.571
+  experiment_id: ddbb062fee404165b6d139ec847fec2b
+  hostname: gr014.nyu.cluster
+  iterations_since_restore: 3
+  node_ip: 10.32.35.78
+  objective: 0.5637014508247375
+  pid: 3660661
+  time_since_restore: 537.413681268692
+  time_this_iter_s: 175.52511715888977
+  time_total_s: 537.413681268692
+  timestamp: 1616683758
+  timesteps_since_restore: 0
+  training_iteration: 3
+  trial_id: 0630b74c
+  
+== Status ==
+Memory usage on this node: 35.3/377.3 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 1/48 CPUs, 2/2 GPUs, 0.0/236.57 GiB heap, 0.0/72.71 GiB objects (0/1.0 accelerator_type:RTX)
+Result logdir: /home/as11919/ray_results/_inner_2021-03-25_10-40-20
+Number of trials: 2/8 (1 PENDING, 1 RUNNING)
++-----------------+----------+---------------------+-----------------+-------------+
+| Trial name      | status   | loc                 |   learning_rate |   objective |
+|-----------------+----------+---------------------+-----------------+-------------|
+| _inner_0630b74c | RUNNING  | 10.32.35.78:3660661 |     2.49816e-05 |    0.563701 |
+| _inner_0633a6aa | PENDING  |                     |     4.80286e-05 |             |
++-----------------+----------+---------------------+-----------------+-------------+
+
+
+[2m[36m(pid=3660661)[0m {'eval_loss': 0.5637014508247375, 'eval_accuracy': 0.7896024464831805, 'eval_precision': 0.8360488798370672, 'eval_recall': 0.8177290836653387, 'eval_f1': 0.8267875125881169, 'eval_runtime': 9.9957, 'eval_samples_per_second': 163.571, 'epoch': 3.0}
+[2m[36m(pid=3660661)[0m {'train_runtime': 529.2123, 'train_samples_per_second': 3.345, 'epoch': 3.0}
+Result for _inner_0630b74c:
+  date: 2021-03-25_10-49-18
+  done: true
+  epoch: 3.0
+  eval_accuracy: 0.7896024464831805
+  eval_f1: 0.8267875125881169
+  eval_loss: 0.5637014508247375
+  eval_precision: 0.8360488798370672
+  eval_recall: 0.8177290836653387
+  eval_runtime: 9.9957
+  eval_samples_per_second: 163.571
+  experiment_id: ddbb062fee404165b6d139ec847fec2b
+  experiment_tag: 1_learning_rate=2.4982e-05
+  hostname: gr014.nyu.cluster
+  iterations_since_restore: 3
+  node_ip: 10.32.35.78
+  objective: 0.5637014508247375
+  pid: 3660661
+  time_since_restore: 537.413681268692
+  time_this_iter_s: 175.52511715888977
+  time_total_s: 537.413681268692
+  timestamp: 1616683758
+  timesteps_since_restore: 0
+  training_iteration: 3
+  trial_id: 0630b74c
+  
+[2m[36m(pid=3660661)[0m 
+[2m[36m(pid=3660672)[0m 
+[2m[36m(pid=3660672)[0m {'loss': 0.6525, 'learning_rate': 3.4461178963629236e-05, 'epoch': 0.85}
+Result for _inner_0633a6aa:
+  date: 2021-03-25_10-52-25
+  done: false
+  epoch: 1.0
+  eval_accuracy: 0.691743119266055
+  eval_f1: 0.7622641509433962
+  eval_loss: 0.5975002646446228
+  eval_precision: 0.7240143369175627
+  eval_recall: 0.8047808764940239
+  eval_runtime: 10.0835
+  eval_samples_per_second: 162.147
+  experiment_id: 7f4c7272ba4c48d6bee9e87340f28965
+  hostname: gr014.nyu.cluster
+  iterations_since_restore: 1
+  node_ip: 10.32.35.78
+  objective: 0.5975002646446228
+  pid: 3660672
+  time_since_restore: 187.15445137023926
+  time_this_iter_s: 187.15445137023926
+  time_total_s: 187.15445137023926
+  timestamp: 1616683945
+  timesteps_since_restore: 0
+  training_iteration: 1
+  trial_id: 0633a6aa
+  
+== Status ==
+Memory usage on this node: 35.4/377.3 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 1/48 CPUs, 2/2 GPUs, 0.0/236.57 GiB heap, 0.0/72.71 GiB objects (0/1.0 accelerator_type:RTX)
+Result logdir: /home/as11919/ray_results/_inner_2021-03-25_10-40-20
+Number of trials: 3/8 (1 PENDING, 1 RUNNING, 1 TERMINATED)
++-----------------+------------+---------------------+-----------------+-------------+
+| Trial name      | status     | loc                 |   learning_rate |   objective |
+|-----------------+------------+---------------------+-----------------+-------------|
+| _inner_0633a6aa | RUNNING    | 10.32.35.78:3660672 |     4.80286e-05 |    0.5975   |
+| _inner_46dcad68 | PENDING    |                     |     3.92798e-05 |             |
+| _inner_0630b74c | TERMINATED |                     |     2.49816e-05 |    0.563701 |
++-----------------+------------+---------------------+-----------------+-------------+
+
+
+[2m[36m(pid=3660672)[0m {'eval_loss': 0.5975002646446228, 'eval_accuracy': 0.691743119266055, 'eval_precision': 0.7240143369175627, 'eval_recall': 0.8047808764940239, 'eval_f1': 0.7622641509433962, 'eval_runtime': 10.0835, 'eval_samples_per_second': 162.147, 'epoch': 1.0}
+[2m[36m(pid=3660672)[0m {'loss': 0.5677, 'learning_rate': 2.089378567086182e-05, 'epoch': 1.69}
+Result for _inner_0633a6aa:
+  date: 2021-03-25_10-55-21
+  done: false
+  epoch: 2.0
+  eval_accuracy: 0.746177370030581
+  eval_f1: 0.7911424257674886
+  eval_loss: 0.5124159455299377
+  eval_precision: 0.7995930824008138
+  eval_recall: 0.7828685258964143
+  eval_runtime: 10.039
+  eval_samples_per_second: 162.864
+  experiment_id: 7f4c7272ba4c48d6bee9e87340f28965
+  hostname: gr014.nyu.cluster
+  iterations_since_restore: 2
+  node_ip: 10.32.35.78
+  objective: 0.5124159455299377
+  pid: 3660672
+  time_since_restore: 362.4288206100464
+  time_this_iter_s: 175.27436923980713
+  time_total_s: 362.4288206100464
+  timestamp: 1616684121
+  timesteps_since_restore: 0
+  training_iteration: 2
+  trial_id: 0633a6aa
+  
+== Status ==
+Memory usage on this node: 35.3/377.3 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 1/48 CPUs, 2/2 GPUs, 0.0/236.57 GiB heap, 0.0/72.71 GiB objects (0/1.0 accelerator_type:RTX)
+Result logdir: /home/as11919/ray_results/_inner_2021-03-25_10-40-20
+Number of trials: 3/8 (1 PENDING, 1 RUNNING, 1 TERMINATED)
++-----------------+------------+---------------------+-----------------+-------------+
+| Trial name      | status     | loc                 |   learning_rate |   objective |
+|-----------------+------------+---------------------+-----------------+-------------|
+| _inner_0633a6aa | RUNNING    | 10.32.35.78:3660672 |     4.80286e-05 |    0.512416 |
+| _inner_46dcad68 | PENDING    |                     |     3.92798e-05 |             |
+| _inner_0630b74c | TERMINATED |                     |     2.49816e-05 |    0.563701 |
++-----------------+------------+---------------------+-----------------+-------------+
+
+
+[2m[36m(pid=3660672)[0m {'eval_loss': 0.5124159455299377, 'eval_accuracy': 0.746177370030581, 'eval_precision': 0.7995930824008138, 'eval_recall': 0.7828685258964143, 'eval_f1': 0.7911424257674886, 'eval_runtime': 10.039, 'eval_samples_per_second': 162.864, 'epoch': 2.0}
+[2m[36m(pid=3660672)[0m {'loss': 0.4305, 'learning_rate': 7.326392378094404e-06, 'epoch': 2.54}
+Result for _inner_0633a6aa:
+  date: 2021-03-25_10-58-16
+  done: false
+  epoch: 3.0
+  eval_accuracy: 0.7730886850152905
+  eval_f1: 0.8155146693187468
+  eval_loss: 0.5163044929504395
+  eval_precision: 0.814299900695134
+  eval_recall: 0.8167330677290837
+  eval_runtime: 10.0326
+  eval_samples_per_second: 162.969
+  experiment_id: 7f4c7272ba4c48d6bee9e87340f28965
+  hostname: gr014.nyu.cluster
+  iterations_since_restore: 3
+  node_ip: 10.32.35.78
+  objective: 0.5163044929504395
+  pid: 3660672
+  time_since_restore: 537.6749603748322
+  time_this_iter_s: 175.24613976478577
+  time_total_s: 537.6749603748322
+  timestamp: 1616684296
+  timesteps_since_restore: 0
+  training_iteration: 3
+  trial_id: 0633a6aa
+  
+== Status ==
+Memory usage on this node: 35.1/377.3 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 1/48 CPUs, 2/2 GPUs, 0.0/236.57 GiB heap, 0.0/72.71 GiB objects (0/1.0 accelerator_type:RTX)
+Result logdir: /home/as11919/ray_results/_inner_2021-03-25_10-40-20
+Number of trials: 3/8 (1 PENDING, 1 RUNNING, 1 TERMINATED)
++-----------------+------------+---------------------+-----------------+-------------+
+| Trial name      | status     | loc                 |   learning_rate |   objective |
+|-----------------+------------+---------------------+-----------------+-------------|
+| _inner_0633a6aa | RUNNING    | 10.32.35.78:3660672 |     4.80286e-05 |    0.516304 |
+| _inner_46dcad68 | PENDING    |                     |     3.92798e-05 |             |
+| _inner_0630b74c | TERMINATED |                     |     2.49816e-05 |    0.563701 |
++-----------------+------------+---------------------+-----------------+-------------+
+
+
+[2m[36m(pid=3660672)[0m {'eval_loss': 0.5163044929504395, 'eval_accuracy': 0.7730886850152905, 'eval_precision': 0.814299900695134, 'eval_recall': 0.8167330677290837, 'eval_f1': 0.8155146693187468, 'eval_runtime': 10.0326, 'eval_samples_per_second': 162.969, 'epoch': 3.0}
+[2m[36m(pid=3660672)[0m {'train_runtime': 529.2826, 'train_samples_per_second': 3.344, 'epoch': 3.0}
+[2m[36m(pid=3660672)[0m 
+Result for _inner_0633a6aa:
+  date: 2021-03-25_10-58-16
+  done: true
+  epoch: 3.0
+  eval_accuracy: 0.7730886850152905
+  eval_f1: 0.8155146693187468
+  eval_loss: 0.5163044929504395
+  eval_precision: 0.814299900695134
+  eval_recall: 0.8167330677290837
+  eval_runtime: 10.0326
+  eval_samples_per_second: 162.969
+  experiment_id: 7f4c7272ba4c48d6bee9e87340f28965
+  experiment_tag: 2_learning_rate=4.8029e-05
+  hostname: gr014.nyu.cluster
+  iterations_since_restore: 3
+  node_ip: 10.32.35.78
+  objective: 0.5163044929504395
+  pid: 3660672
+  time_since_restore: 537.6749603748322
+  time_this_iter_s: 175.24613976478577
+  time_total_s: 537.6749603748322
+  timestamp: 1616684296
+  timesteps_since_restore: 0
+  training_iteration: 3
+  trial_id: 0633a6aa
+  
+[2m[36m(pid=3660672)[0m 
+[2m[36m(pid=3660600)[0m 
+[2m[36m(pid=3660600)[0m {'loss': 0.667, 'learning_rate': 2.8183780928824513e-05, 'epoch': 0.85}
+Result for _inner_46dcad68:
+  date: 2021-03-25_11-01-23
+  done: false
+  epoch: 1.0
+  eval_accuracy: 0.6140672782874618
+  eval_f1: 0.7608942781356574
+  eval_loss: 0.6740683913230896
+  eval_precision: 0.6140672782874618
+  eval_recall: 1.0
+  eval_runtime: 10.0318
+  eval_samples_per_second: 162.982
+  experiment_id: 3eab474d8b89419cb486ee7d0741e5ad
+  hostname: gr014.nyu.cluster
+  iterations_since_restore: 1
+  node_ip: 10.32.35.78
+  objective: 0.6740683913230896
+  pid: 3660600
+  time_since_restore: 186.3878209590912
+  time_this_iter_s: 186.3878209590912
+  time_total_s: 186.3878209590912
+  timestamp: 1616684483
+  timesteps_since_restore: 0
+  training_iteration: 1
+  trial_id: 46dcad68
+  
+== Status ==
+Memory usage on this node: 35.3/377.3 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 1/48 CPUs, 2/2 GPUs, 0.0/236.57 GiB heap, 0.0/72.71 GiB objects (0/1.0 accelerator_type:RTX)
+Result logdir: /home/as11919/ray_results/_inner_2021-03-25_10-40-20
+Number of trials: 4/8 (1 PENDING, 1 RUNNING, 2 TERMINATED)
++-----------------+------------+---------------------+-----------------+-------------+
+| Trial name      | status     | loc                 |   learning_rate |   objective |
+|-----------------+------------+---------------------+-----------------+-------------|
+| _inner_46dcad68 | RUNNING    | 10.32.35.78:3660600 |     3.92798e-05 |    0.674068 |
+| _inner_879f375c | PENDING    |                     |     3.39463e-05 |             |
+| _inner_0630b74c | TERMINATED |                     |     2.49816e-05 |    0.563701 |
+| _inner_0633a6aa | TERMINATED |                     |     4.80286e-05 |    0.516304 |
++-----------------+------------+---------------------+-----------------+-------------+
+
+
+[2m[36m(pid=3660600)[0m {'eval_loss': 0.6740683913230896, 'eval_accuracy': 0.6140672782874618, 'eval_precision': 0.6140672782874618, 'eval_recall': 1.0, 'eval_f1': 0.7608942781356574, 'eval_runtime': 10.0318, 'eval_samples_per_second': 162.982, 'epoch': 1.0}
+[2m[36m(pid=3660600)[0m {'loss': 0.6655, 'learning_rate': 1.7087804185192814e-05, 'epoch': 1.69}
+Result for _inner_46dcad68:
+  date: 2021-03-25_11-04-17
+  done: false
+  epoch: 2.0
+  eval_accuracy: 0.6140672782874618
+  eval_f1: 0.7608942781356574
+  eval_loss: 0.6671429872512817
+  eval_precision: 0.6140672782874618
+  eval_recall: 1.0
+  eval_runtime: 9.982
+  eval_samples_per_second: 163.795
+  experiment_id: 3eab474d8b89419cb486ee7d0741e5ad
+  hostname: gr014.nyu.cluster
+  iterations_since_restore: 2
+  node_ip: 10.32.35.78
+  objective: 0.6671429872512817
+  pid: 3660600
+  time_since_restore: 360.93620014190674
+  time_this_iter_s: 174.54837918281555
+  time_total_s: 360.93620014190674
+  timestamp: 1616684657
+  timesteps_since_restore: 0
+  training_iteration: 2
+  trial_id: 46dcad68
+  
+== Status ==
+Memory usage on this node: 35.2/377.3 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 1/48 CPUs, 2/2 GPUs, 0.0/236.57 GiB heap, 0.0/72.71 GiB objects (0/1.0 accelerator_type:RTX)
+Result logdir: /home/as11919/ray_results/_inner_2021-03-25_10-40-20
+Number of trials: 4/8 (1 PENDING, 1 RUNNING, 2 TERMINATED)
++-----------------+------------+---------------------+-----------------+-------------+
+| Trial name      | status     | loc                 |   learning_rate |   objective |
+|-----------------+------------+---------------------+-----------------+-------------|
+| _inner_46dcad68 | RUNNING    | 10.32.35.78:3660600 |     3.92798e-05 |    0.667143 |
+| _inner_879f375c | PENDING    |                     |     3.39463e-05 |             |
+| _inner_0630b74c | TERMINATED |                     |     2.49816e-05 |    0.563701 |
+| _inner_0633a6aa | TERMINATED |                     |     4.80286e-05 |    0.516304 |
++-----------------+------------+---------------------+-----------------+-------------+
+
+
+[2m[36m(pid=3660600)[0m {'eval_loss': 0.6671429872512817, 'eval_accuracy': 0.6140672782874618, 'eval_precision': 0.6140672782874618, 'eval_recall': 1.0, 'eval_f1': 0.7608942781356574, 'eval_runtime': 9.982, 'eval_samples_per_second': 163.795, 'epoch': 2.0}
+[2m[36m(pid=3660600)[0m {'loss': 0.6624, 'learning_rate': 5.991827441561117e-06, 'epoch': 2.54}
+Result for _inner_46dcad68:
+  date: 2021-03-25_11-07-12
+  done: false
+  epoch: 3.0
+  eval_accuracy: 0.6140672782874618
+  eval_f1: 0.7608942781356574
+  eval_loss: 0.6668376922607422
+  eval_precision: 0.6140672782874618
+  eval_recall: 1.0
+  eval_runtime: 10.0218
+  eval_samples_per_second: 163.145
+  experiment_id: 3eab474d8b89419cb486ee7d0741e5ad
+  hostname: gr014.nyu.cluster
+  iterations_since_restore: 3
+  node_ip: 10.32.35.78
+  objective: 0.6668376922607422
+  pid: 3660600
+  time_since_restore: 535.4949145317078
+  time_this_iter_s: 174.55871438980103
+  time_total_s: 535.4949145317078
+  timestamp: 1616684832
+  timesteps_since_restore: 0
+  training_iteration: 3
+  trial_id: 46dcad68
+  
+== Status ==
+Memory usage on this node: 35.4/377.3 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 1/48 CPUs, 2/2 GPUs, 0.0/236.57 GiB heap, 0.0/72.71 GiB objects (0/1.0 accelerator_type:RTX)
+Result logdir: /home/as11919/ray_results/_inner_2021-03-25_10-40-20
+Number of trials: 4/8 (1 PENDING, 1 RUNNING, 2 TERMINATED)
++-----------------+------------+---------------------+-----------------+-------------+
+| Trial name      | status     | loc                 |   learning_rate |   objective |
+|-----------------+------------+---------------------+-----------------+-------------|
+| _inner_46dcad68 | RUNNING    | 10.32.35.78:3660600 |     3.92798e-05 |    0.666838 |
+| _inner_879f375c | PENDING    |                     |     3.39463e-05 |             |
+| _inner_0630b74c | TERMINATED |                     |     2.49816e-05 |    0.563701 |
+| _inner_0633a6aa | TERMINATED |                     |     4.80286e-05 |    0.516304 |
++-----------------+------------+---------------------+-----------------+-------------+
+
+
+[2m[36m(pid=3660600)[0m {'eval_loss': 0.6668376922607422, 'eval_accuracy': 0.6140672782874618, 'eval_precision': 0.6140672782874618, 'eval_recall': 1.0, 'eval_f1': 0.7608942781356574, 'eval_runtime': 10.0218, 'eval_samples_per_second': 163.145, 'epoch': 3.0}
+[2m[36m(pid=3660600)[0m {'train_runtime': 527.2253, 'train_samples_per_second': 3.357, 'epoch': 3.0}
+Result for _inner_46dcad68:
+  date: 2021-03-25_11-07-12
+  done: true
+  epoch: 3.0
+  eval_accuracy: 0.6140672782874618
+  eval_f1: 0.7608942781356574
+  eval_loss: 0.6668376922607422
+  eval_precision: 0.6140672782874618
+  eval_recall: 1.0
+  eval_runtime: 10.0218
+  eval_samples_per_second: 163.145
+  experiment_id: 3eab474d8b89419cb486ee7d0741e5ad
+  experiment_tag: 3_learning_rate=3.928e-05
+  hostname: gr014.nyu.cluster
+  iterations_since_restore: 3
+  node_ip: 10.32.35.78
+  objective: 0.6668376922607422
+  pid: 3660600
+  time_since_restore: 535.4949145317078
+  time_this_iter_s: 174.55871438980103
+  time_total_s: 535.4949145317078
+  timestamp: 1616684832
+  timesteps_since_restore: 0
+  training_iteration: 3
+  trial_id: 46dcad68
+  
+[2m[36m(pid=3660600)[0m 
+[2m[36m(pid=3660601)[0m 
+[2m[36m(pid=3660601)[0m {'loss': 0.6521, 'learning_rate': 2.4356977964525126e-05, 'epoch': 0.85}
+Result for _inner_879f375c:
+  date: 2021-03-25_11-10-19
+  done: false
+  epoch: 1.0
+  eval_accuracy: 0.7027522935779816
+  eval_f1: 0.7737430167597765
+  eval_loss: 0.5712165832519531
+  eval_precision: 0.7263986013986014
+  eval_recall: 0.8276892430278885
+  eval_runtime: 10.1467
+  eval_samples_per_second: 161.136
+  experiment_id: 8c0648122ade4169a92309c5e2de55c2
+  hostname: gr014.nyu.cluster
+  iterations_since_restore: 1
+  node_ip: 10.32.35.78
+  objective: 0.5712165832519531
+  pid: 3660601
+  time_since_restore: 187.2222170829773
+  time_this_iter_s: 187.2222170829773
+  time_total_s: 187.2222170829773
+  timestamp: 1616685019
+  timesteps_since_restore: 0
+  training_iteration: 1
+  trial_id: 879f375c
+  
+[2m[36m(pid=3660601)[0m {'eval_loss': 0.5712165832519531, 'eval_accuracy': 0.7027522935779816, 'eval_precision': 0.7263986013986014, 'eval_recall': 0.8276892430278885, 'eval_f1': 0.7737430167597765, 'eval_runtime': 10.1467, 'eval_samples_per_second': 161.136, 'epoch': 1.0}
+== Status ==
+Memory usage on this node: 35.3/377.3 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 1/48 CPUs, 2/2 GPUs, 0.0/236.57 GiB heap, 0.0/72.71 GiB objects (0/1.0 accelerator_type:RTX)
+Result logdir: /home/as11919/ray_results/_inner_2021-03-25_10-40-20
+Number of trials: 4/8 (1 RUNNING, 3 TERMINATED)
++-----------------+------------+---------------------+-----------------+-------------+
+| Trial name      | status     | loc                 |   learning_rate |   objective |
+|-----------------+------------+---------------------+-----------------+-------------|
+| _inner_879f375c | RUNNING    | 10.32.35.78:3660601 |     3.39463e-05 |    0.571217 |
+| _inner_0630b74c | TERMINATED |                     |     2.49816e-05 |    0.563701 |
+| _inner_0633a6aa | TERMINATED |                     |     4.80286e-05 |    0.516304 |
+| _inner_46dcad68 | TERMINATED |                     |     3.92798e-05 |    0.666838 |
++-----------------+------------+---------------------+-----------------+-------------+
+
+
+[2m[36m(pid=3660601)[0m {'loss': 0.5317, 'learning_rate': 1.4767616561168775e-05, 'epoch': 1.69}
+Result for _inner_879f375c:
+  date: 2021-03-25_11-13-15
+  done: false
+  epoch: 2.0
+  eval_accuracy: 0.7541284403669725
+  eval_f1: 0.8001988071570577
+  eval_loss: 0.5209668874740601
+  eval_precision: 0.7986111111111112
+  eval_recall: 0.8017928286852589
+  eval_runtime: 10.0342
+  eval_samples_per_second: 162.943
+  experiment_id: 8c0648122ade4169a92309c5e2de55c2
+  hostname: gr014.nyu.cluster
+  iterations_since_restore: 2
+  node_ip: 10.32.35.78
+  objective: 0.5209668874740601
+  pid: 3660601
+  time_since_restore: 362.54836559295654
+  time_this_iter_s: 175.32614850997925
+  time_total_s: 362.54836559295654
+  timestamp: 1616685195
+  timesteps_since_restore: 0
+  training_iteration: 2
+  trial_id: 879f375c
+  
+== Status ==
+Memory usage on this node: 35.3/377.3 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 1/48 CPUs, 2/2 GPUs, 0.0/236.57 GiB heap, 0.0/72.71 GiB objects (0/1.0 accelerator_type:RTX)
+Result logdir: /home/as11919/ray_results/_inner_2021-03-25_10-40-20
+Number of trials: 4/8 (1 RUNNING, 3 TERMINATED)
++-----------------+------------+---------------------+-----------------+-------------+
+| Trial name      | status     | loc                 |   learning_rate |   objective |
+|-----------------+------------+---------------------+-----------------+-------------|
+| _inner_879f375c | RUNNING    | 10.32.35.78:3660601 |     3.39463e-05 |    0.520967 |
+| _inner_0630b74c | TERMINATED |                     |     2.49816e-05 |    0.563701 |
+| _inner_0633a6aa | TERMINATED |                     |     4.80286e-05 |    0.516304 |
+| _inner_46dcad68 | TERMINATED |                     |     3.92798e-05 |    0.666838 |
++-----------------+------------+---------------------+-----------------+-------------+
+
+
+[2m[36m(pid=3660601)[0m {'eval_loss': 0.5209668874740601, 'eval_accuracy': 0.7541284403669725, 'eval_precision': 0.7986111111111112, 'eval_recall': 0.8017928286852589, 'eval_f1': 0.8001988071570577, 'eval_runtime': 10.0342, 'eval_samples_per_second': 162.943, 'epoch': 2.0}
+[2m[36m(pid=3660601)[0m {'loss': 0.3978, 'learning_rate': 5.178255157812428e-06, 'epoch': 2.54}
+Result for _inner_879f375c:
+  date: 2021-03-25_11-16-10
+  done: false
+  epoch: 3.0
+  eval_accuracy: 0.7767584097859327
+  eval_f1: 0.8206388206388207
+  eval_loss: 0.5435624122619629
+  eval_precision: 0.8098933074684772
+  eval_recall: 0.8316733067729084
+  eval_runtime: 10.1093
+  eval_samples_per_second: 161.732
+  experiment_id: 8c0648122ade4169a92309c5e2de55c2
+  hostname: gr014.nyu.cluster
+  iterations_since_restore: 3
+  node_ip: 10.32.35.78
+  objective: 0.5435624122619629
+  pid: 3660601
+  time_since_restore: 538.0153222084045
+  time_this_iter_s: 175.466956615448
+  time_total_s: 538.0153222084045
+  timestamp: 1616685370
+  timesteps_since_restore: 0
+  training_iteration: 3
+  trial_id: 879f375c
+  
+== Status ==
+Memory usage on this node: 35.3/377.3 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 1/48 CPUs, 2/2 GPUs, 0.0/236.57 GiB heap, 0.0/72.71 GiB objects (0/1.0 accelerator_type:RTX)
+Result logdir: /home/as11919/ray_results/_inner_2021-03-25_10-40-20
+Number of trials: 5/8 (1 PENDING, 1 RUNNING, 3 TERMINATED)
++-----------------+------------+---------------------+-----------------+-------------+
+| Trial name      | status     | loc                 |   learning_rate |   objective |
+|-----------------+------------+---------------------+-----------------+-------------|
+| _inner_879f375c | RUNNING    | 10.32.35.78:3660601 |     3.39463e-05 |    0.543562 |
+| _inner_9f4d7e98 | PENDING    |                     |     1.23233e-05 |             |
+| _inner_0630b74c | TERMINATED |                     |     2.49816e-05 |    0.563701 |
+| _inner_0633a6aa | TERMINATED |                     |     4.80286e-05 |    0.516304 |
+| _inner_46dcad68 | TERMINATED |                     |     3.92798e-05 |    0.666838 |
++-----------------+------------+---------------------+-----------------+-------------+
+
+
+[2m[36m(pid=3660601)[0m {'eval_loss': 0.5435624122619629, 'eval_accuracy': 0.7767584097859327, 'eval_precision': 0.8098933074684772, 'eval_recall': 0.8316733067729084, 'eval_f1': 0.8206388206388207, 'eval_runtime': 10.1093, 'eval_samples_per_second': 161.732, 'epoch': 3.0}
+[2m[36m(pid=3660601)[0m {'train_runtime': 529.6269, 'train_samples_per_second': 3.342, 'epoch': 3.0}
+Result for _inner_879f375c:
+  date: 2021-03-25_11-16-10
+  done: true
+  epoch: 3.0
+  eval_accuracy: 0.7767584097859327
+  eval_f1: 0.8206388206388207
+  eval_loss: 0.5435624122619629
+  eval_precision: 0.8098933074684772
+  eval_recall: 0.8316733067729084
+  eval_runtime: 10.1093
+  eval_samples_per_second: 161.732
+  experiment_id: 8c0648122ade4169a92309c5e2de55c2
+  experiment_tag: 4_learning_rate=3.3946e-05
+  hostname: gr014.nyu.cluster
+  iterations_since_restore: 3
+  node_ip: 10.32.35.78
+  objective: 0.5435624122619629
+  pid: 3660601
+  time_since_restore: 538.0153222084045
+  time_this_iter_s: 175.466956615448
+  time_total_s: 538.0153222084045
+  timestamp: 1616685370
+  timesteps_since_restore: 0
+  training_iteration: 3
+  trial_id: 879f375c
+  
+[2m[36m(pid=3660601)[0m 
+[2m[36m(pid=3660602)[0m 
+[2m[36m(pid=3660602)[0m {'loss': 0.6336, 'learning_rate': 8.842173727765273e-06, 'epoch': 0.85}
+Result for _inner_9f4d7e98:
+  date: 2021-03-25_11-19-19
+  done: false
+  epoch: 1.0
+  eval_accuracy: 0.7314984709480122
+  eval_f1: 0.7728918779099845
+  eval_loss: 0.5383538007736206
+  eval_precision: 0.8040904198062433
+  eval_recall: 0.7440239043824701
+  eval_runtime: 9.9866
+  eval_samples_per_second: 163.72
+  experiment_id: 16f8b0766dac434bbbd5fe543eb5b85a
+  hostname: gr014.nyu.cluster
+  iterations_since_restore: 1
+  node_ip: 10.32.35.78
+  objective: 0.5383538007736206
+  pid: 3660602
+  time_since_restore: 188.58394956588745
+  time_this_iter_s: 188.58394956588745
+  time_total_s: 188.58394956588745
+  timestamp: 1616685559
+  timesteps_since_restore: 0
+  training_iteration: 1
+  trial_id: 9f4d7e98
+  
+== Status ==
+Memory usage on this node: 35.3/377.3 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 1/48 CPUs, 2/2 GPUs, 0.0/236.57 GiB heap, 0.0/72.71 GiB objects (0/1.0 accelerator_type:RTX)
+Result logdir: /home/as11919/ray_results/_inner_2021-03-25_10-40-20
+Number of trials: 5/8 (1 RUNNING, 4 TERMINATED)
++-----------------+------------+---------------------+-----------------+-------------+
+| Trial name      | status     | loc                 |   learning_rate |   objective |
+|-----------------+------------+---------------------+-----------------+-------------|
+| _inner_9f4d7e98 | RUNNING    | 10.32.35.78:3660602 |     1.23233e-05 |    0.538354 |
+| _inner_0630b74c | TERMINATED |                     |     2.49816e-05 |    0.563701 |
+| _inner_0633a6aa | TERMINATED |                     |     4.80286e-05 |    0.516304 |
+| _inner_46dcad68 | TERMINATED |                     |     3.92798e-05 |    0.666838 |
+| _inner_879f375c | TERMINATED |                     |     3.39463e-05 |    0.543562 |
++-----------------+------------+---------------------+-----------------+-------------+
+
+
+[2m[36m(pid=3660602)[0m {'eval_loss': 0.5383538007736206, 'eval_accuracy': 0.7314984709480122, 'eval_precision': 0.8040904198062433, 'eval_recall': 0.7440239043824701, 'eval_f1': 0.7728918779099845, 'eval_runtime': 9.9866, 'eval_samples_per_second': 163.72, 'epoch': 1.0}
+[2m[36m(pid=3660602)[0m {'loss': 0.501, 'learning_rate': 5.361002968802567e-06, 'epoch': 1.69}
+Result for _inner_9f4d7e98:
+  date: 2021-03-25_11-22-15
+  done: false
+  epoch: 2.0
+  eval_accuracy: 0.7626911314984709
+  eval_f1: 0.7995867768595042
+  eval_loss: 0.5057745575904846
+  eval_precision: 0.8304721030042919
+  eval_recall: 0.7709163346613546
+  eval_runtime: 9.987
+  eval_samples_per_second: 163.713
+  experiment_id: 16f8b0766dac434bbbd5fe543eb5b85a
+  hostname: gr014.nyu.cluster
+  iterations_since_restore: 2
+  node_ip: 10.32.35.78
+  objective: 0.5057745575904846
+  pid: 3660602
+  time_since_restore: 364.16887378692627
+  time_this_iter_s: 175.58492422103882
+  time_total_s: 364.16887378692627
+  timestamp: 1616685735
+  timesteps_since_restore: 0
+  training_iteration: 2
+  trial_id: 9f4d7e98
+  
+== Status ==
+Memory usage on this node: 35.2/377.3 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 1/48 CPUs, 2/2 GPUs, 0.0/236.57 GiB heap, 0.0/72.71 GiB objects (0/1.0 accelerator_type:RTX)
+Result logdir: /home/as11919/ray_results/_inner_2021-03-25_10-40-20
+Number of trials: 5/8 (1 RUNNING, 4 TERMINATED)
++-----------------+------------+---------------------+-----------------+-------------+
+| Trial name      | status     | loc                 |   learning_rate |   objective |
+|-----------------+------------+---------------------+-----------------+-------------|
+| _inner_9f4d7e98 | RUNNING    | 10.32.35.78:3660602 |     1.23233e-05 |    0.505775 |
+| _inner_0630b74c | TERMINATED |                     |     2.49816e-05 |    0.563701 |
+| _inner_0633a6aa | TERMINATED |                     |     4.80286e-05 |    0.516304 |
+| _inner_46dcad68 | TERMINATED |                     |     3.92798e-05 |    0.666838 |
+| _inner_879f375c | TERMINATED |                     |     3.39463e-05 |    0.543562 |
++-----------------+------------+---------------------+-----------------+-------------+
+
+
+[2m[36m(pid=3660602)[0m {'eval_loss': 0.5057745575904846, 'eval_accuracy': 0.7626911314984709, 'eval_precision': 0.8304721030042919, 'eval_recall': 0.7709163346613546, 'eval_f1': 0.7995867768595042, 'eval_runtime': 9.987, 'eval_samples_per_second': 163.713, 'epoch': 2.0}
+[2m[36m(pid=3660602)[0m {'loss': 0.4135, 'learning_rate': 1.8798322098398614e-06, 'epoch': 2.54}
+Result for _inner_9f4d7e98:
+  date: 2021-03-25_11-25-10
+  done: false
+  epoch: 3.0
+  eval_accuracy: 0.781651376146789
+  eval_f1: 0.817391304347826
+  eval_loss: 0.5118862390518188
+  eval_precision: 0.8401682439537329
+  eval_recall: 0.795816733067729
+  eval_runtime: 10.0234
+  eval_samples_per_second: 163.118
+  experiment_id: 16f8b0766dac434bbbd5fe543eb5b85a
+  hostname: gr014.nyu.cluster
+  iterations_since_restore: 3
+  node_ip: 10.32.35.78
+  objective: 0.5118862390518188
+  pid: 3660602
+  time_since_restore: 539.6762883663177
+  time_this_iter_s: 175.50741457939148
+  time_total_s: 539.6762883663177
+  timestamp: 1616685910
+  timesteps_since_restore: 0
+  training_iteration: 3
+  trial_id: 9f4d7e98
+  
+== Status ==
+Memory usage on this node: 35.2/377.3 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 1/48 CPUs, 2/2 GPUs, 0.0/236.57 GiB heap, 0.0/72.71 GiB objects (0/1.0 accelerator_type:RTX)
+Result logdir: /home/as11919/ray_results/_inner_2021-03-25_10-40-20
+Number of trials: 5/8 (1 RUNNING, 4 TERMINATED)
++-----------------+------------+---------------------+-----------------+-------------+
+| Trial name      | status     | loc                 |   learning_rate |   objective |
+|-----------------+------------+---------------------+-----------------+-------------|
+| _inner_9f4d7e98 | RUNNING    | 10.32.35.78:3660602 |     1.23233e-05 |    0.511886 |
+| _inner_0630b74c | TERMINATED |                     |     2.49816e-05 |    0.563701 |
+| _inner_0633a6aa | TERMINATED |                     |     4.80286e-05 |    0.516304 |
+| _inner_46dcad68 | TERMINATED |                     |     3.92798e-05 |    0.666838 |
+| _inner_879f375c | TERMINATED |                     |     3.39463e-05 |    0.543562 |
++-----------------+------------+---------------------+-----------------+-------------+
+
+
+[2m[36m(pid=3660602)[0m {'eval_loss': 0.5118862390518188, 'eval_accuracy': 0.781651376146789, 'eval_precision': 0.8401682439537329, 'eval_recall': 0.795816733067729, 'eval_f1': 0.817391304347826, 'eval_runtime': 10.0234, 'eval_samples_per_second': 163.118, 'epoch': 3.0}
+[2m[36m(pid=3660602)[0m {'train_runtime': 531.2819, 'train_samples_per_second': 3.332, 'epoch': 3.0}
+[2m[36m(pid=3660602)[0m 
+Result for _inner_9f4d7e98:
+  date: 2021-03-25_11-25-10
+  done: true
+  epoch: 3.0
+  eval_accuracy: 0.781651376146789
+  eval_f1: 0.817391304347826
+  eval_loss: 0.5118862390518188
+  eval_precision: 0.8401682439537329
+  eval_recall: 0.795816733067729
+  eval_runtime: 10.0234
+  eval_samples_per_second: 163.118
+  experiment_id: 16f8b0766dac434bbbd5fe543eb5b85a
+  experiment_tag: 5_learning_rate=1.2323e-05
+  hostname: gr014.nyu.cluster
+  iterations_since_restore: 3
+  node_ip: 10.32.35.78
+  objective: 0.5118862390518188
+  pid: 3660602
+  time_since_restore: 539.6762883663177
+  time_this_iter_s: 175.50741457939148
+  time_total_s: 539.6762883663177
+  timestamp: 1616685910
+  timesteps_since_restore: 0
+  training_iteration: 3
+  trial_id: 9f4d7e98
+  
+[2m[36m(pid=3660602)[0m 
+== Status ==
+Memory usage on this node: 32.2/377.3 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 0/48 CPUs, 0/2 GPUs, 0.0/236.57 GiB heap, 0.0/72.71 GiB objects (0/1.0 accelerator_type:RTX)
+Result logdir: /home/as11919/ray_results/_inner_2021-03-25_10-40-20
+Number of trials: 5/8 (5 TERMINATED)
++-----------------+------------+-------+-----------------+-------------+
+| Trial name      | status     | loc   |   learning_rate |   objective |
+|-----------------+------------+-------+-----------------+-------------|
+| _inner_0630b74c | TERMINATED |       |     2.49816e-05 |    0.563701 |
+| _inner_0633a6aa | TERMINATED |       |     4.80286e-05 |    0.516304 |
+| _inner_46dcad68 | TERMINATED |       |     3.92798e-05 |    0.666838 |
+| _inner_879f375c | TERMINATED |       |     3.39463e-05 |    0.543562 |
+| _inner_9f4d7e98 | TERMINATED |       |     1.23233e-05 |    0.511886 |
++-----------------+------------+-------+-----------------+-------------+
+
+
+VVVVVVVVVVVVVV BEST RUN DETAILS VVVVVVVVVVVVVV
+BestRun(run_id='9f4d7e98', objective=0.5118862390518188, hyperparameters={'learning_rate': 1.2323344486727979e-05})
+Done!

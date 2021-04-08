@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/scratch/as11919/transformers/examples/question-answering/run_qa.py", line 507, in <module>
+    main()
+  File "/scratch/as11919/transformers/examples/question-answering/run_qa.py", line 178, in main
+    raise ValueError(
+ValueError: Output directory (/scratch/as11919/Domain-Adaptation/models/movie_roberta/eval_on_moviesQA/roberta_base_plain) already exists and is not empty. Use --overwrite_output_dir to overcome.
