@@ -20,13 +20,15 @@ source /ext3/env.sh
 conda activate
 
 python $SCRATCH/transformers/examples/question-answering/run_qa.py \
-  --model_name_or_path /scratch/as11919/Domain-Adaptation/movie_roberta/roberta_DAPT_movies_model_withEVAL \
+  --model_name_or_path /scratch/as11919/Domain-Adaptation/movie_roberta/final_movie_roberta_7April2021 \
   --dataset_name squad \
   --do_train \
   --do_eval \
   --per_device_train_batch_size 12 \
   --max_seq_length 384 \
   --doc_stride 128 \
+  --overwrite_output_dir \
+  --overwrite_cache \
   --output_dir $SCRATCH/Domain-Adaptation/models/movie_roberta/eval_on_squadv1/movieR_final_7april2021
 
 echo "Done! This was the main movieRoberta model trained on squadv1"
