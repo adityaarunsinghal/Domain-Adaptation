@@ -21,8 +21,8 @@ conda activate
 
 python $SCRATCH/transformers/examples/token-classification/run_ner.py \
   --model_name_or_path roberta-base \
-  --train_file $SCRATCH/Domain-Adaptation/data/MIT_movie_NER/dict_structure/trivia_training.dict \
-  --validation_file $SCRATCH/Domain-Adaptation/data/MIT_movie_NER/dict_structure/trivia_validation.dict \
+  --train_file $SCRATCH/Domain-Adaptation/data/MIT_movie_NER/dict_structure/trivia_training.json \
+  --validation_file $SCRATCH/Domain-Adaptation/data/MIT_movie_NER/dict_structure/trivia_validation.json \
   --do_train \
   --do_eval \
   --per_device_train_batch_size 512 \
