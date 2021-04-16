@@ -30,6 +30,7 @@ python /scratch/as11919/transformers/examples/language-modeling/run_mlm.py \
     --model_name_or_path roberta-base \
     --train_file $SCRATCH/Domain-Adaptation/data/simple_movie_text_MLM/ALL_DATA_train.txt \
     --validation_file $SCRATCH/Domain-Adaptation/data/simple_movie_text_MLM/ALL_DATA_test.txt \
+    --output_dir $SCRATCH/Domain-Adaptation/movie_roberta/movie_roberta_15April2021 \
     --do_train \
     --do_eval \
     --per_device_train_batch_size 64 \
@@ -41,7 +42,6 @@ python /scratch/as11919/transformers/examples/language-modeling/run_mlm.py \
     --eval_steps 500 \
     --line_by_line \
     --logging_first_step \
-    --output_dir $SCRATCH/Domain-Adaptation/movie_roberta/movie_roberta_15April2021 \
     --overwrite_output_dir \
     --overwrite_cache \
     --run_name "Making MovieR 100 epoch"
