@@ -33,7 +33,7 @@ python /scratch/as11919/transformers/examples/language-modeling/run_mlm.py \
     --line_by_line \
     --logging_first_step \
     --overwrite_output_dir \
-    --run_name "debugging sh file" \
+    --run_name debugging sh file \
     --output_dir /scratch/as11919/Domain-Adaptation/movie_roberta/to_delete
 
 echo "Done!"
