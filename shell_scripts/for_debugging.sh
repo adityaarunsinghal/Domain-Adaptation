@@ -19,11 +19,9 @@ source /ext3/env.sh
 conda activate
 
 python /scratch/as11919/transformers/examples/language-modeling/run_mlm.py \
-    --model_name_or_path roberta-base \
-    --train_file /scratch/as11919/Domain-Adaptation/data/simple_movie_text_MLM/ALL_DATA_train.txt \
-    --validation_file /scratch/as11919/Domain-Adaptation/data/simple_movie_text_MLM/ALL_DATA_test.txt \
+    --model_name_or_path camembert-base \
+    --train_file /scratch/as11919/Domain-Adaptation/data/simple_movie_text_MLM/movie_names_25mlens_small_debug.txt \
     --do_train \
-    --do_eval \
     --per_device_train_batch_size 64 \
     --per_device_eval_batch_size 64 \
     --num_train_epochs 1 \
@@ -32,9 +30,12 @@ python /scratch/as11919/transformers/examples/language-modeling/run_mlm.py \
     --save_steps 500 \
     --eval_steps 500 \
     --line_by_line \
+    --logging_first_step \
     --overwrite_output_dir \
     --run_name "debugging sh file" \
-    --output_dir $SCRATCH/Domain-Adaptation/movie_roberta/to_delete
+    --output_dir /scratch/as11919/Domain-Adaptation/movie_roberta/to_delete
 
 echo "Done!"
 "
+
+data/simple_movie_text_MLM/movie_names_25mlens_small_debug.txt
