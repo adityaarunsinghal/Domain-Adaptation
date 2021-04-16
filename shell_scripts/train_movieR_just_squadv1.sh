@@ -24,9 +24,10 @@ python $SCRATCH/transformers/examples/question-answering/run_qa.py \
   --dataset_name squad \
   --do_train \
   --do_eval \
-  --per_device_train_batch_size 12 \
+  --per_device_train_batch_size 128 \
   --max_seq_length 384 \
   --doc_stride 128 \
+  --num_epochs 100 \
   --overwrite_output_dir \
   --overwrite_cache \
   --output_dir $SCRATCH/Domain-Adaptation/models/movie_roberta/eval_on_squadv1/movieR_final_7april2021

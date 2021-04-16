@@ -21,6 +21,6 @@
   "position_embedding_type": "absolute",
   "transformers_version": "4.4.0.dev0",
   "type_vocab_size": 1,
-  "use_cache": true,
+  "use_cache": false,
   "vocab_size": 50265
 }
