@@ -1,5 +1,5 @@
 {
-  "_name_or_path": "/scratch/as11919/Domain-Adaptation/movie_roberta/roberta_DAPT_movies_model_withEVAL/checkpoint-150000",
+  "_name_or_path": "/scratch/as11919/Domain-Adaptation/movie_roberta/final_movie_roberta_7April2021",
   "architectures": [
     "RobertaForMaskedLM"
   ],

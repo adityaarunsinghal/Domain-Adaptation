@@ -36,7 +36,7 @@
                                           
 [INFO|configuration_utils.py:488] 2021-04-07 21:51:59,789 >> loading configuration file /scratch/as11919/Domain-Adaptation/movie_roberta/final_movie_roberta_7April2021/config.json
 [INFO|configuration_utils.py:526] 2021-04-07 21:51:59,789 >> Model config RobertaConfig {
-  "_name_or_path": "/scratch/as11919/Domain-Adaptation/movie_roberta/roberta_DAPT_movies_model_withEVAL/checkpoint-150000",
+  "_name_or_path": "/scratch/as11919/Domain-Adaptation/movie_roberta/roberta_DAPT_movies_model_withEVAL/checkpoint-150000", #why is it using the checkpoint? Change the config.json 
   "architectures": [
     "RobertaForMaskedLM"
   ],
@@ -61,7 +61,7 @@
   "use_cache": true,
   "vocab_size": 50265
 }
-
+# why is this twice? 
 [INFO|configuration_utils.py:488] 2021-04-07 21:51:59,790 >> loading configuration file /scratch/as11919/Domain-Adaptation/movie_roberta/final_movie_roberta_7April2021/config.json
 [INFO|configuration_utils.py:526] 2021-04-07 21:51:59,790 >> Model config RobertaConfig {
   "_name_or_path": "/scratch/as11919/Domain-Adaptation/movie_roberta/roberta_DAPT_movies_model_withEVAL/checkpoint-150000",
@@ -91,6 +91,10 @@
 }
 
 [INFO|tokenization_utils_base.py:1647] 2021-04-07 21:51:59,790 >> Didn't find file /scratch/as11919/Domain-Adaptation/movie_roberta/final_movie_roberta_7April2021/tokenizer.json. We won't load it.
+
+# no tokenizer? 
+
+
 [INFO|tokenization_utils_base.py:1647] 2021-04-07 21:51:59,791 >> Didn't find file /scratch/as11919/Domain-Adaptation/movie_roberta/final_movie_roberta_7April2021/added_tokens.json. We won't load it.
 [INFO|tokenization_utils_base.py:1711] 2021-04-07 21:51:59,792 >> loading file /scratch/as11919/Domain-Adaptation/movie_roberta/final_movie_roberta_7April2021/vocab.json
 [INFO|tokenization_utils_base.py:1711] 2021-04-07 21:51:59,792 >> loading file /scratch/as11919/Domain-Adaptation/movie_roberta/final_movie_roberta_7April2021/merges.txt
@@ -100,8 +104,17 @@
 [INFO|tokenization_utils_base.py:1711] 2021-04-07 21:51:59,792 >> loading file /scratch/as11919/Domain-Adaptation/movie_roberta/final_movie_roberta_7April2021/tokenizer_config.json
 [INFO|modeling_utils.py:1050] 2021-04-07 21:51:59,926 >> loading weights file /scratch/as11919/Domain-Adaptation/movie_roberta/final_movie_roberta_7April2021/pytorch_model.bin
 [WARNING|modeling_utils.py:1159] 2021-04-07 21:52:04,776 >> Some weights of the model checkpoint at /scratch/as11919/Domain-Adaptation/movie_roberta/final_movie_roberta_7April2021 were not used when initializing RobertaForQuestionAnswering: ['lm_head.bias', 'lm_head.dense.weight', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.layer_norm.bias', 'lm_head.decoder.weight', 'lm_head.decoder.bias']
-- This IS expected if you are initializing RobertaForQuestionAnswering from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+
+# were not used? Why? 
+
+# it still had the MLM head!!!!
+
+# this is fine
+
+- This IS expected if you are initializing RobertaForQuestionAnswering from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model). # yes this is what i did
 - This IS NOT expected if you are initializing RobertaForQuestionAnswering from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+
+
 [WARNING|modeling_utils.py:1170] 2021-04-07 21:52:04,776 >> Some weights of RobertaForQuestionAnswering were not initialized from the model checkpoint at /scratch/as11919/Domain-Adaptation/movie_roberta/final_movie_roberta_7April2021 and are newly initialized: ['qa_outputs.weight', 'qa_outputs.bias']
 You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
 
@@ -196,6 +209,8 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
 100%|██████████| 88/88 [00:21<00:00,  4.75ba/s]
 100%|██████████| 88/88 [00:21<00:00,  4.08ba/s]
 
+# 88 = training epoch
+
   0%|          | 0/11 [00:00<?, ?ba/s]
   9%|▉         | 1/11 [00:00<00:09,  1.08ba/s]
  18%|█▊        | 2/11 [00:01<00:08,  1.07ba/s]
@@ -209,7 +224,13 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
  91%|█████████ | 10/11 [00:09<00:00,  1.11ba/s]
 100%|██████████| 11/11 [00:09<00:00,  1.29ba/s]
 100%|██████████| 11/11 [00:09<00:00,  1.14ba/s]
+
+
 [INFO|trainer.py:490] 2021-04-07 21:52:44,271 >> The following columns in the evaluation set  don't have a corresponding argument in `RobertaForQuestionAnswering.forward` and have been ignored: example_id, offset_mapping.
+
+#double check if it is okay to not use these keys!
+
+
 [INFO|trainer.py:921] 2021-04-07 21:52:44,478 >> Loading model from /scratch/as11919/Domain-Adaptation/movie_roberta/final_movie_roberta_7April2021).
 [INFO|configuration_utils.py:488] 2021-04-07 21:52:44,478 >> loading configuration file /scratch/as11919/Domain-Adaptation/movie_roberta/final_movie_roberta_7April2021/config.json
 [INFO|configuration_utils.py:526] 2021-04-07 21:52:44,479 >> Model config RobertaConfig {
@@ -238,6 +259,10 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   "use_cache": true,
   "vocab_size": 50265
 }
+
+
+# why are there multiple outputs on this log file?
+
 
 [INFO|modeling_utils.py:1050] 2021-04-07 21:52:44,479 >> loading weights file /scratch/as11919/Domain-Adaptation/movie_roberta/final_movie_roberta_7April2021/pytorch_model.bin
 [WARNING|modeling_utils.py:1159] 2021-04-07 21:52:48,336 >> Some weights of the model checkpoint at /scratch/as11919/Domain-Adaptation/movie_roberta/final_movie_roberta_7April2021 were not used when initializing RobertaForQuestionAnswering: ['lm_head.bias', 'lm_head.dense.weight', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.layer_norm.bias', 'lm_head.decoder.weight', 'lm_head.decoder.bias']
@@ -301,6 +326,13 @@ Training completed. Do not forget to share your model on huggingface.co/models =
 [INFO|trainer.py:1865] 2021-04-07 21:52:55,828 >> ***** Running Evaluation *****
 [INFO|trainer.py:1866] 2021-04-07 21:52:55,829 >>   Num examples = 10790
 [INFO|trainer.py:1867] 2021-04-07 21:52:55,829 >>   Batch size = 16
+
+# this is evaluation
+
+# use pdbdebugger in the python file 
+# try to use interactive jobs 
+
+
 
   0%|          | 0/675 [00:00<?, ?it/s]
   0%|          | 3/675 [00:00<02:41,  4.16it/s]
@@ -1340,7 +1372,7 @@ Training completed. Do not forget to share your model on huggingface.co/models =
 
 100%|██████████| 675/675 [07:44<00:00,  1.45it/s]
 [INFO|trainer_pt_utils.py:722] 2021-04-07 22:00:43,471 >> ***** eval metrics *****
-[INFO|trainer_pt_utils.py:727] 2021-04-07 22:00:43,471 >>   epoch        =    3.0
+[INFO|trainer_pt_utils.py:727] 2021-04-07 22:00:43,471 >>   epoch        =    3.0  # why just 3 epochs? set to 100
 [INFO|trainer_pt_utils.py:727] 2021-04-07 22:00:43,471 >>   eval_samples =  10790
 [INFO|trainer_pt_utils.py:727] 2021-04-07 22:00:43,471 >>   exact_match  = 0.1419
 [INFO|trainer_pt_utils.py:727] 2021-04-07 22:00:43,471 >>   f1           = 6.6306
@@ -1384,9 +1416,13 @@ wandb: Synced /scratch/as11919/Domain-Adaptation/models/movie_roberta/eval_on_sq
 #   --dataset_name squad \
 #   --do_train \
 #   --do_eval \
-#   --per_device_train_batch_size 12 \
+#   --per_device_train_batch_size 128 \
 #   --max_seq_length 384 \
 #   --doc_stride 128 \
 #   --overwrite_output_dir \
 #   --overwrite_cache \
 #   --output_dir $SCRATCH/Domain-Adaptation/models/movie_roberta/eval_on_squadv1/movieR_final_7april2021
+
+
+
+# google tmux overview

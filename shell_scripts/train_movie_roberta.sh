@@ -24,7 +24,8 @@ conda activate
 
 python $SCRATCH/Domain-Adaptation/make_movies_dataset.py
 
-python /scratch/as11919/transformers/examples/language-modeling/run_mlm.py \
+python /scratch/as11919/transformers/examples/language-modeling/run_mlm.py \  
+# there has to be an argument to start with evaluation!!! check perplexity before training
     --model_name_or_path roberta-base \
     --train_file $SCRATCH/Domain-Adaptation/data/simple_movie_text_MLM/ALL_DATA_train.txt \
     --validation_file $SCRATCH/Domain-Adaptation/data/simple_movie_text_MLM/ALL_DATA_test.txt \
@@ -37,6 +38,14 @@ python /scratch/as11919/transformers/examples/language-modeling/run_mlm.py \
 
 echo "Done!"
 "
+
+# do everything on interactive!!!!
+# try distilbert
+
+#also export datsets as jsons directly from HF datasets library
+
+# use Json Lines format!!!!!
+
 
 # default_config =     "attention_probs_dropout_prob": 0.1,
 #   "bos_token_id": 0,
