@@ -19,8 +19,9 @@ source /ext3/env.sh
 conda activate
 
 python /scratch/as11919/transformers/examples/language-modeling/run_mlm.py \
-    --model_name_or_path camembert-base \
+    --model_name_or_path distilroberta-base \
     --train_file /scratch/as11919/Domain-Adaptation/data/simple_movie_text_MLM/movie_names_25mlens_small_debug.txt \
+    --validation_file /scratch/as11919/Domain-Adaptation/data/simple_movie_text_MLM/movie_names_25mlens_small_debug.txt \
     --do_train \
     --per_device_train_batch_size 64 \
     --per_device_eval_batch_size 64 \
@@ -37,5 +38,3 @@ python /scratch/as11919/transformers/examples/language-modeling/run_mlm.py \
 
 echo "Done!"
 "
-
-data/simple_movie_text_MLM/movie_names_25mlens_small_debug.txt
