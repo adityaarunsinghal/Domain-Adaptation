@@ -42,10 +42,11 @@ python /scratch/as11919/transformers/examples/language-modeling/run_mlm.py \
     --line_by_line \
     --logging_first_step \
     --overwrite_output_dir \
+    --overwrite_cache \
     --run_name "Making MovieR 100 epoch" \
     --output_dir $SCRATCH/Domain-Adaptation/movie_roberta/movie_roberta_15April2021
 
-echo "Done!"
+echo "Done! this was Making MovieR 100 epoch"
 "
 
 # do everything on interactive!!!!
