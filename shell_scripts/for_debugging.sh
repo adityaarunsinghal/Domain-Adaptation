@@ -32,7 +32,6 @@ python /scratch/as11919/transformers/examples/language-modeling/run_mlm.py \
     --save_steps 500 \
     --eval_steps 500 \
     --line_by_line \
-    --logging_first_step \
     --overwrite_output_dir \
     --run_name "debugging sh file" \
     --output_dir $SCRATCH/Domain-Adaptation/movie_roberta/to_delete
