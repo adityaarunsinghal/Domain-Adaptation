@@ -24,12 +24,15 @@ python $SCRATCH/transformers/examples/question-answering/run_qa.py \
   --dataset_name squad \
   --do_train \
   --do_eval \
-  --per_device_train_batch_size 128 \
+  --per_device_train_batch_size 64 \
+  --per_device_eval_batch_size 64 \
+  --save_steps 500 \
   --max_seq_length 384 \
   --doc_stride 128 \
-  --num_epochs 100 \
-  --overwrite_output_dir \
-  --overwrite_cache \
+  --num_train_epochs 100 \
+  --evaluation_strategy epoch \
+  --logging_first_step \
+  --run_name "MovieR-7Apr21 on Squadv1" \
   --output_dir $SCRATCH/Domain-Adaptation/models/movie_roberta/eval_on_squadv1/movieR_final_7april2021
 
 echo "Done! This was the main movieRoberta model trained on squadv1"

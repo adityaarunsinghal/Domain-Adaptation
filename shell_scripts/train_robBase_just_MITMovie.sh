@@ -25,7 +25,7 @@ python $SCRATCH/transformers/examples/token-classification/run_ner.py \
   --validation_file $SCRATCH/Domain-Adaptation/data/MIT_movie_NER/dict_structure/trivia_testing.json \
   --do_train \
   --do_eval \
-  --per_device_train_batch_size 512 \
+  --per_device_train_batch_size 64 \
   --overwrite_output_dir \
   --output_dir $SCRATCH/Domain-Adaptation/models/roberta_base_on_MITMovie/
 

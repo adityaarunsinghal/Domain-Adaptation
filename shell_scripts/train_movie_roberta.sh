@@ -22,19 +22,28 @@ conda activate
 
 # this was mlm continued on roberta
 
+# there has to be an argument to start with evaluation!!! check perplexity before training
+
 python $SCRATCH/Domain-Adaptation/make_movies_dataset.py
 
-python /scratch/as11919/transformers/examples/language-modeling/run_mlm.py \  
-# there has to be an argument to start with evaluation!!! check perplexity before training
+python /scratch/as11919/transformers/examples/language-modeling/run_mlm.py \
     --model_name_or_path roberta-base \
     --train_file $SCRATCH/Domain-Adaptation/data/simple_movie_text_MLM/ALL_DATA_train.txt \
     --validation_file $SCRATCH/Domain-Adaptation/data/simple_movie_text_MLM/ALL_DATA_test.txt \
     --do_train \
     --do_eval \
+    --per_device_train_batch_size 64 \
+    --per_device_eval_batch_size 64 \
+    --num_train_epochs 100 \
+    --evaluation_strategy epoch \
+    --overwrite_output_dir \
     --save_steps 7500 \
     --eval_steps 500 \
     --line_by_line \
-    --output_dir $SCRATCH/Domain-Adaptation/movie_roberta/roberta_DAPT_movies_model_withEVAL
+    --logging_first_step \
+    --overwrite_output_dir \
+    --run_name "Making MovieR 100 epoch" \
+    --output_dir $SCRATCH/Domain-Adaptation/movie_roberta/movie_roberta_15April2021
 
 echo "Done!"
 "
@@ -45,38 +54,3 @@ echo "Done!"
 #also export datsets as jsons directly from HF datasets library
 
 # use Json Lines format!!!!!
-
-
-# default_config =     "attention_probs_dropout_prob": 0.1,
-#   "bos_token_id": 0,
-#   "eos_token_id": 2,
-#   "gradient_checkpointing": false,
-#   "hidden_act": "gelu",
-#   "hidden_dropout_prob": 0.1,
-#   "hidden_size": 768,
-#   "initializer_range": 0.02,
-#   "intermediate_size": 3072,
-#   "layer_norm_eps": 1e-05,
-#   "max_position_embeddings": 514,
-#   "model_type": "roberta",
-#   "num_attention_heads": 12,
-#   "num_hidden_layers": 12,
-#   "pad_token_id": 1,
-#   "position_embedding_type": "absolute",
-#   "transformers_version": "4.4.0.dev0",
-#   "type_vocab_size": 1,
-#   "use_cache": true,
-#   "vocab_size": 50265
-
-
-# this was movie_roberta from scratch
-# python DAPT_movies_scratch.py
-
-# this was wiki_movies roberta
-# python /scratch/as11919/transformers/examples/language-modeling/run_mlm.py \
-#     --model_name_or_path roberta-base \
-#     --train_file /scratch/as11919/Domain-Adaptation/movie_roberta/data/full_qa_train.csv \
-#     --validation_file /scratch/as11919/Domain-Adaptation/movie_roberta/data/full_qa_dev.csv \
-#     --do_train \
-#     --do_eval \
-#     --output_dir /scratch/as11919/Domain-Adaptation/models/movie_roberta
