@@ -2,7 +2,6 @@
 
 #SBATCH --job-name=debug
 #SBATCH --nodes=1
-# #SBATCH --open-mode=append
 #SBATCH --output=./slurm_logs/%j.out
 #SBATCH --error=./slurm_logs/%j.err
 #SBATCH --export=ALL
@@ -31,10 +30,10 @@ python /scratch/as11919/transformers/examples/language-modeling/run_mlm.py \
     --save_steps 500 \
     --eval_steps 500 \
     --line_by_line \
+    --output_dir /scratch/as11919/Domain-Adaptation/movie_roberta/to_delete \
     --logging_first_step \
     --overwrite_output_dir \
-    --run_name debugging sh file \
-    --output_dir /scratch/as11919/Domain-Adaptation/movie_roberta/to_delete
+    --run_name 'debugging sh file'
 
 echo "Done!"
 "
