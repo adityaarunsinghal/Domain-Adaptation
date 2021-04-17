@@ -6,11 +6,11 @@
 #SBATCH --output=./slurm_logs/%j_movieR7Apr_on_squadv1.out
 #SBATCH --error=./slurm_logs/%j_movieR7Apr_on_squadv1.err
 #SBATCH --export=ALL
-#SBATCH --cpus-per-task 8
+#SBATCH --cpus-per-task 4
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=128GB
 #SBATCH --time=3-00:00:00
-#SBATCH --gres=gpu:3
+#SBATCH --gres=gpu:2
 #SBATCH --mail-type=ALL
 #SBATCH -c 8
 #SBATCH --mail-user=adis@nyu.edu
