@@ -31,12 +31,12 @@ python /scratch/as11919/transformers/examples/language-modeling/run_mlm.py \
     --output_dir $SCRATCH/Domain-Adaptation/movie_roberta/movie_roberta_15April2021 \
     --do_train \
     --do_eval \
-    --per_device_train_batch_size 32 \
-    --per_device_eval_batch_size 32 \
+    --per_device_train_batch_size 20 \
+    --per_device_eval_batch_size 20 \
     --num_train_epochs 100 \
     --evaluation_strategy epoch \
     --overwrite_output_dir \
-    --save_steps 7500 \
+    --save_steps 100000 \
     --eval_steps 500 \
     --line_by_line \
     --logging_first_step \
