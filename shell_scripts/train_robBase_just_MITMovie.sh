@@ -22,8 +22,8 @@ conda activate
 
 python $SCRATCH/transformers/examples/token-classification/run_ner.py \
   --model_name_or_path roberta-base \
-  --train_file $SCRATCH/Domain-Adaptation/data/MIT_movie_NER/dict_structure/trivia_training.jsonl \
-  --validation_file $SCRATCH/Domain-Adaptation/data/MIT_movie_NER/dict_structure/trivia_val.jsonl \
+  --train_file $SCRATCH/Domain-Adaptation/data/MIT_movie_NER/dict_structure/trivia_training.json \
+  --validation_file $SCRATCH/Domain-Adaptation/data/MIT_movie_NER/dict_structure/trivia_val.json \
   --output_dir $SCRATCH/Domain-Adaptation/models/roberta_base_on_MITMovieNER/ \
   --do_train \
   --do_eval \
