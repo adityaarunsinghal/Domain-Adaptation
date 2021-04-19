@@ -22,8 +22,7 @@ conda activate
 
 python $SCRATCH/transformers/examples/legacy/token-classification/run_ner.py \
   --model_name_or_path roberta-base \
-  --train_file $SCRATCH/Domain-Adaptation/data/MIT_movie_NER/dict_structure/trivia_training.json \
-  --validation_file $SCRATCH/Domain-Adaptation/data/MIT_movie_NER/dict_structure/trivia_val.json \
+  --data_dir /home/as11919/Domain-Adaptation/data/MIT_movie_NER/txt_json_structure \
   --output_dir $SCRATCH/Domain-Adaptation/models/roberta_base_on_MITMovieNER/ \
   --do_train \
   --do_eval \
@@ -36,6 +35,23 @@ python $SCRATCH/transformers/examples/legacy/token-classification/run_ner.py \
   --eval_steps 500 \
   --logging_first_step \
   --run_name "Testing RobBase on MIT_movie_NER"
+
+# python $SCRATCH/transformers/examples/token-classification/run_ner.py \
+#   --model_name_or_path roberta-base \
+#   --train_file $SCRATCH/Domain-Adaptation/data/MIT_movie_NER/dict_structure/trivia_training.json \
+#   --validation_file $SCRATCH/Domain-Adaptation/data/MIT_movie_NER/dict_structure/trivia_val.json \
+#   --output_dir $SCRATCH/Domain-Adaptation/models/roberta_base_on_MITMovieNER/ \
+#   --do_train \
+#   --do_eval \
+#   --per_device_train_batch_size 64 \
+#   --per_device_eval_batch_size 20 \
+#   --num_train_epochs 1 \
+#   --overwrite_output_dir \
+#   --evaluation_strategy steps \
+#   --save_steps 1000 \
+#   --eval_steps 500 \
+#   --logging_first_step \
+#   --run_name "Testing RobBase on MIT_movie_NER"
 
 echo "Done! This was the plain roberta base model trained on MITMovie - NER"
 "
