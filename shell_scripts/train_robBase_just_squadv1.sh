@@ -14,7 +14,7 @@
 #SBATCH -c 8
 #SBATCH --mail-user=adis@nyu.edu
 
-singularity exec --nv --overlay $SCRATCH/overlay-50G-10M.ext3:ro /scratch/work/public/singularity/cuda10.1-cudnn7-devel-ubuntu18.04-20201207.sif /bin/bash -c "
+singularity exec --nv --overlay $SCRATCH/overlay-50G-10M.ext3:rw /scratch/work/public/singularity/cuda11.0-cudnn8-devel-ubuntu18.04.sif /bin/bash -c "
 
 source /ext3/env.sh
 conda activate
@@ -22,14 +22,21 @@ conda activate
 python $SCRATCH/transformers/examples/question-answering/run_qa.py \
   --model_name_or_path roberta-base \
   --dataset_name squad \
+  --output_dir $SCRATCH/Domain-Adaptation/models/plain_roberta_on_squadv1 \
   --do_train \
   --do_eval \
-  --per_device_train_batch_size 12 \
+  --num_train_epochs 100 \
+  --evaluation_strategy steps \
+  --save_steps 2000 \
+  --eval_steps 1000 \
+  --per_device_train_batch_size 32 \
+  --per_device_eval_batch_size 20 \
+  --logging_first_step \
   --max_seq_length 384 \
   --doc_stride 128 \
   --overwrite_output_dir \
   --overwrite_cache \
-  --output_dir $SCRATCH/Domain-Adaptation/models/movie_roberta/eval_on_squadv1/plain_roberta_8april2021
+  --run_name "Training RobBase on Squadv1 - 100 epochs"
 
 echo "Done! This was the plain roberta base model trained on squadv1"
 "

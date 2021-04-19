@@ -15,7 +15,7 @@
 #SBATCH -c 8
 #SBATCH --mail-user=adis@nyu.edu
 
-singularity exec --nv --overlay $SCRATCH/overlay-50G-10M.ext3:ro /scratch/work/public/singularity/cuda11.0-cudnn8-devel-ubuntu18.04.sif /bin/bash -c "
+singularity exec --nv --overlay $SCRATCH/overlay-50G-10M.ext3:rw /scratch/work/public/singularity/cuda11.0-cudnn8-devel-ubuntu18.04.sif /bin/bash -c "
 
 source /ext3/env.sh
 conda activate
@@ -33,18 +33,17 @@ python /scratch/as11919/transformers/examples/language-modeling/run_mlm.py \
     --do_eval \
     --per_device_train_batch_size 20 \
     --per_device_eval_batch_size 20 \
-    --num_train_epochs 100 \
-    --evaluation_strategy epoch \
+    --num_train_epochs 2 \
+    --evaluation_strategy steps \
     --overwrite_output_dir \
-    --save_steps 100000 \
-    --eval_steps 500 \
+    --save_steps 10000 \
+    --eval_steps 10000 \
+    —-preprocessing_num_workers 8 \
     --line_by_line \
     --logging_first_step \
-    --overwrite_output_dir \
-    --overwrite_cache \
-    --run_name "Making MovieR 100 epoch"
+    --run_name "Making MovieR cont. 2 epoch"
 
-echo "Done! this was Making MovieR 100 epoch"
+echo "Done!"
 "
 
 # do everything on interactive!!!!
