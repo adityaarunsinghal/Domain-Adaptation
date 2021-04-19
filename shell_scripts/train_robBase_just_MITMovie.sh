@@ -20,7 +20,7 @@ singularity exec --nv --overlay $SCRATCH/overlay-50G-10M.ext3:rw /scratch/work/p
 source /ext3/env.sh
 conda activate
 
-python $SCRATCH/transformers/examples/token-classification/run_ner.py \
+python $SCRATCH/transformers/examples/legacy/token-classification/run_ner.py \
   --model_name_or_path roberta-base \
   --train_file $SCRATCH/Domain-Adaptation/data/MIT_movie_NER/dict_structure/trivia_training.json \
   --validation_file $SCRATCH/Domain-Adaptation/data/MIT_movie_NER/dict_structure/trivia_val.json \
@@ -35,7 +35,6 @@ python $SCRATCH/transformers/examples/token-classification/run_ner.py \
   --save_steps 1000 \
   --eval_steps 500 \
   --logging_first_step \
-  --add_prefix_space \
   --run_name "Testing RobBase on MIT_movie_NER"
 
 echo "Done! This was the plain roberta base model trained on MITMovie - NER"
