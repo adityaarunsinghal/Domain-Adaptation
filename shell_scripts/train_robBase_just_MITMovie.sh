@@ -8,7 +8,7 @@
 #SBATCH --export=ALL
 #SBATCH --cpus-per-task=8
 #SBATCH --ntasks-per-node=1
-#SBATCH --mem=64GB
+#SBATCH --mem=128GB
 #SBATCH --time=1-00:00:00
 #SBATCH --gres=gpu:2
 #SBATCH --mail-type=ALL
@@ -28,13 +28,20 @@ python $SCRATCH/transformers/examples/legacy/token-classification/run_ner.py \
   --do_eval \
   --per_device_train_batch_size 64 \
   --per_device_eval_batch_size 20 \
-  --num_train_epochs 1 \
+  --num_train_epochs 100 \
   --overwrite_output_dir \
   --evaluation_strategy steps \
   --save_steps 1000 \
   --eval_steps 500 \
   --logging_first_step \
-  --run_name "Testing RobBase on MIT_movie_NER"
+  --run_name "Testing RobBase on MIT_movie_NER - 100 epoch - legacy file"
+
+
+echo "Done! This was the plain roberta base model trained on MITMovie - NER"
+"
+
+# non legacy version - gives tokenizer bug
+
 
 # python $SCRATCH/transformers/examples/token-classification/run_ner.py \
 #   --model_name_or_path roberta-base \
@@ -52,6 +59,3 @@ python $SCRATCH/transformers/examples/legacy/token-classification/run_ner.py \
 #   --eval_steps 500 \
 #   --logging_first_step \
 #   --run_name "Testing RobBase on MIT_movie_NER"
-
-echo "Done! This was the plain roberta base model trained on MITMovie - NER"
-"
