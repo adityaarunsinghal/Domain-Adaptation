@@ -34,7 +34,6 @@ python $SCRATCH/transformers/examples/token-classification/run_ner.py \
   --evaluation_strategy steps \
   --save_steps 1000 \
   --eval_steps 500 \
-  —-preprocessing_num_workers 8 \
   --logging_first_step \
   --run_name "Testing RobBase on MIT_movie_NER"
 

@@ -35,10 +35,8 @@ python /scratch/as11919/transformers/examples/language-modeling/run_mlm.py \
     --per_device_eval_batch_size 20 \
     --num_train_epochs 2 \
     --evaluation_strategy steps \
-    --overwrite_output_dir \
     --save_steps 10000 \
-    --eval_steps 10000 \
-    —-preprocessing_num_workers 8 \
+    --eval_steps 2000 \
     --line_by_line \
     --logging_first_step \
     --run_name "Making MovieR cont. 2 epoch"
