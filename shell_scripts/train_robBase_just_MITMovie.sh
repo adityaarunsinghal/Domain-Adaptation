@@ -35,6 +35,7 @@ python $SCRATCH/transformers/examples/token-classification/run_ner.py \
   --save_steps 1000 \
   --eval_steps 500 \
   --logging_first_step \
+  --add_prefix_space \
   --run_name "Testing RobBase on MIT_movie_NER"
 
 echo "Done! This was the plain roberta base model trained on MITMovie - NER"
