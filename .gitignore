@@ -1,9 +1,4 @@
 .vscode
 .idea
 .python-version
-models
 domain_venv
-datasets/movies/simple_movie_text_MLM/ALL_DATA.txt
-datasets/movies/simple_movie_text_MLM/ALL_DATA_train.txt
-datasets/movies/simple_movie_text_MLM/ALL_DATA_test.txt
-datasets/movies/data_for_inspection(scp-ed)
