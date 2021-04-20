@@ -1,0 +1,3 @@
+[submodule "CovidQA"]
+	path = CovidQA
+	url = https://github.com/Xiang-Pan/CovidQA
