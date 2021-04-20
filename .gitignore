@@ -1,4 +1,5 @@
 .vscode
+.idea
 .python-version
 domain_venv
 data/simple_movie_text_MLM/ALL_DATA.txt
