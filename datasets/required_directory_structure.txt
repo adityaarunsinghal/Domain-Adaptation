@@ -1,0 +1,51 @@
+.
+├── bio
+│   ├── squad.biomedical.dev.json
+│   ├── squad.biomedical.test.json
+│   └── squad.biomedical.train.json
+└── movies
+    ├── MIT_movie_NER
+    │   ├── csv_format
+    │   │   ├── trivia_testing.csv
+    │   │   └── trivia_training.csv
+    │   ├── dict_structure [12 entries exceeds filelimit, not opening dir]
+    │   ├── nested_lists [12 entries exceeds filelimit, not opening dir]
+    │   ├── original_files
+    │   │   ├── engtest.bio
+    │   │   ├── engtrain.bio
+    │   │   ├── trivia10k13test.bio
+    │   │   └── trivia10k13train.bio
+    │   └── txt_json_structure
+    │       ├── dev.txt
+    │       ├── test.txt
+    │       └── train.txt
+    ├── data_for_inspection(scp-ed)
+    │   ├── squad.film.test.json
+    │   ├── squad_dev-v2.0.json
+    │   └── squad_v2-validation.arrow
+    ├── lookup_table.json
+    ├── simple_movie_text_MLM
+    │   ├── cornell_movie_lines.txt
+    │   ├── imdb
+    │   │   ├── README
+    │   │   ├── imdb.vocab
+    │   │   ├── test
+    │   │   │   ├── neg [12500 entries exceeds filelimit, not opening dir]
+    │   │   │   └── pos [12500 entries exceeds filelimit, not opening dir]
+    │   │   └── train
+    │   │       ├── neg [12500 entries exceeds filelimit, not opening dir]
+    │   │       ├── pos [12500 entries exceeds filelimit, not opening dir]
+    │   │       └── unsup [50000 entries exceeds filelimit, not opening dir]
+    │   ├── movie_metadata.txt
+    │   ├── movie_names_25mlens.txt
+    │   ├── movie_names_25mlens_small_debug.txt
+    │   ├── polarity_movie_html_data_1.txt
+    │   └── polarity_movie_html_data_2.txt
+    └── wiki_movies_data
+        ├── full_qa_dev.csv
+        ├── full_qa_dev.txt
+        ├── full_qa_test.csv
+        ├── full_qa_test.txt
+        ├── full_qa_train.csv
+        └── full_qa_train.txt
+
