@@ -387,3 +387,48 @@
 │   └── saved_checkpoint_movieR_withEVAL
 ├── __pycache__
 └── shell_scripts
+
+
+
+
+
+
+----------
+
+├── data
+│   ├── MIT_movie_NER
+│   │   ├── csv_format
+│   │   ├── dict_structure
+│   │   ├── nested_lists
+│   │   ├── original_files
+│   │   └── txt_json_structure
+│   ├── data_for_inspection(scp-ed)
+│   ├── simple_movie_text_MLM
+│   │   └── imdb
+│   │       ├── test
+│   │       │   ├── neg
+│   │       │   └── pos
+│   │       └── train
+│   │           ├── neg
+│   │           ├── pos
+│   │           └── unsup
+│   └── wiki_movies_data
+├── domain-specific-QA
+├── domain_venv
+│   ├── bin
+│   ├── include
+│   ├── lib
+│   │   └── python3.8
+│   │       └── site-packages [83 entries exceeds filelimit, not opening dir]
+│   └── share
+│       ├── jupyter
+│       │   └── kernels
+│       │       └── python3
+│       └── man
+│           └── man1
+├── important_slurm_logs
+├── movie_roberta
+│   ├── final_movie_roberta_7April2021
+│   └── roberta_DAPT_movies_model
+├── read_json_NER_to_csv
+└── shell_scripts
