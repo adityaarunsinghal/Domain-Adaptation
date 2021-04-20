@@ -5,4 +5,6 @@ domain_venv
 data/movies/simple_movie_text_MLM/ALL_DATA.txt
 data/movies/simple_movie_text_MLM/ALL_DATA_train.txt
 data/movies/simple_movie_text_MLM/ALL_DATA_test.txt
+datasets/movies
+models
 data/movies/data_for_inspection(scp-ed)

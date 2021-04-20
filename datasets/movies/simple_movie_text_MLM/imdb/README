@@ -1,20 +1,3 @@
-REPLACE this sirectory imdb with the downloaded IMDB data which should have a tree structure like this :
-
-.
-├── test
-│   ├── neg
-│   └── pos
-└── train
-    ├── neg
-    ├── pos
-    └── unsup
-
-
--------------
-
-
-
-
 Large Movie Review Dataset v1.0
 
 Overview
