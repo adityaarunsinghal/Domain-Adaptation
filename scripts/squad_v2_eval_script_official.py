@@ -16,7 +16,7 @@
 
 import datasets
 
-from .evaluate_script_HF import apply_no_ans_threshold, get_raw_scores, make_eval_dict, make_qid_to_has_ans, merge_eval
+from scripts.evaluate_script_HF import apply_no_ans_threshold, get_raw_scores, make_eval_dict, make_qid_to_has_ans, merge_eval
 
 
 _CITATION = """\

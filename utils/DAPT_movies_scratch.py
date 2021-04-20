@@ -103,7 +103,7 @@ data_collator = DataCollatorForLanguageModeling(
 from transformers import Trainer, TrainingArguments
 
 training_args = TrainingArguments(
-    output_dir="./movie_roberta/roberta_DAPT_movies_model/",
+    output_dir="../models/movie_roberta/roberta_DAPT_movies_model/",
     overwrite_output_dir=True,
     num_train_epochs=1,
     per_gpu_train_batch_size=64,
