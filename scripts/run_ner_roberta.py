@@ -330,10 +330,10 @@ def main():
             word_ids = tokenized_inputs.word_ids(batch_index=i)
             previous_word_idx = None
             label_ids = []
-            for word_idx in word_ids:
-                print("word_idx = ", word_idx)
-                print("label_ids = ", label_ids)
-                pdb.set_trace()
+            for word_idx in word_ids[:-1]:
+                # print("word_idx = ", word_idx)
+                # print("label_ids = ", label_ids)
+                # pdb.set_trace()
                 # Special tokens have a word id that is None. We set the label to -100 so they are automatically
                 # ignored in the loss function.
                 if word_idx is None:
