@@ -3,8 +3,8 @@
 #SBATCH --job-name=movRsquad
 #SBATCH --nodes=1
 #SBATCH --open-mode=append
-#SBATCH --output=./slurm_logs/%j_movieR7Apr_on_squadv1.out
-#SBATCH --error=./slurm_logs/%j_movieR7Apr_on_squadv1.err
+#SBATCH --output=./slurm_logs/%j_movieR15Apr_on_squadv1.out
+#SBATCH --error=./slurm_logs/%j_movieR15Apr_on_squadv1.err
 #SBATCH --export=ALL
 #SBATCH --cpus-per-task 4
 #SBATCH --ntasks-per-node=1
@@ -21,49 +21,25 @@ source /ext3/env.sh
 conda activate
 
 python $SCRATCH/transformers/examples/question-answering/run_qa.py \
-  --model_name_or_path /scratch/as11919/Domain-Adaptation/movie_roberta/final_movie_roberta_7April2021 \
+  --model_name_or_path /scratch/as11919/Domain-Adaptation/movie_roberta/movie_roberta_15April2021 \
   --dataset_name squad \
+  --output_dir $SCRATCH/Domain-Adaptation/models/movieR_15April2021_on_squadv1 \
+  --test_file $SCRATCH/Domain-Adaptation/data/squad.film.all.json \
   --do_train \
   --do_eval \
-  --per_device_train_batch_size 64 \
-  --per_device_eval_batch_size 64 \
-  --save_steps 500 \
-  --num_train_epochs 100 \
-  --output_dir $SCRATCH/Domain-Adaptation/models/movie_roberta/eval_on_squadv1/movieR_final_7april2021 \
+  --do_predict \
+  --num_train_epochs 10 \
+  --evaluation_strategy steps \
+  --save_steps 7500 \
+  --eval_steps 7500 \
+  --per_device_train_batch_size 32 \
+  --per_device_eval_batch_size 20 \
+  --max_seq_length 384 \
+  --doc_stride 128 \
+  --overwrite_output_dir \
   --evaluation_strategy epoch \
   --logging_first_step \
-  --run_name "MovieR-7Apr21 on Squadv1 - 100 epochs" 
+  --run_name "MovieR-15Apr21 on Squadv1 - 10 epochs"
 
-echo "Done! This was the main movieRoberta model trained on squadv1"
+echo "Done!"
 "
-
-#python $SCRATCH/transformers/examples/question-answering/run_qa.py \
-#  --model_name_or_path /scratch/as11919/Domain-Adaptation/movie_roberta/final_movie_roberta_7April2021 \
-#  --dataset_name squad \
-#  --do_train \
-#  --do_eval \
-#  --per_device_train_batch_size 32 \
-#  --per_device_eval_batch_size 32 \
-#  --save_steps 500 \
-#  --num_train_epochs 1 \
-#  --overwrite_output_dir \
-#  --output_dir $SCRATCH/Domain-Adaptation/models/movie_roberta/eval_on_squadv1/movieR_final_7april2021 \
-#  --evaluation_strategy epoch \
-#  --logging_first_step \
-#  --run_name "MovieR-7Apr21 on Squadv1 - 1 epoch (test)"
-
-
-#  python $SCRATCH/transformers/examples/question-answering/run_qa.py \
-#  --model_name_or_path roberta-base \
-#  --dataset_name squad \
-#  --do_train \
-#  --do_eval \
-#  --per_device_train_batch_size 32 \
-#  --per_device_eval_batch_size 32 \
-#  --save_steps 500 \
-#  --num_train_epochs 1 \
-#  --overwrite_output_dir \
-#  --output_dir $SCRATCH/Domain-Adaptation/models/movie_roberta/eval_on_squadv1/movieR_final_7april2021 \
-#  --evaluation_strategy epoch \
-#  --logging_first_step \
-#  --run_name "RobBase on Squadv1 - 1 epoch (test)"
