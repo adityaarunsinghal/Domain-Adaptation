@@ -330,7 +330,7 @@ def main():
             word_ids = tokenized_inputs.word_ids(batch_index=i)
             previous_word_idx = None
             label_ids = []
-            for word_idx in word_ids[:-1]:
+            for word_idx in word_ids:
                 print("word_idx = ", word_idx)
                 print("label_ids = ", label_ids)
                 pdb.set_trace()
