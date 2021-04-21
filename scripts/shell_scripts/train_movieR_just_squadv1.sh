@@ -21,7 +21,7 @@ source /ext3/env.sh
 conda activate
 
 python $SCRATCH/transformers/examples/question-answering/run_qa.py \
-  --model_name_or_path /scratch/as11919/Domain-Adaptation/movie_roberta/movie_roberta_15April2021 \
+  --model_name_or_path $SCRATCH/Domain-Adaptation/models/movie_roberta/movie_roberta_15April2021 \
   --dataset_name squad \
   --output_dir $SCRATCH/Domain-Adaptation/models/movieR_15April2021_on_squadv1 \
   --test_file $SCRATCH/Domain-Adaptation/datasets/movies/squad.film.all.json \
