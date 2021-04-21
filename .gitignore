@@ -1,13 +1,7 @@
-<<<<<<< HEAD
 .vscode
 .idea
 .python-version
 domain_venv
 models
 datasets
-=======
-.vscode
-.idea
-.python-version
-domain_venv
->>>>>>> 1dc9468baddf89cfafb70159cd5d576248a2621b
+
