@@ -24,7 +24,7 @@ import os
 import sys
 from dataclasses import dataclass, field
 from typing import Optional
-# import pdb
+import pdb
 
 import numpy as np
 from datasets import ClassLabel, load_dataset, load_metric
@@ -266,6 +266,12 @@ def main():
         return label_list
 
     if isinstance(features[label_column_name].feature, ClassLabel):
+        
+        print("features = ", features)
+        print("label_column_name = ", label_column_name)
+        print("features[label_column_name] = ", features[label_column_name])
+        pdb.set_trace()
+
         label_list = features[label_column_name].feature.names
         # No need to convert the labels since they are already ints.
         label_to_id = {i: i for i in range(len(label_list))}
