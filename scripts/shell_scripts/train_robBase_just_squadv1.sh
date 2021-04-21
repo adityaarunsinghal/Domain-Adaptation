@@ -34,6 +34,7 @@ conda activate
   --max_seq_length 384 \
   --doc_stride 128 \
   --overwrite_output_dir \
+  --overwrite_cache \
   --evaluation_strategy steps \
   --logging_first_step \
   --run_name "Roberta Base on Squadv1 - 10 epochs"

@@ -25,13 +25,13 @@ conda activate
   --train_file $SCRATCH/Domain-Adaptation/datasets/movies/MIT_movie_NER/dict_structure/trivia_training.json \
   --validation_file $SCRATCH/Domain-Adaptation/datasets/movies/MIT_movie_NER/dict_structure/trivia_val.json \
   --output_dir $SCRATCH/Domain-Adaptation/models/movieR_on_MITMovieNER/ \
-  --dataset_config_name conll2003 \
   --do_train \
   --do_eval \
   --per_device_train_batch_size 64 \
   --per_device_eval_batch_size 20 \
   --num_train_epochs 10 \
   --overwrite_output_dir \
+  --overwrite_cache \
   --evaluation_strategy steps \
   --save_steps 1000 \
   --eval_steps 500 \
@@ -40,3 +40,23 @@ conda activate
 
 echo "Done!"
 "
+
+
+  # python $SCRATCH/Domain-Adaptation/scripts/run_ner_roberta.py \
+  # --model_name_or_path $SCRATCH/Domain-Adaptation/models/movie_roberta/movie_roberta_15April2021 \
+  # --train_file $SCRATCH/Domain-Adaptation/datasets/movies/MIT_movie_NER/dict_structure/trivia_training.json \
+  # --validation_file $SCRATCH/Domain-Adaptation/datasets/movies/MIT_movie_NER/dict_structure/trivia_val.json \
+  # --output_dir $SCRATCH/Domain-Adaptation/models/movieR_on_MITMovieNER/ \
+  # --dataset_config_name conll2003 \
+  # --do_train \
+  # --do_eval \
+  # --per_device_train_batch_size 64 \
+  # --per_device_eval_batch_size 20 \
+  # --num_train_epochs 1 \
+  # --overwrite_output_dir \
+  # --overwrite_cache \
+  # --evaluation_strategy steps \
+  # --save_steps 1000 \
+  # --eval_steps 500 \
+  # --logging_first_step \
+  # --run_name "Testing movieR on MIT_movie_NER - 1 epoch"
