@@ -8,7 +8,7 @@
 #SBATCH --export=ALL
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=64GB
-#SBATCH --time=1-00:00:00
+#SBATCH --time=0-20:00:00
 #SBATCH --gres=gpu:2
 #SBATCH --mail-type=ALL
 #SBATCH -c 8
@@ -23,10 +23,8 @@ conda activate
   --model_name_or_path roberta-base \
   --dataset_name squad \
   --output_dir $SCRATCH/Domain-Adaptation/models/plain_roberta_on_squadv1 \
-  --test_file $SCRATCH/Domain-Adaptation/data/squad.film.all.json \
   --do_train \
   --do_eval \
-  --do_predict \
   --num_train_epochs 10 \
   --evaluation_strategy steps \
   --save_steps 7500 \
@@ -36,7 +34,7 @@ conda activate
   --max_seq_length 384 \
   --doc_stride 128 \
   --overwrite_output_dir \
-  --evaluation_strategy epoch \
+  --evaluation_strategy steps \
   --logging_first_step \
   --run_name "Roberta Base on Squadv1 - 10 epochs"
 

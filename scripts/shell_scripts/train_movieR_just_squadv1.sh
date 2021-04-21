@@ -9,7 +9,7 @@
 #SBATCH --cpus-per-task 4
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=128GB
-#SBATCH --time=3-00:00:00
+#SBATCH --time=0-20:00:00
 #SBATCH --gres=gpu:2
 #SBATCH --mail-type=ALL
 #SBATCH -c 8
@@ -24,7 +24,7 @@ python $SCRATCH/transformers/examples/question-answering/run_qa.py \
   --model_name_or_path /scratch/as11919/Domain-Adaptation/movie_roberta/movie_roberta_15April2021 \
   --dataset_name squad \
   --output_dir $SCRATCH/Domain-Adaptation/models/movieR_15April2021_on_squadv1 \
-  --test_file $SCRATCH/Domain-Adaptation/data/squad.film.all.json \
+  --test_file $SCRATCH/Domain-Adaptation/datasets/movies/squad.film.all.json \
   --do_train \
   --do_eval \
   --do_predict \
@@ -37,7 +37,7 @@ python $SCRATCH/transformers/examples/question-answering/run_qa.py \
   --max_seq_length 384 \
   --doc_stride 128 \
   --overwrite_output_dir \
-  --evaluation_strategy epoch \
+  --evaluation_strategy steps \
   --logging_first_step \
   --run_name "MovieR-15Apr21 on Squadv1 - 10 epochs"
 

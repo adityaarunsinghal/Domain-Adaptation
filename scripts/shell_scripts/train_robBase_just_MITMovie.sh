@@ -36,7 +36,6 @@ python $SCRATCH/transformers/examples/legacy/token-classification/run_ner.py \
   --logging_first_step \
   --run_name "Testing RobBase on MIT_movie_NER - 10 epoch - legacy file"
 
-
 echo "Done!"
 "
 
