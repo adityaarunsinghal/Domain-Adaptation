@@ -15,12 +15,12 @@
 #SBATCH -c 8
 #SBATCH --mail-user=adis@nyu.edu
 
-singularity exec --nv --overlay $SCRATCH/overlay-50G-10M.ext3:rw /scratch/work/public/singularity/cuda11.0-cudnn8-devel-ubuntu18.04.sif /bin/bash -c "
+singularity exec --nv --overlay $SCRATCH/overlay-50G-10M.ext3:ro /scratch/work/public/singularity/cuda11.0-cudnn8-devel-ubuntu18.04.sif /bin/bash -c "
 
 source /ext3/env.sh
 conda activate
 
-python $SCRATCH/transformers/examples/legacy/token-classification/run_ner.py \
+python $SCRATCH/Domain-Adaptation/scripts/run_ner_roberta.py \
   --model_name_or_path roberta-base \
   --data_dir /home/as11919/Domain-Adaptation/data/MIT_movie_NER/txt_json_structure \
   --output_dir $SCRATCH/Domain-Adaptation/models/roberta_base_on_MITMovieNER/ \
