@@ -37,33 +37,33 @@ python $SCRATCH/transformers/examples/question-answering/run_qa.py \
 echo "Done! This was the main movieRoberta model trained on squadv1"
 "
 
-python $SCRATCH/transformers/examples/question-answering/run_qa.py \
-  --model_name_or_path /scratch/as11919/Domain-Adaptation/movie_roberta/final_movie_roberta_7April2021 \
-  --dataset_name squad \
-  --do_train \
-  --do_eval \
-  --per_device_train_batch_size 32 \
-  --per_device_eval_batch_size 32 \
-  --save_steps 500 \
-  --num_train_epochs 1 \
-  --overwrite_output_dir \
-  --output_dir $SCRATCH/Domain-Adaptation/models/movie_roberta/eval_on_squadv1/movieR_final_7april2021 \
-  --evaluation_strategy epoch \
-  --logging_first_step \
-  --run_name "MovieR-7Apr21 on Squadv1 - 1 epoch (test)" 
+#python $SCRATCH/transformers/examples/question-answering/run_qa.py \
+#  --model_name_or_path /scratch/as11919/Domain-Adaptation/movie_roberta/final_movie_roberta_7April2021 \
+#  --dataset_name squad \
+#  --do_train \
+#  --do_eval \
+#  --per_device_train_batch_size 32 \
+#  --per_device_eval_batch_size 32 \
+#  --save_steps 500 \
+#  --num_train_epochs 1 \
+#  --overwrite_output_dir \
+#  --output_dir $SCRATCH/Domain-Adaptation/models/movie_roberta/eval_on_squadv1/movieR_final_7april2021 \
+#  --evaluation_strategy epoch \
+#  --logging_first_step \
+#  --run_name "MovieR-7Apr21 on Squadv1 - 1 epoch (test)"
 
 
-  python $SCRATCH/transformers/examples/question-answering/run_qa.py \
-  --model_name_or_path roberta-base \
-  --dataset_name squad \
-  --do_train \
-  --do_eval \
-  --per_device_train_batch_size 32 \
-  --per_device_eval_batch_size 32 \
-  --save_steps 500 \
-  --num_train_epochs 1 \
-  --overwrite_output_dir \
-  --output_dir $SCRATCH/Domain-Adaptation/models/movie_roberta/eval_on_squadv1/movieR_final_7april2021 \
-  --evaluation_strategy epoch \
-  --logging_first_step \
-  --run_name "RobBase on Squadv1 - 1 epoch (test)" 
+#  python $SCRATCH/transformers/examples/question-answering/run_qa.py \
+#  --model_name_or_path roberta-base \
+#  --dataset_name squad \
+#  --do_train \
+#  --do_eval \
+#  --per_device_train_batch_size 32 \
+#  --per_device_eval_batch_size 32 \
+#  --save_steps 500 \
+#  --num_train_epochs 1 \
+#  --overwrite_output_dir \
+#  --output_dir $SCRATCH/Domain-Adaptation/models/movie_roberta/eval_on_squadv1/movieR_final_7april2021 \
+#  --evaluation_strategy epoch \
+#  --logging_first_step \
+#  --run_name "RobBase on Squadv1 - 1 epoch (test)"

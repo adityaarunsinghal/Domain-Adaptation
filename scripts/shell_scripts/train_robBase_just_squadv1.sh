@@ -25,18 +25,16 @@ python $SCRATCH/transformers/examples/question-answering/run_qa.py \
   --output_dir $SCRATCH/Domain-Adaptation/models/plain_roberta_on_squadv1 \
   --do_train \
   --do_eval \
-  --num_train_epochs 100 \
+  --num_train_epochs 50 \
   --evaluation_strategy steps \
-  --save_steps 2000 \
-  --eval_steps 1000 \
+  --save_steps 7500 \
+  --eval_steps 7500 \
   --per_device_train_batch_size 32 \
   --per_device_eval_batch_size 20 \
   --logging_first_step \
   --max_seq_length 384 \
   --doc_stride 128 \
-  --overwrite_output_dir \
-  --overwrite_cache \
-  --run_name "Training RobBase on Squadv1 - 100 epochs"
+  --run_name "Training RobBase on Squadv1 - 50 epochs"
 
 echo "Done! This was the plain roberta base model trained on squadv1"
 "
