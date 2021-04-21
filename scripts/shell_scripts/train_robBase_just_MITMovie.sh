@@ -9,7 +9,7 @@
 #SBATCH --cpus-per-task=8
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=128GB
-#SBATCH --time=1-00:00:00
+#SBATCH --time=0-20:00:00
 #SBATCH --gres=gpu:2
 #SBATCH --mail-type=ALL
 #SBATCH -c 8
@@ -61,16 +61,17 @@ echo "Done!"
 #   --run_name "Testing RobBase on MIT_movie_NER - 10 epoch - legacy file"
 
 
-  python $SCRATCH/Domain-Adaptation/scripts/run_ner_roberta.py \
-  --model_name_or_path roberta-base \
-  --train_file $SCRATCH/Domain-Adaptation/datasets/movies/MIT_movie_NER/dict_structure/trivia_training.json \
-  --validation_file $SCRATCH/Domain-Adaptation/datasets/movies/MIT_movie_NER/dict_structure/trivia_val.json \
-  --output_dir $SCRATCH/Domain-Adaptation/models/roberta_base_on_MITMovieNER/ \
-  --do_train \
-  --do_eval \
-  --per_device_train_batch_size 64 \
-  --per_device_eval_batch_size 20 \
-  --num_train_epochs 1 \
-  --overwrite_output_dir \
-  --logging_first_step \
-  --run_name "Testing RobBase on MIT_movie_NER - 10 epoch"
+  # python $SCRATCH/Domain-Adaptation/scripts/run_ner_roberta.py \
+  # --model_name_or_path roberta-base \
+  # --train_file $SCRATCH/Domain-Adaptation/datasets/movies/MIT_movie_NER/dict_structure/trivia_training.json \
+  # --validation_file $SCRATCH/Domain-Adaptation/datasets/movies/MIT_movie_NER/dict_structure/trivia_val.json \
+  # --output_dir $SCRATCH/Domain-Adaptation/models/roberta_base_on_MITMovieNER/ \
+  # --dataset_config_name conll2003 \
+  # --do_train \
+  # --do_eval \
+  # --per_device_train_batch_size 64 \
+  # --per_device_eval_batch_size 20 \
+  # --num_train_epochs 1 \
+  # --overwrite_output_dir \
+  # --logging_first_step \
+  # --run_name "Testing RobBase on MIT_movie_NER - 10 epoch"
