@@ -326,20 +326,20 @@ def main():
             is_split_into_words=True,
         )
         labels = []
-        pdb.set_trace()
         for i, label in enumerate(examples[label_column_name]):
             word_ids = tokenized_inputs.word_ids(batch_index=i)
             previous_word_idx = None
             label_ids = []
-            pdb.set_trace()
             for word_idx in word_ids:
+                print("word_idx = ", word_idx)
+                print("label_ids = ", label_ids)
+                pdb.set_trace()
                 # Special tokens have a word id that is None. We set the label to -100 so they are automatically
                 # ignored in the loss function.
                 if word_idx is None:
                     label_ids.append(-100)
                 # We set the label for the first token of each word.
                 elif word_idx != previous_word_idx:
-                    pdb.set_trace()
                     label_ids.append(label_to_id[label[word_idx]])
                 # For the other tokens in a word, we set the label to either the current label or -100, depending on
                 # the label_all_tokens flag.
