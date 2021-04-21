@@ -25,6 +25,7 @@ conda activate
   --train_file $SCRATCH/Domain-Adaptation/datasets/movies/MIT_movie_NER/dict_structure/trivia_training.json \
   --validation_file $SCRATCH/Domain-Adaptation/datasets/movies/MIT_movie_NER/dict_structure/trivia_val.json \
   --output_dir $SCRATCH/Domain-Adaptation/models/roberta_base_on_MITMovieNER/ \
+  --dataset_config_name conll2003 \
   --do_train \
   --do_eval \
   --per_device_train_batch_size 64 \
