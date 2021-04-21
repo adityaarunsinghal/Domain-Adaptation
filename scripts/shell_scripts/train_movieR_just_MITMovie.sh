@@ -99,7 +99,7 @@ python run_ner_roberta.py \
 
 
   python run_ner_roberta.py \
-  --model_name_or_path distil-roberta \
+  --model_name_or_path robert-base \
   --dataset_name conll2003 \
   --output_dir $SCRATCH/Domain-Adaptation/models/robBase_on_conll/ \
   --learning_rate 3e-5 \
