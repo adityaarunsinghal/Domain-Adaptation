@@ -20,9 +20,10 @@ singularity exec --nv --overlay $SCRATCH/overlay-50G-10M.ext3:ro /scratch/work/p
 source /ext3/env.sh
 conda activate
 
-python $SCRATCH/Domain-Adaptation/scripts/run_ner_roberta.py \
+  python $SCRATCH/Domain-Adaptation/scripts/run_ner_roberta.py \
   --model_name_or_path roberta-base \
-  --data_dir /home/as11919/Domain-Adaptation/data/MIT_movie_NER/txt_json_structure \
+  --train_file $SCRATCH/Domain-Adaptation/datasets/movies/MIT_movie_NER/dict_structure/trivia_training.json \
+  --validation_file $SCRATCH/Domain-Adaptation/datasets/movies/MIT_movie_NER/dict_structure/trivia_val.json \
   --output_dir $SCRATCH/Domain-Adaptation/models/roberta_base_on_MITMovieNER/ \
   --do_train \
   --do_eval \
@@ -34,7 +35,7 @@ python $SCRATCH/Domain-Adaptation/scripts/run_ner_roberta.py \
   --save_steps 1000 \
   --eval_steps 500 \
   --logging_first_step \
-  --run_name "Testing RobBase on MIT_movie_NER - 10 epoch - legacy file"
+  --run_name "Testing RobBase on MIT_movie_NER - 10 epoch"
 
 echo "Done!"
 "
@@ -42,10 +43,9 @@ echo "Done!"
 # non legacy version - gives tokenizer bug
 
 
-# python $SCRATCH/transformers/examples/token-classification/run_ner.py \
+# python $SCRATCH/transformers/examples/legacy/token-classification/run_ner.py \
 #   --model_name_or_path roberta-base \
-#   --train_file $SCRATCH/Domain-Adaptation/data/MIT_movie_NER/dict_structure/trivia_training.json \
-#   --validation_file $SCRATCH/Domain-Adaptation/data/MIT_movie_NER/dict_structure/trivia_val.json \
+#   --data_dir /home/as11919/Domain-Adaptation/datasets/movies/MIT_movie_NER/txt_json_structure \
 #   --output_dir $SCRATCH/Domain-Adaptation/models/roberta_base_on_MITMovieNER/ \
 #   --do_train \
 #   --do_eval \
@@ -57,4 +57,4 @@ echo "Done!"
 #   --save_steps 1000 \
 #   --eval_steps 500 \
 #   --logging_first_step \
-#   --run_name "Testing RobBase on MIT_movie_NER - 10 epoch"
+#   --run_name "Testing RobBase on MIT_movie_NER - 10 epoch - legacy file"
