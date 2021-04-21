@@ -7,6 +7,7 @@ This is the Spring 2021 collaboration project between a few NYU Data Science stu
 Aditya Singhal, 
 David Shimshoni, 
 Alex Sheng, 
+Xiang Pan,
 Avi Sil, 
 Sara Rosenthal
 
@@ -20,7 +21,7 @@ We explore the performance of this compositional adaptation approach in the Movi
 The RoBERTa-Base model is initialized to pretrained weights, fine-tuned in either sequential or multitask regime on SQuAD 2.0 along with a domain-specific task, and evaluated on the target domain-specific QA task in a zero-shot setting without any training on the target task. One of the baselines will be to take generic RoBERTa and fine-tune it on SQuAD 2.0 using HuggingFace. Then we do the same with a domain-specific RoBERTa obtained through continued LM to get a second baseline. The experimental model will be obtained though both sequential and multitask learning (MTL) using the Jiant library, with the baselines + NER + SQuAD 2.0. Our team hasn’t done MTL before but it is the only part of our project that requires engineering and Jiant will help. All of these model variations will be evaluated on the mentioned domain-specific QA evaluation sets, and the Macro-F1 score will be reported. 
 
 ### Collaboration Statement
-Alex, David and Adi will handle training and evaluation for the Bio, News and Movies domains respectively. David took charge in research, collaboration and formatting, Adi was instrumental with planning and technical management and Alex helped with literature review and idea formation. This team is mentored by IBM’s Avi Sil and Sara Rosenthal. Xiang Pan is doing similar research but we will produce two different projects for the class. We intend to aggregate our results later on for a publication.
+Alex, David Adi, and Xiang Pan will handle training and evaluation for the Bio, News, Movies, Covid domains respectively. David took charge in research, collaboration and formatting, Adi was instrumental with planning and technical management and Alex helped with literature review and idea formation, Xiang Pan take charge of the final paper writing and idea formation. This team is mentored by IBM’s Avi Sil and Sara Rosenthal. We intend to aggregate our results later on for a publication.
 
 #### References
 
