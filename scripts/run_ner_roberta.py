@@ -265,17 +265,17 @@ def main():
         label_list.sort()
         return label_list
 
-        print("features = ", features)
-        print("label_column_name = ", label_column_name)
-        print("features[label_column_name] = ", features[label_column_name])
-        pdb.set_trace()
+        # print("features = ", features)
+        # print("label_column_name = ", label_column_name)
+        # print("features[label_column_name] = ", features[label_column_name])
+        # pdb.set_trace()
 
     if isinstance(features[label_column_name].feature, ClassLabel):
 
-        print("features = ", features)
-        print("label_column_name = ", label_column_name)
-        print("features[label_column_name] = ", features[label_column_name])
-        pdb.set_trace()
+        # print("features = ", features)
+        # print("label_column_name = ", label_column_name)
+        # print("features[label_column_name] = ", features[label_column_name])
+        # pdb.set_trace()
         
         label_list = features[label_column_name].feature.names
         # No need to convert the labels since they are already ints.
@@ -283,7 +283,7 @@ def main():
     else:
         label_list = get_label_list(datasets["train"][label_column_name])
         label_to_id = {l: i for i, l in enumerate(label_list)}
-    num_labels = len(label_list)
+    num_labels = len(label_list) + 1
 
     # Load pretrained model and tokenizer
     #
