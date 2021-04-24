@@ -6,7 +6,6 @@
 #SBATCH --output=./slurm_logs/%j_movieR15Apr_on_squadv1.out
 #SBATCH --error=./slurm_logs/%j_movieR15Apr_on_squadv1.err
 #SBATCH --export=ALL
-#SBATCH --cpus-per-task 4
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=128GB
 #SBATCH --time=0-20:00:00

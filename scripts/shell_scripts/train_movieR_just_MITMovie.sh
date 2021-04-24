@@ -89,13 +89,13 @@ echo "Done!"
 #   --do_eval
 
 
-python run_ner_roberta.py \
-  --model_name_or_path roberta-base \
-  --dataset_name conll2003 \
-  --output_dir /Users/aditya/Desktop/trash_model_rob_on_conll \
-  --learning_rate 3e-5 \
-  --do_train \
-  --do_eval
+# python run_ner_roberta.py \
+#   --model_name_or_path roberta-base \
+#   --dataset_name conll2003 \
+#   --output_dir /Users/aditya/Desktop/trash_model_rob_on_conll \
+#   --learning_rate 3e-5 \
+#   --do_train \
+#   --do_eval
 
 
   python run_ner_roberta.py \
