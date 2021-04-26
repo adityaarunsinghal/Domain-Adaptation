@@ -1,0 +1,49 @@
+wandb: Run summary:
+wandb:                                                             train/loss 0.0892
+wandb:                                                    train/learning_rate 1e-05
+wandb:                                                            train/epoch 10.0
+wandb:                                                      train/global_step 1230
+wandb:                                                               _runtime 256
+wandb:                                                             _timestamp 1619409644
+wandb:                                                                  _step 6
+wandb:                                                              eval/loss 0.28278
+wandb:                                                         eval/precision 0.88914
+wandb:                                                            eval/recall 0.89406
+wandb:                                                                eval/f1 0.89159
+wandb:                                                          eval/accuracy 0.94851
+wandb:                                                           eval/runtime 4.1823
+wandb:                                                eval/samples_per_second 467.446
+wandb:                                                    train/train_runtime 250.569
+wandb:                                         train/train_samples_per_second 4.909
+wandb:                                                       train/total_flos 1635991857107136.0
+wandb: Synced 5 W&B file(s), 1 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: 
+wandb: Synced Testing RobBase on MIT_movie_NER - 10 epoch: https://wandb.ai/thatdramebaazguy/huggingface/runs/qkqm15ff
+
+
+--------
+
+
+wandb: Run summary:
+wandb:                                                             train/loss 0.0797
+wandb:                                                    train/learning_rate 1e-05
+wandb:                                                            train/epoch 10.0
+wandb:                                                      train/global_step 1230
+wandb:                                                               _runtime 254
+wandb:                                                             _timestamp 1619409971
+wandb:                                                                  _step 6
+wandb:                                                              eval/loss 0.28089
+wandb:                                                         eval/precision 0.88177
+wandb:                                                            eval/recall 0.88807
+wandb:                                                                eval/f1 0.88491
+wandb:                                                          eval/accuracy 0.94625
+wandb:                                                           eval/runtime 3.6553
+wandb:                                                eval/samples_per_second 534.842
+wandb:                                                    train/train_runtime 250.3393
+wandb:                                         train/train_samples_per_second 4.913
+wandb:                                                       train/total_flos 1635981717454560.0
+wandb: Synced 5 W&B file(s), 1 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: 
+wandb: Synced Testing movieR on MIT_movie_NER - 10 epoch: https://wandb.ai/thatdramebaazguy/huggingface/runs/28lwto2f
+
+
