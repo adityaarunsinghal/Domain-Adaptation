@@ -271,10 +271,9 @@ def main():
     else:
         label_list = get_label_list(datasets["train"][label_column_name])
         label_to_id = {l: i for i, l in enumerate(label_list)}
-    num_labels = len(label_list) +1
+    num_labels = len(label_list)
 
     # Load pretrained model and tokenizer
-    #
     # Distributed training:
     # The .from_pretrained methods guarantee that only one local process can concurrently
     # download model & vocab.

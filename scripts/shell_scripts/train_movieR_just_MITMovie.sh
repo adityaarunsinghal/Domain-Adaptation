@@ -21,7 +21,7 @@ source /ext3/env.sh
 conda activate
 
   python $SCRATCH/transformers/examples/token-classification/run_ner.py \
-  --model_name_or_path $SCRATCH/Domain-Adaptation/models/movie_roberta/movie_roberta_15April2021 \
+  --model_name_or_path thatdramebaazguy/movie-roberta-base \
   --train_file $SCRATCH/Domain-Adaptation/datasets/movies/MIT_movie_NER/dict_structure/trivia_training.json \
   --validation_file $SCRATCH/Domain-Adaptation/datasets/movies/MIT_movie_NER/dict_structure/trivia_val.json \
   --output_dir $SCRATCH/Domain-Adaptation/models/movieR_on_MITMovieNER/ \
@@ -79,14 +79,23 @@ echo "Done!"
   # --run_name "Testing movieR on MIT_movie_NER - 1 epoch"
 
 
-# python /scratch/as11919/transformers/examples/pytorch/token-classification/run_ner.py \
-#   --model_name_or_path distil-roberta \
-#   --dataset_name conll2003 \
-#   --output_dir $SCRATCH/Domain-Adaptation/models/robBase_on_conll/ \
-#   --learning_rate 3e-5 \
-#   --overwrite_cache \
-#   --do_train \
-#   --do_eval
+  # python $SCRATCH/transformers/examples/token-classification/run_ner.py \
+  # --model_name_or_path thatdramebaazguy/movie-roberta-base \
+  # --train_file $SCRATCH/Domain-Adaptation/datasets/movies/MIT_movie_NER/dict_structure/trivia_training.json \
+  # --validation_file $SCRATCH/Domain-Adaptation/datasets/movies/MIT_movie_NER/dict_structure/trivia_val.json \
+  # --output_dir $SCRATCH/Domain-Adaptation/models/movieR_on_MITMovieNER/ \
+  # --do_train \
+  # --do_eval \
+  # --per_device_train_batch_size 64 \
+  # --per_device_eval_batch_size 20 \
+  # --num_train_epochs 10 \
+  # --overwrite_output_dir \
+  # --overwrite_cache \
+  # --evaluation_strategy steps \
+  # --save_steps 1000 \
+  # --eval_steps 500 \
+  # --logging_first_step \
+  # --run_name "Testing movieR on MIT_movie_NER - 10 epoch"
 
 
 # python run_ner_roberta.py \
@@ -98,10 +107,12 @@ echo "Done!"
 #   --do_eval
 
 
-  python run_ner_roberta.py \
-  --model_name_or_path robert-base \
-  --dataset_name conll2003 \
-  --output_dir $SCRATCH/Domain-Adaptation/models/robBase_on_conll/ \
-  --learning_rate 3e-5 \
-  --do_train \
-  --do_eval
+  # python run_ner_roberta.py \
+  # --model_name_or_path robert-base \
+  # --dataset_name conll2003 \
+  # --output_dir $SCRATCH/Domain-Adaptation/models/robBase_on_conll/ \
+  # --learning_rate 3e-5 \
+  # --do_train \
+  # --do_eval
+
+
