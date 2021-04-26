@@ -9,7 +9,7 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=128GB
 #SBATCH --time=0-20:00:00
-#SBATCH --gres=gpu:2
+#SBATCH --gres=gpu:1
 #SBATCH --mail-type=ALL
 #SBATCH -c 8
 #SBATCH --mail-user=adis@nyu.edu
