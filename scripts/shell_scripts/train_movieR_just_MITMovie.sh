@@ -20,7 +20,7 @@ singularity exec --nv --overlay $SCRATCH/overlay-50G-10M.ext3:ro /scratch/work/p
 source /ext3/env.sh
 conda activate
 
-  python $SCRATCH/Domain-Adaptation/scripts/run_ner_roberta.py \
+  python $SCRATCH/transformers/examples/token-classification/run_ner.py \
   --model_name_or_path $SCRATCH/Domain-Adaptation/models/movie_roberta/movie_roberta_15April2021 \
   --train_file $SCRATCH/Domain-Adaptation/datasets/movies/MIT_movie_NER/dict_structure/trivia_training.json \
   --validation_file $SCRATCH/Domain-Adaptation/datasets/movies/MIT_movie_NER/dict_structure/trivia_val.json \
