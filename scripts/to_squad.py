@@ -27,7 +27,7 @@ for i in range(len(data['data'])):
 
     df = df.append(row_dict, ignore_index=True)
 
-df.set_index("id", inplace=True)
+# df.set_index("id", inplace=True)
 
 lst = inputted_path.split(".")
 json_path = ".".join(lst[:-1]) + ".squad_format." + "json"
