@@ -24,7 +24,6 @@ import sys
 from dataclasses import dataclass, field
 from typing import Optional
 
-
 from datasets import load_dataset, load_metric
 
 import transformers
@@ -314,12 +313,9 @@ def main():
     if training_args.do_train:
         column_names = datasets["train"].column_names
     elif training_args.do_eval:
-        column_names = datasets["validation"].column_names['paragraphs']
+        column_names = datasets["validation"].column_names
     else:
         column_names = datasets["test"].column_names
-
-    print(column_names)
-
 
     question_column_name = "question" if "question" in column_names else column_names[0]
     context_column_name = "context" if "context" in column_names else column_names[1]
