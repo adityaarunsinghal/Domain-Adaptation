@@ -27,7 +27,11 @@ for i in range(len(data['data'])):
 
     df = df.append(row_dict, ignore_index=True)
 
-lst = inputted_path.split(".")
-out_path = ".".join(lst[:-1]) + ".squad_format." + lst[-1]
+df.set_index("id", inplace=True)
 
-df.to_json(out_path, orient='records', lines=True)
+lst = inputted_path.split(".")
+json_path = ".".join(lst[:-1]) + ".squad_format." + "json"
+csv_path = ".".join(lst[:-1]) + ".squad_format." + "csv"
+
+df.to_json(json_path, orient='records', lines=True)
+df.to_csv(csv_path)
