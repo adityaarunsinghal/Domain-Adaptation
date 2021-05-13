@@ -1,0 +1,472 @@
+wandb_version: 1
+
+_n_gpu:
+  desc: null
+  value: 2
+_name_or_path:
+  desc: null
+  value: thatdramebaazguy/movie-roberta-base
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.10.21
+    framework: huggingface
+    huggingface_version: 4.5.1
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.8.5
+    t:
+      1:
+      - 1
+      - 3
+      - 5
+      - 11
+      2:
+      - 1
+      - 3
+      - 5
+      - 11
+      3:
+      - 1
+      4: 3.8.5
+      5: 0.10.21
+      6: 4.5.1
+      8:
+      - 5
+adafactor:
+  desc: null
+  value: false
+adam_beta1:
+  desc: null
+  value: 0.9
+adam_beta2:
+  desc: null
+  value: 0.999
+adam_epsilon:
+  desc: null
+  value: 1.0e-08
+add_cross_attention:
+  desc: null
+  value: false
+architectures:
+  desc: null
+  value:
+  - RobertaForMaskedLM
+attention_probs_dropout_prob:
+  desc: null
+  value: 0.1
+bad_words_ids:
+  desc: null
+  value: null
+bos_token_id:
+  desc: null
+  value: 0
+chunk_size_feed_forward:
+  desc: null
+  value: 0
+dataloader_drop_last:
+  desc: null
+  value: false
+dataloader_num_workers:
+  desc: null
+  value: 0
+dataloader_pin_memory:
+  desc: null
+  value: true
+ddp_find_unused_parameters:
+  desc: null
+  value: None
+debug:
+  desc: null
+  value: false
+decoder_start_token_id:
+  desc: null
+  value: null
+deepspeed:
+  desc: null
+  value: None
+disable_tqdm:
+  desc: null
+  value: false
+diversity_penalty:
+  desc: null
+  value: 0.0
+do_eval:
+  desc: null
+  value: true
+do_predict:
+  desc: null
+  value: false
+do_sample:
+  desc: null
+  value: false
+do_train:
+  desc: null
+  value: true
+early_stopping:
+  desc: null
+  value: false
+encoder_no_repeat_ngram_size:
+  desc: null
+  value: 0
+eos_token_id:
+  desc: null
+  value: 2
+eval_accumulation_steps:
+  desc: null
+  value: None
+eval_batch_size:
+  desc: null
+  value: 40
+eval_steps:
+  desc: null
+  value: 500
+evaluation_strategy:
+  desc: null
+  value: steps
+finetuning_task:
+  desc: null
+  value: ner
+forced_bos_token_id:
+  desc: null
+  value: null
+forced_eos_token_id:
+  desc: null
+  value: null
+fp16:
+  desc: null
+  value: false
+fp16_backend:
+  desc: null
+  value: auto
+fp16_full_eval:
+  desc: null
+  value: false
+fp16_opt_level:
+  desc: null
+  value: O1
+gradient_accumulation_steps:
+  desc: null
+  value: 1
+gradient_checkpointing:
+  desc: null
+  value: false
+greater_is_better:
+  desc: null
+  value: None
+group_by_length:
+  desc: null
+  value: false
+hidden_act:
+  desc: null
+  value: gelu
+hidden_dropout_prob:
+  desc: null
+  value: 0.1
+hidden_size:
+  desc: null
+  value: 768
+id2label:
+  desc: null
+  value:
+    '0': LABEL_0
+    '1': LABEL_1
+    '10': LABEL_10
+    '11': LABEL_11
+    '12': LABEL_12
+    '13': LABEL_13
+    '14': LABEL_14
+    '15': LABEL_15
+    '16': LABEL_16
+    '17': LABEL_17
+    '18': LABEL_18
+    '19': LABEL_19
+    '2': LABEL_2
+    '20': LABEL_20
+    '21': LABEL_21
+    '22': LABEL_22
+    '23': LABEL_23
+    '24': LABEL_24
+    '25': LABEL_25
+    '3': LABEL_3
+    '4': LABEL_4
+    '5': LABEL_5
+    '6': LABEL_6
+    '7': LABEL_7
+    '8': LABEL_8
+    '9': LABEL_9
+ignore_data_skip:
+  desc: null
+  value: false
+initializer_range:
+  desc: null
+  value: 0.02
+intermediate_size:
+  desc: null
+  value: 3072
+is_decoder:
+  desc: null
+  value: false
+is_encoder_decoder:
+  desc: null
+  value: false
+label2id:
+  desc: null
+  value:
+    LABEL_0: 0
+    LABEL_1: 1
+    LABEL_10: 10
+    LABEL_11: 11
+    LABEL_12: 12
+    LABEL_13: 13
+    LABEL_14: 14
+    LABEL_15: 15
+    LABEL_16: 16
+    LABEL_17: 17
+    LABEL_18: 18
+    LABEL_19: 19
+    LABEL_2: 2
+    LABEL_20: 20
+    LABEL_21: 21
+    LABEL_22: 22
+    LABEL_23: 23
+    LABEL_24: 24
+    LABEL_25: 25
+    LABEL_3: 3
+    LABEL_4: 4
+    LABEL_5: 5
+    LABEL_6: 6
+    LABEL_7: 7
+    LABEL_8: 8
+    LABEL_9: 9
+label_names:
+  desc: null
+  value: None
+label_smoothing_factor:
+  desc: null
+  value: 0.0
+layer_norm_eps:
+  desc: null
+  value: 1.0e-05
+learning_rate:
+  desc: null
+  value: 5.0e-05
+length_column_name:
+  desc: null
+  value: length
+length_penalty:
+  desc: null
+  value: 1.0
+load_best_model_at_end:
+  desc: null
+  value: false
+local_rank:
+  desc: null
+  value: -1
+logging_dir:
+  desc: null
+  value: runs/May05_15-11-40_gr034.nyu.cluster
+logging_first_step:
+  desc: null
+  value: true
+logging_steps:
+  desc: null
+  value: 500
+logging_strategy:
+  desc: null
+  value: steps
+lr_scheduler_type:
+  desc: null
+  value: linear
+max_grad_norm:
+  desc: null
+  value: 1.0
+max_length:
+  desc: null
+  value: 20
+max_position_embeddings:
+  desc: null
+  value: 514
+max_steps:
+  desc: null
+  value: -1
+metric_for_best_model:
+  desc: null
+  value: None
+min_length:
+  desc: null
+  value: 0
+model_type:
+  desc: null
+  value: roberta
+mp_parameters:
+  desc: null
+  value: ''
+no_cuda:
+  desc: null
+  value: false
+no_repeat_ngram_size:
+  desc: null
+  value: 0
+num_attention_heads:
+  desc: null
+  value: 12
+num_beam_groups:
+  desc: null
+  value: 1
+num_beams:
+  desc: null
+  value: 1
+num_hidden_layers:
+  desc: null
+  value: 12
+num_return_sequences:
+  desc: null
+  value: 1
+num_train_epochs:
+  desc: null
+  value: 3.0
+output_attentions:
+  desc: null
+  value: false
+output_dir:
+  desc: null
+  value: /scratch/as11919/Domain-Adaptation/models/three_epochs/movieR_on_NER
+output_hidden_states:
+  desc: null
+  value: false
+output_scores:
+  desc: null
+  value: false
+overwrite_output_dir:
+  desc: null
+  value: true
+pad_token_id:
+  desc: null
+  value: 1
+past_index:
+  desc: null
+  value: -1
+per_device_eval_batch_size:
+  desc: null
+  value: 20
+per_device_train_batch_size:
+  desc: null
+  value: 64
+per_gpu_eval_batch_size:
+  desc: null
+  value: None
+per_gpu_train_batch_size:
+  desc: null
+  value: None
+position_embedding_type:
+  desc: null
+  value: absolute
+prediction_loss_only:
+  desc: null
+  value: false
+prefix:
+  desc: null
+  value: null
+pruned_heads:
+  desc: null
+  value: {}
+remove_invalid_values:
+  desc: null
+  value: false
+remove_unused_columns:
+  desc: null
+  value: true
+repetition_penalty:
+  desc: null
+  value: 1.0
+report_to:
+  desc: null
+  value: '[''tensorboard'', ''wandb'']'
+return_dict:
+  desc: null
+  value: true
+return_dict_in_generate:
+  desc: null
+  value: false
+run_name:
+  desc: null
+  value: MovieR on MIT_movie_NER - 3 epoch
+save_steps:
+  desc: null
+  value: 500
+save_strategy:
+  desc: null
+  value: epoch
+save_total_limit:
+  desc: null
+  value: None
+seed:
+  desc: null
+  value: 42
+sep_token_id:
+  desc: null
+  value: null
+sharded_ddp:
+  desc: null
+  value: '[]'
+skip_memory_metrics:
+  desc: null
+  value: false
+task_specific_params:
+  desc: null
+  value: null
+temperature:
+  desc: null
+  value: 1.0
+tie_encoder_decoder:
+  desc: null
+  value: false
+tie_word_embeddings:
+  desc: null
+  value: true
+tokenizer_class:
+  desc: null
+  value: null
+top_k:
+  desc: null
+  value: 50
+top_p:
+  desc: null
+  value: 1.0
+torchscript:
+  desc: null
+  value: false
+tpu_metrics_debug:
+  desc: null
+  value: false
+tpu_num_cores:
+  desc: null
+  value: None
+train_batch_size:
+  desc: null
+  value: 128
+transformers_version:
+  desc: null
+  value: 4.5.1
+type_vocab_size:
+  desc: null
+  value: 1
+use_bfloat16:
+  desc: null
+  value: false
+use_cache:
+  desc: null
+  value: false
+vocab_size:
+  desc: null
+  value: 50265
+warmup_ratio:
+  desc: null
+  value: 0.0
+warmup_steps:
+  desc: null
+  value: 0
+weight_decay:
+  desc: null
+  value: 0.0

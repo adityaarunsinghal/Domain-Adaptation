@@ -41,3 +41,19 @@ conda activate
 
 echo "Done!"
 "
+
+    python $SCRATCH/transformers/examples/question-answering/run_qa.py \
+  --model_name_or_path $SCRATCH/Domain-Adaptation/models/movieR_on_MITMovieNER/five_epochs/QA_config_model \
+  --dataset_name squad \
+  --output_dir $SCRATCH/Domain-Adaptation/models/movieR_5NER_1squad \
+  --do_train \
+  --do_eval \
+  --num_train_epochs 1 \
+  --evaluation_strategy steps \
+  --eval_steps 1500 \
+  --per_device_eval_batch_size 32 \
+  --max_seq_length 384 \
+  --doc_stride 128 \
+  --overwrite_output_dir \
+  --logging_first_step \
+  --run_name "MovieR on NER (5 epoch) and train on Squadv1 - 1 epoch"

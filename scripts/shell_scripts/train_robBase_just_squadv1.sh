@@ -41,3 +41,23 @@ conda activate
 
 echo "Done! This was the plain roberta base model trained on squadv1"
 "
+
+
+# python $SCRATCH/transformers/examples/question-answering/run_qa.py \
+#   --model_name_or_path roberta-base \
+#   --dataset_name squad \
+#   --output_dir $SCRATCH/Domain-Adaptation/models/three_epochs/roberta_on_squad \
+#   --do_train \
+#   --do_eval \
+#   --num_train_epochs 3 \
+#   --evaluation_strategy steps \
+#   --save_strategy epoch \
+#   --eval_steps 7500 \
+#   --per_device_train_batch_size 32 \
+#   --per_device_eval_batch_size 20 \
+#   --max_seq_length 384 \
+#   --doc_stride 128 \
+#   --overwrite_output_dir \
+#   --overwrite_cache \
+#   --logging_first_step \
+#   --run_name "Roberta Base on Squadv1 - 3 epochs"

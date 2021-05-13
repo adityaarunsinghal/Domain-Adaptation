@@ -1,0 +1,16 @@
+  0%|          | 0/33213 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/scratch/as11919/transformers/examples/question-answering/run_qa.py", line 610, in <module>
+    main()
+  File "/scratch/as11919/transformers/examples/question-answering/run_qa.py", line 567, in main
+    train_result = trainer.train(resume_from_checkpoint=checkpoint)
+  File "/scratch/as11919/transformers/src/transformers/trainer.py", line 1120, in train
+    tr_loss += self.training_step(model, inputs)
+  File "/scratch/as11919/transformers/src/transformers/trainer.py", line 1524, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/scratch/as11919/transformers/src/transformers/trainer.py", line 1556, in compute_loss
+    outputs = model(**inputs)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/scratch/as11919/transformers/src/transformers/models/roberta/modeling_roberta.py", line 1460, in forward
+    start_logits, end_logits = logits.split(1, dim=-1)
+ValueError: too many values to unpack (expected 2)

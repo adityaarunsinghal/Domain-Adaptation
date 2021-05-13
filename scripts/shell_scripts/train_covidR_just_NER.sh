@@ -1,10 +1,10 @@
 #!/bin/bash -e
 
-#SBATCH --job-name=MovRNER
+#SBATCH --job-name=covNER
 #SBATCH --nodes=1
 #SBATCH --open-mode=append
-#SBATCH --output=./slurm_logs/%j_movieR_on_MITMovieNER.out
-#SBATCH --error=./slurm_logs/%j_movieR_on_MITMovieNER.err
+#SBATCH --output=./slurm_logs/%j_covidR_on_NER.out
+#SBATCH --error=./slurm_logs/%j_covidR_on_NER.err
 #SBATCH --export=ALL
 #SBATCH --cpus-per-task=8
 #SBATCH --ntasks-per-node=1
@@ -20,8 +20,10 @@ singularity exec --nv --overlay $SCRATCH/overlay-50G-10M.ext3:ro /scratch/work/p
 source /ext3/env.sh
 conda activate
 
+COVID='models/covid_roberta'
+
   python $SCRATCH/transformers/examples/token-classification/run_ner.py \
-  --model_name_or_path thatdramebaazguy/movie-roberta-base \
+  --model_name_or_path $COVID \
   --train_file $SCRATCH/Domain-Adaptation/datasets/movies/MIT_movie_NER/dict_structure/plain_training.json \
   --validation_file $SCRATCH/Domain-Adaptation/datasets/movies/MIT_movie_NER/dict_structure/plain_val.json \
   --output_dir $SCRATCH/Domain-Adaptation/models/movieR_on_MITMovieNER/ \

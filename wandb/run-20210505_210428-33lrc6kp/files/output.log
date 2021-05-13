@@ -1,0 +1,14 @@
+  0%|          | 0/189 [00:00<?, ?it/s]/ext3/miniconda3/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:64: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+Traceback (most recent call last):
+  File "/scratch/as11919/transformers/examples/question-answering/run_qa.py", line 610, in <module>
+    main()
+  File "/scratch/as11919/transformers/examples/question-answering/run_qa.py", line 567, in main
+    train_result = trainer.train(resume_from_checkpoint=checkpoint)
+  File "/scratch/as11919/transformers/src/transformers/trainer.py", line 1162, in train
+    self.optimizer.step()
+  File "/ext3/miniconda3/lib/python3.8/site-packages/torch/optim/lr_scheduler.py", line 67, in wrapper
+    return wrapped(*args, **kwargs)
+  File "/scratch/as11919/transformers/src/transformers/optimization.py", line 345, in step
+    exp_avg.mul_(beta1).add_(grad, alpha=1.0 - beta1)
+RuntimeError: The size of tensor a (26) must match the size of tensor b (2) at non-singleton dimension 0

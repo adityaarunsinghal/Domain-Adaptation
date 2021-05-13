@@ -1,10 +1,10 @@
 #!/bin/bash -e
 
-#SBATCH --job-name=MovieR
+#SBATCH --job-name=RobNERSquad
 #SBATCH --nodes=1
 #SBATCH --open-mode=append
-#SBATCH --output=./slurm_logs/%j_movieR_full_stack.out
-#SBATCH --error=./slurm_logs/%j_movieR_full_stack.err
+#SBATCH --output=./slurm_logs/%j_roberta_NER_squad.out
+#SBATCH --error=./slurm_logs/%j_roberta_NER_squad.err
 #SBATCH --export=ALL
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=128GB
@@ -115,19 +115,3 @@ echo "Done!"
   --overwrite_cache \
   --logging_first_step \
   --run_name "MovieR on NER (2 epoch) and train on Squadv1 - Eval on MoviesQA"
-
-    python $SCRATCH/transformers/examples/question-answering/run_qa.py \
-  --model_name_or_path $SCRATCH/Domain-Adaptation/models/roberta_base_on_MITMovieNER/five_epochs/QA_config_model \
-  --dataset_name squad \
-  --output_dir $SCRATCH/Domain-Adaptation/models/roberta_5NER_1squad \
-  --do_train \
-  --do_eval \
-  --num_train_epochs 1 \
-  --evaluation_strategy steps \
-  --eval_steps 500 \
-  --per_device_eval_batch_size 32 \
-  --max_seq_length 384 \
-  --doc_stride 128 \
-  --overwrite_output_dir \
-  --logging_first_step \
-  --run_name "Roberta Base on NER (5 epoch) and train on Squadv1 - 1 epoch"
