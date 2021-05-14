@@ -20,60 +20,26 @@ singularity exec --nv --overlay $SCRATCH/overlay-50G-10M.ext3:ro /scratch/work/p
 source /ext3/env.sh
 conda activate
 
-COVID='models/covid_roberta'
+COVIDR='/home/as11919/Domain-Adaptation/models/covid_roberta'
+COVIDNER='/home/as11919/Domain-Adaptation/datasets/covid'
 
   python $SCRATCH/transformers/examples/token-classification/run_ner.py \
-  --model_name_or_path $COVID \
-  --train_file $SCRATCH/Domain-Adaptation/datasets/movies/MIT_movie_NER/dict_structure/plain_training.json \
-  --validation_file $SCRATCH/Domain-Adaptation/datasets/movies/MIT_movie_NER/dict_structure/plain_val.json \
-  --output_dir $SCRATCH/Domain-Adaptation/models/movieR_on_MITMovieNER/ \
+  --model_name_or_path $COVIDR \
+  --train_file $COVIDNER/train.json \
+  --validation_file $COVIDNER/dev.json \
+  --output_dir $SCRATCH/Domain-Adaptation/models/covidR_on_NER/ \
   --do_train \
   --do_eval \
   --per_device_train_batch_size 64 \
   --per_device_eval_batch_size 20 \
-  --num_train_epochs 10 \
+  --num_train_epochs 5 \
   --overwrite_output_dir \
   --overwrite_cache \
   --evaluation_strategy steps \
   --save_steps 1000 \
   --eval_steps 500 \
   --logging_first_step \
-  --run_name "Testing movieR on MIT_movie_NER - 10 epoch"
+  --run_name "Training covidR on NER - 5 epoch"
 
 echo "Done!"
 "
-
-  # python $SCRATCH/Domain-Adaptation/scripts/run_ner_roberta.py \
-  # --model_name_or_path thatdramebaazguy/movie-roberta-base \
-  # --train_file $SCRATCH/Domain-Adaptation/datasets/movies/MIT_movie_NER/dict_structure/plain_training.json \
-  # --validation_file $SCRATCH/Domain-Adaptation/datasets/movies/MIT_movie_NER/dict_structure/plain_val.json \
-  # --output_dir $SCRATCH/Domain-Adaptation/models/three_epochs/movieR_on_NER \
-  # --do_train \
-  # --do_eval \
-  # --per_device_train_batch_size 64 \
-  # --per_device_eval_batch_size 20 \
-  # --num_train_epochs 3 \
-  # --overwrite_output_dir \
-  # --overwrite_cache \
-  # --evaluation_strategy steps \
-  # --save_strategy epoch \
-  # --eval_steps 500 \
-  # --logging_first_step \
-  # --run_name "MovieR on MIT_movie_NER - 3 epoch"
-
-
-  python $SCRATCH/Domain-Adaptation/scripts/run_ner_roberta.py \
-  --model_name_or_path thatdramebaazguy/movie-roberta-base \
-  --train_file $SCRATCH/Domain-Adaptation/datasets/movies/MIT_movie_NER/dict_structure/plain_training.json \
-  --validation_file $SCRATCH/Domain-Adaptation/datasets/movies/MIT_movie_NER/dict_structure/plain_val.json \
-  --output_dir $SCRATCH/Domain-Adaptation/models/movieR_on_MITMovieNER/five_epochs \
-  --do_train \
-  --do_eval \
-  --per_device_train_batch_size 64 \
-  --per_device_eval_batch_size 20 \
-  --num_train_epochs 5 \
-  --evaluation_strategy steps \
-  --save_strategy epoch \
-  --eval_steps 500 \
-  --logging_first_step \
-  --run_name "MovieR on MIT_movie_NER - 5 epoch"
