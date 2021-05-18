@@ -1,4 +1,4 @@
-# Domain-Adaptation [Final Paper Link](https://github.com/adityaarunsinghal/Domain-Adaptation/blob/b5199448881c3a1aec97e7599acd8cd8cda936f0/Singhal,%20Shimshoni,%20Pan,%20Sheng%20-%20DomainQA.pdf)
+# Domain-Adaptation [(Final Paper Link)](https://github.com/adityaarunsinghal/Domain-Adaptation/blob/b5199448881c3a1aec97e7599acd8cd8cda936f0/Singhal,%20Shimshoni,%20Pan,%20Sheng%20-%20DomainQA.pdf)
 
 This is the Spring 2021 collaboration project between a few NYU Data Science students and the IBM NLP Research group. 
 
