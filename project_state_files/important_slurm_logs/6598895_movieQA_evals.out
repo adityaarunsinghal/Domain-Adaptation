@@ -1,0 +1,336 @@
+05/08/2021 12:27:00 - WARNING - __main__ -   Process rank: -1, device: cuda:0, n_gpu: 1distributed training: False, 16-bits training: False
+05/08/2021 12:27:00 - INFO - __main__ -   Training/evaluation parameters TrainingArguments(output_dir=/scratch/as11919/Domain-Adaptation/models/eval_on_moviesQA/robBase-3epoch, overwrite_output_dir=True, do_train=False, do_eval=True, do_predict=False, evaluation_strategy=IntervalStrategy.STEPS, prediction_loss_only=False, per_device_train_batch_size=8, per_device_eval_batch_size=32, gradient_accumulation_steps=1, eval_accumulation_steps=None, learning_rate=5e-05, weight_decay=0.0, adam_beta1=0.9, adam_beta2=0.999, adam_epsilon=1e-08, max_grad_norm=1.0, num_train_epochs=3.0, max_steps=-1, lr_scheduler_type=SchedulerType.LINEAR, warmup_ratio=0.0, warmup_steps=0, logging_dir=runs/May08_12-26-59_gr017.nyu.cluster, logging_strategy=IntervalStrategy.STEPS, logging_first_step=True, logging_steps=500, save_strategy=IntervalStrategy.STEPS, save_steps=7500, save_total_limit=None, no_cuda=False, seed=42, fp16=False, fp16_opt_level=O1, fp16_backend=auto, fp16_full_eval=False, local_rank=-1, tpu_num_cores=None, tpu_metrics_debug=False, debug=False, dataloader_drop_last=False, eval_steps=500, dataloader_num_workers=0, past_index=-1, run_name=Eval RobBase - NER (3 epoch) - squad (1 epoch) - on moviesQA, disable_tqdm=False, remove_unused_columns=True, label_names=None, load_best_model_at_end=False, metric_for_best_model=None, greater_is_better=None, ignore_data_skip=False, sharded_ddp=[], deepspeed=None, label_smoothing_factor=0.0, adafactor=False, group_by_length=False, length_column_name=length, report_to=['tensorboard', 'wandb'], ddp_find_unused_parameters=None, dataloader_pin_memory=True, skip_memory_metrics=False, _n_gpu=1, mp_parameters=)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+05/08/2021 12:27:18 - INFO - __main__ -   *** Evaluate ***
+05/08/2021 12:28:03 - INFO - utils_qa -   Post-processing 5032 example predictions split into 5032 features.
+05/08/2021 12:28:09 - INFO - utils_qa -   Saving predictions to /scratch/as11919/Domain-Adaptation/models/eval_on_moviesQA/robBase-3epoch/eval_predictions.json.
+05/08/2021 12:28:09 - INFO - utils_qa -   Saving nbest_preds to /scratch/as11919/Domain-Adaptation/models/eval_on_moviesQA/robBase-3epoch/eval_nbest_predictions.json.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+
+
+05/08/2021 12:28:58 - WARNING - __main__ -   Process rank: -1, device: cuda:0, n_gpu: 1distributed training: False, 16-bits training: False
+05/08/2021 12:28:58 - INFO - __main__ -   Training/evaluation parameters TrainingArguments(output_dir=/scratch/as11919/Domain-Adaptation/models/eval_on_moviesQA/robBase-2epoch, overwrite_output_dir=True, do_train=False, do_eval=True, do_predict=False, evaluation_strategy=IntervalStrategy.STEPS, prediction_loss_only=False, per_device_train_batch_size=8, per_device_eval_batch_size=32, gradient_accumulation_steps=1, eval_accumulation_steps=None, learning_rate=5e-05, weight_decay=0.0, adam_beta1=0.9, adam_beta2=0.999, adam_epsilon=1e-08, max_grad_norm=1.0, num_train_epochs=3.0, max_steps=-1, lr_scheduler_type=SchedulerType.LINEAR, warmup_ratio=0.0, warmup_steps=0, logging_dir=runs/May08_12-28-58_gr017.nyu.cluster, logging_strategy=IntervalStrategy.STEPS, logging_first_step=True, logging_steps=500, save_strategy=IntervalStrategy.STEPS, save_steps=7500, save_total_limit=None, no_cuda=False, seed=42, fp16=False, fp16_opt_level=O1, fp16_backend=auto, fp16_full_eval=False, local_rank=-1, tpu_num_cores=None, tpu_metrics_debug=False, debug=False, dataloader_drop_last=False, eval_steps=500, dataloader_num_workers=0, past_index=-1, run_name=Eval RobBase - NER (2 epoch) - squad (1 epoch) - on moviesQA, disable_tqdm=False, remove_unused_columns=True, label_names=None, load_best_model_at_end=False, metric_for_best_model=None, greater_is_better=None, ignore_data_skip=False, sharded_ddp=[], deepspeed=None, label_smoothing_factor=0.0, adafactor=False, group_by_length=False, length_column_name=length, report_to=['tensorboard', 'wandb'], ddp_find_unused_parameters=None, dataloader_pin_memory=True, skip_memory_metrics=False, _n_gpu=1, mp_parameters=)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+05/08/2021 12:29:12 - INFO - __main__ -   *** Evaluate ***
+05/08/2021 12:29:56 - INFO - utils_qa -   Post-processing 5032 example predictions split into 5032 features.
+05/08/2021 12:30:03 - INFO - utils_qa -   Saving predictions to /scratch/as11919/Domain-Adaptation/models/eval_on_moviesQA/robBase-2epoch/eval_predictions.json.
+05/08/2021 12:30:03 - INFO - utils_qa -   Saving nbest_preds to /scratch/as11919/Domain-Adaptation/models/eval_on_moviesQA/robBase-2epoch/eval_nbest_predictions.json.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+
+
+05/08/2021 12:30:51 - WARNING - __main__ -   Process rank: -1, device: cuda:0, n_gpu: 1distributed training: False, 16-bits training: False
+05/08/2021 12:30:51 - INFO - __main__ -   Training/evaluation parameters TrainingArguments(output_dir=/scratch/as11919/Domain-Adaptation/models/eval_on_moviesQA/robBase-1epoch, overwrite_output_dir=True, do_train=False, do_eval=True, do_predict=False, evaluation_strategy=IntervalStrategy.STEPS, prediction_loss_only=False, per_device_train_batch_size=8, per_device_eval_batch_size=32, gradient_accumulation_steps=1, eval_accumulation_steps=None, learning_rate=5e-05, weight_decay=0.0, adam_beta1=0.9, adam_beta2=0.999, adam_epsilon=1e-08, max_grad_norm=1.0, num_train_epochs=3.0, max_steps=-1, lr_scheduler_type=SchedulerType.LINEAR, warmup_ratio=0.0, warmup_steps=0, logging_dir=runs/May08_12-30-51_gr017.nyu.cluster, logging_strategy=IntervalStrategy.STEPS, logging_first_step=True, logging_steps=500, save_strategy=IntervalStrategy.STEPS, save_steps=7500, save_total_limit=None, no_cuda=False, seed=42, fp16=False, fp16_opt_level=O1, fp16_backend=auto, fp16_full_eval=False, local_rank=-1, tpu_num_cores=None, tpu_metrics_debug=False, debug=False, dataloader_drop_last=False, eval_steps=500, dataloader_num_workers=0, past_index=-1, run_name=Eval RobBase - NER (1 epoch) - squad (1 epoch) - on moviesQA, disable_tqdm=False, remove_unused_columns=True, label_names=None, load_best_model_at_end=False, metric_for_best_model=None, greater_is_better=None, ignore_data_skip=False, sharded_ddp=[], deepspeed=None, label_smoothing_factor=0.0, adafactor=False, group_by_length=False, length_column_name=length, report_to=['tensorboard', 'wandb'], ddp_find_unused_parameters=None, dataloader_pin_memory=True, skip_memory_metrics=False, _n_gpu=1, mp_parameters=)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+05/08/2021 12:31:05 - INFO - __main__ -   *** Evaluate ***
+05/08/2021 12:31:50 - INFO - utils_qa -   Post-processing 5032 example predictions split into 5032 features.
+05/08/2021 12:31:56 - INFO - utils_qa -   Saving predictions to /scratch/as11919/Domain-Adaptation/models/eval_on_moviesQA/robBase-1epoch/eval_predictions.json.
+05/08/2021 12:31:57 - INFO - utils_qa -   Saving nbest_preds to /scratch/as11919/Domain-Adaptation/models/eval_on_moviesQA/robBase-1epoch/eval_nbest_predictions.json.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+
+
+05/08/2021 12:32:40 - WARNING - __main__ -   Process rank: -1, device: cuda:0, n_gpu: 1distributed training: False, 16-bits training: False
+05/08/2021 12:32:40 - INFO - __main__ -   Training/evaluation parameters TrainingArguments(output_dir=/scratch/as11919/Domain-Adaptation/models/eval_on_moviesQA/movieR/1epoch_onsquad, overwrite_output_dir=True, do_train=False, do_eval=True, do_predict=False, evaluation_strategy=IntervalStrategy.STEPS, prediction_loss_only=False, per_device_train_batch_size=8, per_device_eval_batch_size=32, gradient_accumulation_steps=1, eval_accumulation_steps=None, learning_rate=5e-05, weight_decay=0.0, adam_beta1=0.9, adam_beta2=0.999, adam_epsilon=1e-08, max_grad_norm=1.0, num_train_epochs=3.0, max_steps=-1, lr_scheduler_type=SchedulerType.LINEAR, warmup_ratio=0.0, warmup_steps=0, logging_dir=runs/May08_12-32-40_gr017.nyu.cluster, logging_strategy=IntervalStrategy.STEPS, logging_first_step=True, logging_steps=500, save_strategy=IntervalStrategy.STEPS, save_steps=7500, save_total_limit=None, no_cuda=False, seed=42, fp16=False, fp16_opt_level=O1, fp16_backend=auto, fp16_full_eval=False, local_rank=-1, tpu_num_cores=None, tpu_metrics_debug=False, debug=False, dataloader_drop_last=False, eval_steps=500, dataloader_num_workers=0, past_index=-1, run_name=Eval movieR - squad (1 epoch) - on moviesQA, disable_tqdm=False, remove_unused_columns=True, label_names=None, load_best_model_at_end=False, metric_for_best_model=None, greater_is_better=None, ignore_data_skip=False, sharded_ddp=[], deepspeed=None, label_smoothing_factor=0.0, adafactor=False, group_by_length=False, length_column_name=length, report_to=['tensorboard', 'wandb'], ddp_find_unused_parameters=None, dataloader_pin_memory=True, skip_memory_metrics=False, _n_gpu=1, mp_parameters=)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+05/08/2021 12:33:03 - INFO - __main__ -   *** Evaluate ***
+05/08/2021 12:33:48 - INFO - utils_qa -   Post-processing 5032 example predictions split into 5032 features.
+05/08/2021 12:33:54 - INFO - utils_qa -   Saving predictions to /scratch/as11919/Domain-Adaptation/models/eval_on_moviesQA/movieR/1epoch_onsquad/eval_predictions.json.
+05/08/2021 12:34:04 - INFO - utils_qa -   Saving nbest_preds to /scratch/as11919/Domain-Adaptation/models/eval_on_moviesQA/movieR/1epoch_onsquad/eval_nbest_predictions.json.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+
+
+05/08/2021 12:34:36 - WARNING - __main__ -   Process rank: -1, device: cuda:0, n_gpu: 1distributed training: False, 16-bits training: False
+05/08/2021 12:34:36 - INFO - __main__ -   Training/evaluation parameters TrainingArguments(output_dir=/scratch/as11919/Domain-Adaptation/models/eval_on_moviesQA/movieR/2epoch_onsquad, overwrite_output_dir=True, do_train=False, do_eval=True, do_predict=False, evaluation_strategy=IntervalStrategy.STEPS, prediction_loss_only=False, per_device_train_batch_size=8, per_device_eval_batch_size=32, gradient_accumulation_steps=1, eval_accumulation_steps=None, learning_rate=5e-05, weight_decay=0.0, adam_beta1=0.9, adam_beta2=0.999, adam_epsilon=1e-08, max_grad_norm=1.0, num_train_epochs=3.0, max_steps=-1, lr_scheduler_type=SchedulerType.LINEAR, warmup_ratio=0.0, warmup_steps=0, logging_dir=runs/May08_12-34-36_gr017.nyu.cluster, logging_strategy=IntervalStrategy.STEPS, logging_first_step=True, logging_steps=500, save_strategy=IntervalStrategy.STEPS, save_steps=7500, save_total_limit=None, no_cuda=False, seed=42, fp16=False, fp16_opt_level=O1, fp16_backend=auto, fp16_full_eval=False, local_rank=-1, tpu_num_cores=None, tpu_metrics_debug=False, debug=False, dataloader_drop_last=False, eval_steps=500, dataloader_num_workers=0, past_index=-1, run_name=Eval movieR - squad (2 epoch) - on moviesQA, disable_tqdm=False, remove_unused_columns=True, label_names=None, load_best_model_at_end=False, metric_for_best_model=None, greater_is_better=None, ignore_data_skip=False, sharded_ddp=[], deepspeed=None, label_smoothing_factor=0.0, adafactor=False, group_by_length=False, length_column_name=length, report_to=['tensorboard', 'wandb'], ddp_find_unused_parameters=None, dataloader_pin_memory=True, skip_memory_metrics=False, _n_gpu=1, mp_parameters=)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+05/08/2021 12:34:53 - INFO - __main__ -   *** Evaluate ***
+05/08/2021 12:35:37 - INFO - utils_qa -   Post-processing 5032 example predictions split into 5032 features.
+05/08/2021 12:35:44 - INFO - utils_qa -   Saving predictions to /scratch/as11919/Domain-Adaptation/models/eval_on_moviesQA/movieR/2epoch_onsquad/eval_predictions.json.
+05/08/2021 12:35:44 - INFO - utils_qa -   Saving nbest_preds to /scratch/as11919/Domain-Adaptation/models/eval_on_moviesQA/movieR/2epoch_onsquad/eval_nbest_predictions.json.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+
+
+05/08/2021 12:36:09 - WARNING - __main__ -   Process rank: -1, device: cuda:0, n_gpu: 1distributed training: False, 16-bits training: False
+05/08/2021 12:36:09 - INFO - __main__ -   Training/evaluation parameters TrainingArguments(output_dir=/scratch/as11919/Domain-Adaptation/models/eval_on_moviesQA/movieR/3epoch_onsquad, overwrite_output_dir=True, do_train=False, do_eval=True, do_predict=False, evaluation_strategy=IntervalStrategy.STEPS, prediction_loss_only=False, per_device_train_batch_size=8, per_device_eval_batch_size=32, gradient_accumulation_steps=1, eval_accumulation_steps=None, learning_rate=5e-05, weight_decay=0.0, adam_beta1=0.9, adam_beta2=0.999, adam_epsilon=1e-08, max_grad_norm=1.0, num_train_epochs=3.0, max_steps=-1, lr_scheduler_type=SchedulerType.LINEAR, warmup_ratio=0.0, warmup_steps=0, logging_dir=runs/May08_12-36-09_gr017.nyu.cluster, logging_strategy=IntervalStrategy.STEPS, logging_first_step=True, logging_steps=500, save_strategy=IntervalStrategy.STEPS, save_steps=7500, save_total_limit=None, no_cuda=False, seed=42, fp16=False, fp16_opt_level=O1, fp16_backend=auto, fp16_full_eval=False, local_rank=-1, tpu_num_cores=None, tpu_metrics_debug=False, debug=False, dataloader_drop_last=False, eval_steps=500, dataloader_num_workers=0, past_index=-1, run_name=Eval movieR - squad (3 epoch) - on moviesQA, disable_tqdm=False, remove_unused_columns=True, label_names=None, load_best_model_at_end=False, metric_for_best_model=None, greater_is_better=None, ignore_data_skip=False, sharded_ddp=[], deepspeed=None, label_smoothing_factor=0.0, adafactor=False, group_by_length=False, length_column_name=length, report_to=['tensorboard', 'wandb'], ddp_find_unused_parameters=None, dataloader_pin_memory=True, skip_memory_metrics=False, _n_gpu=1, mp_parameters=)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+05/08/2021 12:36:22 - INFO - __main__ -   *** Evaluate ***
+05/08/2021 12:37:07 - INFO - utils_qa -   Post-processing 5032 example predictions split into 5032 features.
+05/08/2021 12:37:14 - INFO - utils_qa -   Saving predictions to /scratch/as11919/Domain-Adaptation/models/eval_on_moviesQA/movieR/3epoch_onsquad/eval_predictions.json.
+05/08/2021 12:37:14 - INFO - utils_qa -   Saving nbest_preds to /scratch/as11919/Domain-Adaptation/models/eval_on_moviesQA/movieR/3epoch_onsquad/eval_nbest_predictions.json.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+
+
+05/08/2021 12:37:58 - WARNING - __main__ -   Process rank: -1, device: cuda:0, n_gpu: 1distributed training: False, 16-bits training: False
+05/08/2021 12:37:58 - INFO - __main__ -   Training/evaluation parameters TrainingArguments(output_dir=/scratch/as11919/Domain-Adaptation/models/eval_on_moviesQA/robBase_NER_squad/1epoch_onsquad, overwrite_output_dir=True, do_train=False, do_eval=True, do_predict=False, evaluation_strategy=IntervalStrategy.STEPS, prediction_loss_only=False, per_device_train_batch_size=8, per_device_eval_batch_size=32, gradient_accumulation_steps=1, eval_accumulation_steps=None, learning_rate=5e-05, weight_decay=0.0, adam_beta1=0.9, adam_beta2=0.999, adam_epsilon=1e-08, max_grad_norm=1.0, num_train_epochs=3.0, max_steps=-1, lr_scheduler_type=SchedulerType.LINEAR, warmup_ratio=0.0, warmup_steps=0, logging_dir=runs/May08_12-37-58_gr017.nyu.cluster, logging_strategy=IntervalStrategy.STEPS, logging_first_step=True, logging_steps=500, save_strategy=IntervalStrategy.STEPS, save_steps=7500, save_total_limit=None, no_cuda=False, seed=42, fp16=False, fp16_opt_level=O1, fp16_backend=auto, fp16_full_eval=False, local_rank=-1, tpu_num_cores=None, tpu_metrics_debug=False, debug=False, dataloader_drop_last=False, eval_steps=500, dataloader_num_workers=0, past_index=-1, run_name=Eval Roberta - NER (2 epoch) - squad (1 epoch) - on moviesQA, disable_tqdm=False, remove_unused_columns=True, label_names=None, load_best_model_at_end=False, metric_for_best_model=None, greater_is_better=None, ignore_data_skip=False, sharded_ddp=[], deepspeed=None, label_smoothing_factor=0.0, adafactor=False, group_by_length=False, length_column_name=length, report_to=['tensorboard', 'wandb'], ddp_find_unused_parameters=None, dataloader_pin_memory=True, skip_memory_metrics=False, _n_gpu=1, mp_parameters=)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+05/08/2021 12:38:17 - INFO - __main__ -   *** Evaluate ***
+05/08/2021 12:39:02 - INFO - utils_qa -   Post-processing 5032 example predictions split into 5032 features.
+05/08/2021 12:39:08 - INFO - utils_qa -   Saving predictions to /scratch/as11919/Domain-Adaptation/models/eval_on_moviesQA/robBase_NER_squad/1epoch_onsquad/eval_predictions.json.
+05/08/2021 12:39:10 - INFO - utils_qa -   Saving nbest_preds to /scratch/as11919/Domain-Adaptation/models/eval_on_moviesQA/robBase_NER_squad/1epoch_onsquad/eval_nbest_predictions.json.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+
+
+05/08/2021 12:39:22 - WARNING - __main__ -   Process rank: -1, device: cuda:0, n_gpu: 1distributed training: False, 16-bits training: False
+05/08/2021 12:39:22 - INFO - __main__ -   Training/evaluation parameters TrainingArguments(output_dir=/scratch/as11919/Domain-Adaptation/models/eval_on_moviesQA/robBase_NER_squad/2epoch_onsquad, overwrite_output_dir=True, do_train=False, do_eval=True, do_predict=False, evaluation_strategy=IntervalStrategy.STEPS, prediction_loss_only=False, per_device_train_batch_size=8, per_device_eval_batch_size=32, gradient_accumulation_steps=1, eval_accumulation_steps=None, learning_rate=5e-05, weight_decay=0.0, adam_beta1=0.9, adam_beta2=0.999, adam_epsilon=1e-08, max_grad_norm=1.0, num_train_epochs=3.0, max_steps=-1, lr_scheduler_type=SchedulerType.LINEAR, warmup_ratio=0.0, warmup_steps=0, logging_dir=runs/May08_12-39-22_gr017.nyu.cluster, logging_strategy=IntervalStrategy.STEPS, logging_first_step=True, logging_steps=500, save_strategy=IntervalStrategy.STEPS, save_steps=7500, save_total_limit=None, no_cuda=False, seed=42, fp16=False, fp16_opt_level=O1, fp16_backend=auto, fp16_full_eval=False, local_rank=-1, tpu_num_cores=None, tpu_metrics_debug=False, debug=False, dataloader_drop_last=False, eval_steps=500, dataloader_num_workers=0, past_index=-1, run_name=Eval Roberta - NER (2 epoch) - squad (2 epoch) - on moviesQA, disable_tqdm=False, remove_unused_columns=True, label_names=None, load_best_model_at_end=False, metric_for_best_model=None, greater_is_better=None, ignore_data_skip=False, sharded_ddp=[], deepspeed=None, label_smoothing_factor=0.0, adafactor=False, group_by_length=False, length_column_name=length, report_to=['tensorboard', 'wandb'], ddp_find_unused_parameters=None, dataloader_pin_memory=True, skip_memory_metrics=False, _n_gpu=1, mp_parameters=)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+05/08/2021 12:39:36 - INFO - __main__ -   *** Evaluate ***
+05/08/2021 12:40:21 - INFO - utils_qa -   Post-processing 5032 example predictions split into 5032 features.
+05/08/2021 12:40:28 - INFO - utils_qa -   Saving predictions to /scratch/as11919/Domain-Adaptation/models/eval_on_moviesQA/robBase_NER_squad/2epoch_onsquad/eval_predictions.json.
+05/08/2021 12:40:28 - INFO - utils_qa -   Saving nbest_preds to /scratch/as11919/Domain-Adaptation/models/eval_on_moviesQA/robBase_NER_squad/2epoch_onsquad/eval_nbest_predictions.json.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+
+
+05/08/2021 12:40:50 - WARNING - __main__ -   Process rank: -1, device: cuda:0, n_gpu: 1distributed training: False, 16-bits training: False
+05/08/2021 12:40:50 - INFO - __main__ -   Training/evaluation parameters TrainingArguments(output_dir=/scratch/as11919/Domain-Adaptation/models/eval_on_moviesQA/robBase_NER_squad/3epoch_onsquad, overwrite_output_dir=True, do_train=False, do_eval=True, do_predict=False, evaluation_strategy=IntervalStrategy.STEPS, prediction_loss_only=False, per_device_train_batch_size=8, per_device_eval_batch_size=32, gradient_accumulation_steps=1, eval_accumulation_steps=None, learning_rate=5e-05, weight_decay=0.0, adam_beta1=0.9, adam_beta2=0.999, adam_epsilon=1e-08, max_grad_norm=1.0, num_train_epochs=3.0, max_steps=-1, lr_scheduler_type=SchedulerType.LINEAR, warmup_ratio=0.0, warmup_steps=0, logging_dir=runs/May08_12-40-50_gr017.nyu.cluster, logging_strategy=IntervalStrategy.STEPS, logging_first_step=True, logging_steps=500, save_strategy=IntervalStrategy.STEPS, save_steps=7500, save_total_limit=None, no_cuda=False, seed=42, fp16=False, fp16_opt_level=O1, fp16_backend=auto, fp16_full_eval=False, local_rank=-1, tpu_num_cores=None, tpu_metrics_debug=False, debug=False, dataloader_drop_last=False, eval_steps=500, dataloader_num_workers=0, past_index=-1, run_name=Eval Roberta - NER (2 epoch) - squad (3 epoch) - on moviesQA, disable_tqdm=False, remove_unused_columns=True, label_names=None, load_best_model_at_end=False, metric_for_best_model=None, greater_is_better=None, ignore_data_skip=False, sharded_ddp=[], deepspeed=None, label_smoothing_factor=0.0, adafactor=False, group_by_length=False, length_column_name=length, report_to=['tensorboard', 'wandb'], ddp_find_unused_parameters=None, dataloader_pin_memory=True, skip_memory_metrics=False, _n_gpu=1, mp_parameters=)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+05/08/2021 12:41:07 - INFO - __main__ -   *** Evaluate ***
+05/08/2021 12:41:52 - INFO - utils_qa -   Post-processing 5032 example predictions split into 5032 features.
+05/08/2021 12:41:59 - INFO - utils_qa -   Saving predictions to /scratch/as11919/Domain-Adaptation/models/eval_on_moviesQA/robBase_NER_squad/3epoch_onsquad/eval_predictions.json.
+05/08/2021 12:41:59 - INFO - utils_qa -   Saving nbest_preds to /scratch/as11919/Domain-Adaptation/models/eval_on_moviesQA/robBase_NER_squad/3epoch_onsquad/eval_nbest_predictions.json.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+
+
+05/08/2021 12:42:14 - WARNING - __main__ -   Process rank: -1, device: cuda:0, n_gpu: 1distributed training: False, 16-bits training: False
+05/08/2021 12:42:14 - INFO - __main__ -   Training/evaluation parameters TrainingArguments(output_dir=/scratch/as11919/Domain-Adaptation/models/eval_on_moviesQA/movieR_NER_squad/1epoch_onsquad, overwrite_output_dir=True, do_train=False, do_eval=True, do_predict=False, evaluation_strategy=IntervalStrategy.STEPS, prediction_loss_only=False, per_device_train_batch_size=8, per_device_eval_batch_size=32, gradient_accumulation_steps=1, eval_accumulation_steps=None, learning_rate=5e-05, weight_decay=0.0, adam_beta1=0.9, adam_beta2=0.999, adam_epsilon=1e-08, max_grad_norm=1.0, num_train_epochs=3.0, max_steps=-1, lr_scheduler_type=SchedulerType.LINEAR, warmup_ratio=0.0, warmup_steps=0, logging_dir=runs/May08_12-42-14_gr017.nyu.cluster, logging_strategy=IntervalStrategy.STEPS, logging_first_step=True, logging_steps=500, save_strategy=IntervalStrategy.STEPS, save_steps=7500, save_total_limit=None, no_cuda=False, seed=42, fp16=False, fp16_opt_level=O1, fp16_backend=auto, fp16_full_eval=False, local_rank=-1, tpu_num_cores=None, tpu_metrics_debug=False, debug=False, dataloader_drop_last=False, eval_steps=500, dataloader_num_workers=0, past_index=-1, run_name=Eval MovieR - NER (2 epoch) - squad (1 epoch) - on moviesQA, disable_tqdm=False, remove_unused_columns=True, label_names=None, load_best_model_at_end=False, metric_for_best_model=None, greater_is_better=None, ignore_data_skip=False, sharded_ddp=[], deepspeed=None, label_smoothing_factor=0.0, adafactor=False, group_by_length=False, length_column_name=length, report_to=['tensorboard', 'wandb'], ddp_find_unused_parameters=None, dataloader_pin_memory=True, skip_memory_metrics=False, _n_gpu=1, mp_parameters=)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+05/08/2021 12:42:26 - INFO - __main__ -   *** Evaluate ***
+05/08/2021 12:43:11 - INFO - utils_qa -   Post-processing 5032 example predictions split into 5032 features.
+05/08/2021 12:43:18 - INFO - utils_qa -   Saving predictions to /scratch/as11919/Domain-Adaptation/models/eval_on_moviesQA/movieR_NER_squad/1epoch_onsquad/eval_predictions.json.
+05/08/2021 12:43:18 - INFO - utils_qa -   Saving nbest_preds to /scratch/as11919/Domain-Adaptation/models/eval_on_moviesQA/movieR_NER_squad/1epoch_onsquad/eval_nbest_predictions.json.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+
+
+05/08/2021 12:43:36 - WARNING - __main__ -   Process rank: -1, device: cuda:0, n_gpu: 1distributed training: False, 16-bits training: False
+05/08/2021 12:43:36 - INFO - __main__ -   Training/evaluation parameters TrainingArguments(output_dir=/scratch/as11919/Domain-Adaptation/models/eval_on_moviesQA/movieR_NER_squad/2epoch_onsquad, overwrite_output_dir=True, do_train=False, do_eval=True, do_predict=False, evaluation_strategy=IntervalStrategy.STEPS, prediction_loss_only=False, per_device_train_batch_size=8, per_device_eval_batch_size=32, gradient_accumulation_steps=1, eval_accumulation_steps=None, learning_rate=5e-05, weight_decay=0.0, adam_beta1=0.9, adam_beta2=0.999, adam_epsilon=1e-08, max_grad_norm=1.0, num_train_epochs=3.0, max_steps=-1, lr_scheduler_type=SchedulerType.LINEAR, warmup_ratio=0.0, warmup_steps=0, logging_dir=runs/May08_12-43-36_gr017.nyu.cluster, logging_strategy=IntervalStrategy.STEPS, logging_first_step=True, logging_steps=500, save_strategy=IntervalStrategy.STEPS, save_steps=7500, save_total_limit=None, no_cuda=False, seed=42, fp16=False, fp16_opt_level=O1, fp16_backend=auto, fp16_full_eval=False, local_rank=-1, tpu_num_cores=None, tpu_metrics_debug=False, debug=False, dataloader_drop_last=False, eval_steps=500, dataloader_num_workers=0, past_index=-1, run_name=Eval MovieR - NER (2 epoch) - squad (2 epoch) - on moviesQA, disable_tqdm=False, remove_unused_columns=True, label_names=None, load_best_model_at_end=False, metric_for_best_model=None, greater_is_better=None, ignore_data_skip=False, sharded_ddp=[], deepspeed=None, label_smoothing_factor=0.0, adafactor=False, group_by_length=False, length_column_name=length, report_to=['tensorboard', 'wandb'], ddp_find_unused_parameters=None, dataloader_pin_memory=True, skip_memory_metrics=False, _n_gpu=1, mp_parameters=)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+05/08/2021 12:43:48 - INFO - __main__ -   *** Evaluate ***
+05/08/2021 12:44:33 - INFO - utils_qa -   Post-processing 5032 example predictions split into 5032 features.
+05/08/2021 12:44:39 - INFO - utils_qa -   Saving predictions to /scratch/as11919/Domain-Adaptation/models/eval_on_moviesQA/movieR_NER_squad/2epoch_onsquad/eval_predictions.json.
+05/08/2021 12:44:39 - INFO - utils_qa -   Saving nbest_preds to /scratch/as11919/Domain-Adaptation/models/eval_on_moviesQA/movieR_NER_squad/2epoch_onsquad/eval_nbest_predictions.json.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+
+
+05/08/2021 12:44:49 - WARNING - __main__ -   Process rank: -1, device: cuda:0, n_gpu: 1distributed training: False, 16-bits training: False
+05/08/2021 12:44:49 - INFO - __main__ -   Training/evaluation parameters TrainingArguments(output_dir=/scratch/as11919/Domain-Adaptation/models/eval_on_moviesQA/movieR_NER_squad/3epoch_onsquad, overwrite_output_dir=True, do_train=False, do_eval=True, do_predict=False, evaluation_strategy=IntervalStrategy.STEPS, prediction_loss_only=False, per_device_train_batch_size=8, per_device_eval_batch_size=32, gradient_accumulation_steps=1, eval_accumulation_steps=None, learning_rate=5e-05, weight_decay=0.0, adam_beta1=0.9, adam_beta2=0.999, adam_epsilon=1e-08, max_grad_norm=1.0, num_train_epochs=3.0, max_steps=-1, lr_scheduler_type=SchedulerType.LINEAR, warmup_ratio=0.0, warmup_steps=0, logging_dir=runs/May08_12-44-49_gr017.nyu.cluster, logging_strategy=IntervalStrategy.STEPS, logging_first_step=True, logging_steps=500, save_strategy=IntervalStrategy.STEPS, save_steps=7500, save_total_limit=None, no_cuda=False, seed=42, fp16=False, fp16_opt_level=O1, fp16_backend=auto, fp16_full_eval=False, local_rank=-1, tpu_num_cores=None, tpu_metrics_debug=False, debug=False, dataloader_drop_last=False, eval_steps=500, dataloader_num_workers=0, past_index=-1, run_name=Eval MovieR - NER (2 epoch) - squad (3 epoch) - on moviesQA, disable_tqdm=False, remove_unused_columns=True, label_names=None, load_best_model_at_end=False, metric_for_best_model=None, greater_is_better=None, ignore_data_skip=False, sharded_ddp=[], deepspeed=None, label_smoothing_factor=0.0, adafactor=False, group_by_length=False, length_column_name=length, report_to=['tensorboard', 'wandb'], ddp_find_unused_parameters=None, dataloader_pin_memory=True, skip_memory_metrics=False, _n_gpu=1, mp_parameters=)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+05/08/2021 12:45:01 - INFO - __main__ -   *** Evaluate ***
+05/08/2021 12:45:46 - INFO - utils_qa -   Post-processing 5032 example predictions split into 5032 features.
+05/08/2021 12:45:53 - INFO - utils_qa -   Saving predictions to /scratch/as11919/Domain-Adaptation/models/eval_on_moviesQA/movieR_NER_squad/3epoch_onsquad/eval_predictions.json.
+05/08/2021 12:45:53 - INFO - utils_qa -   Saving nbest_preds to /scratch/as11919/Domain-Adaptation/models/eval_on_moviesQA/movieR_NER_squad/3epoch_onsquad/eval_nbest_predictions.json.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+
+

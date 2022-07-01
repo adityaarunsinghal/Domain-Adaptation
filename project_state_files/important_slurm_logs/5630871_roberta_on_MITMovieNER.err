@@ -1,0 +1,193 @@
+2021-04-19 23:02:07.594074: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+04/19/2021 23:02:19 - WARNING - __main__ -   Process rank: -1, device: cuda:0, n_gpu: 2, distributed training: False, 16-bits training: False
+04/19/2021 23:02:19 - INFO - __main__ -   Training/evaluation parameters TrainingArguments(output_dir=/scratch/as11919/Domain-Adaptation/models/roberta_base_on_MITMovieNER/, overwrite_output_dir=True, do_train=True, do_eval=True, do_predict=False, evaluation_strategy=IntervalStrategy.STEPS, prediction_loss_only=False, per_device_train_batch_size=64, per_device_eval_batch_size=20, gradient_accumulation_steps=1, eval_accumulation_steps=None, learning_rate=5e-05, weight_decay=0.0, adam_beta1=0.9, adam_beta2=0.999, adam_epsilon=1e-08, max_grad_norm=1.0, num_train_epochs=100.0, max_steps=-1, lr_scheduler_type=SchedulerType.LINEAR, warmup_ratio=0.0, warmup_steps=0, logging_dir=runs/Apr19_23-02-19_gr061.nyu.cluster, logging_strategy=IntervalStrategy.STEPS, logging_first_step=True, logging_steps=500, save_strategy=IntervalStrategy.STEPS, save_steps=1000, save_total_limit=None, no_cuda=False, seed=42, fp16=False, fp16_opt_level=O1, fp16_backend=auto, fp16_full_eval=False, local_rank=-1, tpu_num_cores=None, tpu_metrics_debug=False, debug=False, dataloader_drop_last=False, eval_steps=500, dataloader_num_workers=0, past_index=-1, run_name=Testing, disable_tqdm=False, remove_unused_columns=True, label_names=None, load_best_model_at_end=False, metric_for_best_model=None, greater_is_better=None, ignore_data_skip=False, sharded_ddp=[], deepspeed=None, label_smoothing_factor=0.0, adafactor=False, group_by_length=False, length_column_name=length, report_to=['tensorboard', 'wandb'], ddp_find_unused_parameters=None, dataloader_pin_memory=True, skip_memory_metrics=False, _n_gpu=2, mp_parameters=)
+[INFO|configuration_utils.py:490] 2021-04-19 23:02:19,631 >> loading configuration file https://huggingface.co/roberta-base/resolve/main/config.json from cache at /home/as11919/.cache/huggingface/transformers/733bade19e5f0ce98e6531021dd5180994bb2f7b8bd7e80c7968805834ba351e.35205c6cfc956461d8515139f0f8dd5d207a2f336c0c3a83b4bc8dca3518e37b
+[INFO|configuration_utils.py:526] 2021-04-19 23:02:19,632 >> Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "id2label": {
+    "0": "O",
+    "1": "B-MISC",
+    "2": "I-MISC",
+    "3": "B-PER",
+    "4": "I-PER",
+    "5": "B-ORG",
+    "6": "I-ORG",
+    "7": "B-LOC",
+    "8": "I-LOC"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "label2id": {
+    "B-LOC": 7,
+    "B-MISC": 1,
+    "B-ORG": 5,
+    "B-PER": 3,
+    "I-LOC": 8,
+    "I-MISC": 2,
+    "I-ORG": 6,
+    "I-PER": 4,
+    "O": 0
+  },
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.6.0.dev0",
+  "type_vocab_size": 1,
+  "use_cache": true,
+  "vocab_size": 50265
+}
+
+[INFO|configuration_utils.py:490] 2021-04-19 23:02:19,667 >> loading configuration file https://huggingface.co/roberta-base/resolve/main/config.json from cache at /home/as11919/.cache/huggingface/transformers/733bade19e5f0ce98e6531021dd5180994bb2f7b8bd7e80c7968805834ba351e.35205c6cfc956461d8515139f0f8dd5d207a2f336c0c3a83b4bc8dca3518e37b
+[INFO|configuration_utils.py:526] 2021-04-19 23:02:19,668 >> Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.6.0.dev0",
+  "type_vocab_size": 1,
+  "use_cache": true,
+  "vocab_size": 50265
+}
+
+[INFO|tokenization_utils_base.py:1713] 2021-04-19 23:02:19,879 >> loading file https://huggingface.co/roberta-base/resolve/main/vocab.json from cache at /home/as11919/.cache/huggingface/transformers/d3ccdbfeb9aaa747ef20432d4976c32ee3fa69663b379deb253ccfce2bb1fdc5.d67d6b367eb24ab43b08ad55e014cf254076934f71d832bbab9ad35644a375ab
+[INFO|tokenization_utils_base.py:1713] 2021-04-19 23:02:19,880 >> loading file https://huggingface.co/roberta-base/resolve/main/merges.txt from cache at /home/as11919/.cache/huggingface/transformers/cafdecc90fcab17011e12ac813dd574b4b3fea39da6dd817813efa010262ff3f.5d12962c5ee615a4c803841266e9c3be9a691a924f72d395d3a6c6c81157788b
+[INFO|tokenization_utils_base.py:1713] 2021-04-19 23:02:19,880 >> loading file https://huggingface.co/roberta-base/resolve/main/added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:1713] 2021-04-19 23:02:19,880 >> loading file https://huggingface.co/roberta-base/resolve/main/special_tokens_map.json from cache at None
+[INFO|tokenization_utils_base.py:1713] 2021-04-19 23:02:19,880 >> loading file https://huggingface.co/roberta-base/resolve/main/tokenizer_config.json from cache at None
+[INFO|tokenization_utils_base.py:1713] 2021-04-19 23:02:19,880 >> loading file https://huggingface.co/roberta-base/resolve/main/tokenizer.json from cache at /home/as11919/.cache/huggingface/transformers/d53fc0fa09b8342651efd4073d75e19617b3e51287c2a535becda5808a8db287.fc9576039592f026ad76a1c231b89aee8668488c671dfbe6616bab2ed298d730
+[INFO|modeling_utils.py:1052] 2021-04-19 23:02:20,001 >> loading weights file https://huggingface.co/roberta-base/resolve/main/pytorch_model.bin from cache at /home/as11919/.cache/huggingface/transformers/51ba668f7ff34e7cdfa9561e8361747738113878850a7d717dbc69de8683aaad.c7efaa30a0d80b2958b876969faa180e485944a849deee4ad482332de65365a7
+[WARNING|modeling_utils.py:1159] 2021-04-19 23:02:23,506 >> Some weights of the model checkpoint at roberta-base were not used when initializing RobertaForTokenClassification: ['lm_head.bias', 'lm_head.dense.weight', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.layer_norm.bias', 'lm_head.decoder.weight']
+- This IS expected if you are initializing RobertaForTokenClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing RobertaForTokenClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[WARNING|modeling_utils.py:1170] 2021-04-19 23:02:23,507 >> Some weights of RobertaForTokenClassification were not initialized from the model checkpoint at roberta-base and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+04/19/2021 23:02:23 - INFO - filelock -   Lock 22928743944592 acquired on /home/as11919/Domain-Adaptation/data/MIT_movie_NER/txt_json_structure/cached_train_RobertaTokenizer_128.lock
+04/19/2021 23:02:23 - INFO - utils_ner -   Loading features from cached file /home/as11919/Domain-Adaptation/data/MIT_movie_NER/txt_json_structure/cached_train_RobertaTokenizer_128
+04/19/2021 23:02:23 - INFO - filelock -   Lock 22928743944592 released on /home/as11919/Domain-Adaptation/data/MIT_movie_NER/txt_json_structure/cached_train_RobertaTokenizer_128.lock
+04/19/2021 23:02:23 - INFO - filelock -   Lock 22928743891584 acquired on /home/as11919/Domain-Adaptation/data/MIT_movie_NER/txt_json_structure/cached_dev_RobertaTokenizer_128.lock
+04/19/2021 23:02:23 - INFO - utils_ner -   Loading features from cached file /home/as11919/Domain-Adaptation/data/MIT_movie_NER/txt_json_structure/cached_dev_RobertaTokenizer_128
+04/19/2021 23:02:23 - INFO - filelock -   Lock 22928743891584 released on /home/as11919/Domain-Adaptation/data/MIT_movie_NER/txt_json_structure/cached_dev_RobertaTokenizer_128.lock
+/ext3/miniconda3/lib/python3.8/site-packages/transformers/trainer.py:891: FutureWarning: `model_path` is deprecated and will be removed in a future version. Use `resume_from_checkpoint` instead.
+  warnings.warn(
+[INFO|trainer.py:1013] 2021-04-19 23:02:30,627 >> ***** Running training *****
+[INFO|trainer.py:1014] 2021-04-19 23:02:30,627 >>   Num examples = 1
+[INFO|trainer.py:1015] 2021-04-19 23:02:30,627 >>   Num Epochs = 100
+[INFO|trainer.py:1016] 2021-04-19 23:02:30,628 >>   Instantaneous batch size per device = 64
+[INFO|trainer.py:1017] 2021-04-19 23:02:30,628 >>   Total train batch size (w. parallel, distributed & accumulation) = 128
+[INFO|trainer.py:1018] 2021-04-19 23:02:30,628 >>   Gradient Accumulation steps = 1
+[INFO|trainer.py:1019] 2021-04-19 23:02:30,628 >>   Total optimization steps = 100
+[INFO|integrations.py:586] 2021-04-19 23:02:30,642 >> Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+wandb: Currently logged in as: thatdramebaazguy (use `wandb login --relogin` to force relogin)
+wandb: wandb version 0.10.27 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+2021-04-19 23:02:31.976977: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+wandb: Tracking run with wandb version 0.10.21
+wandb: Syncing run Testing
+wandb: ⭐️ View project at https://wandb.ai/thatdramebaazguy/huggingface
+wandb: 🚀 View run at https://wandb.ai/thatdramebaazguy/huggingface/runs/v4gvibve
+wandb: Run data is saved locally in /home/as11919/wandb/run-20210419_230230-v4gvibve
+wandb: Run `wandb offline` to turn off syncing.
+  0%|          | 0/100 [00:00<?, ?it/s]/ext3/miniconda3/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:64: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+  1%|          | 1/100 [00:00<00:43,  2.28it/s]                                                 1%|          | 1/100 [00:00<00:43,  2.28it/s]  2%|▏         | 2/100 [00:00<00:33,  2.91it/s]  3%|▎         | 3/100 [00:00<00:26,  3.68it/s]  4%|▍         | 4/100 [00:00<00:21,  4.51it/s]  5%|▌         | 5/100 [00:00<00:17,  5.33it/s]  6%|▌         | 6/100 [00:00<00:15,  6.15it/s]  8%|▊         | 8/100 [00:01<00:13,  6.99it/s] 10%|█         | 10/100 [00:01<00:11,  7.73it/s] 12%|█▏        | 12/100 [00:01<00:10,  8.37it/s] 14%|█▍        | 14/100 [00:01<00:09,  8.87it/s] 16%|█▌        | 16/100 [00:01<00:09,  9.27it/s] 18%|█▊        | 18/100 [00:02<00:08,  9.57it/s] 20%|██        | 20/100 [00:02<00:08,  9.80it/s] 22%|██▏       | 22/100 [00:02<00:07,  9.95it/s] 24%|██▍       | 24/100 [00:02<00:07, 10.05it/s] 26%|██▌       | 26/100 [00:02<00:07, 10.14it/s] 28%|██▊       | 28/100 [00:03<00:07, 10.20it/s] 30%|███       | 30/100 [00:03<00:06, 10.24it/s] 32%|███▏      | 32/100 [00:03<00:06, 10.30it/s] 34%|███▍      | 34/100 [00:03<00:06, 10.30it/s] 36%|███▌      | 36/100 [00:03<00:06, 10.29it/s] 38%|███▊      | 38/100 [00:04<00:05, 10.34it/s] 40%|████      | 40/100 [00:04<00:05, 10.33it/s] 42%|████▏     | 42/100 [00:04<00:05, 10.24it/s] 44%|████▍     | 44/100 [00:04<00:05, 10.20it/s] 46%|████▌     | 46/100 [00:04<00:05, 10.19it/s] 48%|████▊     | 48/100 [00:05<00:05, 10.17it/s] 50%|█████     | 50/100 [00:05<00:04, 10.10it/s] 52%|█████▏    | 52/100 [00:05<00:04, 10.07it/s] 54%|█████▍    | 54/100 [00:05<00:04, 10.12it/s] 56%|█████▌    | 56/100 [00:05<00:04, 10.14it/s] 58%|█████▊    | 58/100 [00:06<00:04, 10.16it/s] 60%|██████    | 60/100 [00:06<00:03, 10.19it/s] 62%|██████▏   | 62/100 [00:06<00:03, 10.13it/s] 64%|██████▍   | 64/100 [00:06<00:03, 10.10it/s] 66%|██████▌   | 66/100 [00:06<00:03, 10.14it/s] 68%|██████▊   | 68/100 [00:07<00:03, 10.19it/s] 70%|███████   | 70/100 [00:07<00:02, 10.19it/s] 72%|███████▏  | 72/100 [00:07<00:02, 10.23it/s] 74%|███████▍  | 74/100 [00:07<00:02, 10.27it/s] 76%|███████▌  | 76/100 [00:07<00:02, 10.29it/s] 78%|███████▊  | 78/100 [00:08<00:02, 10.40it/s] 80%|████████  | 80/100 [00:08<00:01, 10.35it/s] 82%|████████▏ | 82/100 [00:08<00:01, 10.30it/s] 84%|████████▍ | 84/100 [00:08<00:01, 10.25it/s] 86%|████████▌ | 86/100 [00:08<00:01, 10.22it/s] 88%|████████▊ | 88/100 [00:08<00:01, 10.20it/s] 90%|█████████ | 90/100 [00:09<00:00, 10.20it/s] 92%|█████████▏| 92/100 [00:09<00:00, 10.18it/s] 94%|█████████▍| 94/100 [00:09<00:00, 10.17it/s] 96%|█████████▌| 96/100 [00:09<00:00, 10.16it/s] 98%|█████████▊| 98/100 [00:09<00:00, 10.17it/s]100%|██████████| 100/100 [00:10<00:00, 10.18it/s][INFO|trainer.py:1196] 2021-04-19 23:02:43,261 >> 
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+                                                 100%|██████████| 100/100 [00:10<00:00, 10.18it/s]100%|██████████| 100/100 [00:10<00:00,  9.84it/s]
+[INFO|trainer.py:1648] 2021-04-19 23:02:43,427 >> Saving model checkpoint to /scratch/as11919/Domain-Adaptation/models/roberta_base_on_MITMovieNER/
+[INFO|configuration_utils.py:329] 2021-04-19 23:02:43,429 >> Configuration saved in /scratch/as11919/Domain-Adaptation/models/roberta_base_on_MITMovieNER/config.json
+[INFO|modeling_utils.py:831] 2021-04-19 23:02:44,926 >> Model weights saved in /scratch/as11919/Domain-Adaptation/models/roberta_base_on_MITMovieNER/pytorch_model.bin
+[INFO|tokenization_utils_base.py:1907] 2021-04-19 23:02:44,929 >> tokenizer config file saved in /scratch/as11919/Domain-Adaptation/models/roberta_base_on_MITMovieNER/tokenizer_config.json
+[INFO|tokenization_utils_base.py:1913] 2021-04-19 23:02:44,930 >> Special tokens file saved in /scratch/as11919/Domain-Adaptation/models/roberta_base_on_MITMovieNER/special_tokens_map.json
+04/19/2021 23:02:45 - INFO - __main__ -   *** Evaluate ***
+[INFO|trainer.py:1865] 2021-04-19 23:02:45,253 >> ***** Running Evaluation *****
+[INFO|trainer.py:1866] 2021-04-19 23:02:45,253 >>   Num examples = 1
+[INFO|trainer.py:1867] 2021-04-19 23:02:45,253 >>   Batch size = 40
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 192.64it/s]
+04/19/2021 23:02:45 - INFO - __main__ -   ***** Eval results *****
+04/19/2021 23:02:45 - INFO - __main__ -     eval_loss = 7.974783511599526e-05
+04/19/2021 23:02:45 - INFO - __main__ -     eval_accuracy_score = 1.0
+04/19/2021 23:02:45 - INFO - __main__ -     eval_precision = 0
+04/19/2021 23:02:45 - INFO - __main__ -     eval_recall = 0
+04/19/2021 23:02:45 - INFO - __main__ -     eval_f1 = 0
+04/19/2021 23:02:45 - INFO - __main__ -     eval_runtime = 0.0317
+04/19/2021 23:02:45 - INFO - __main__ -     eval_samples_per_second = 31.575
+04/19/2021 23:02:45 - INFO - __main__ -     epoch = 100.0
+04/19/2021 23:02:45 - INFO - __main__ -     eval_mem_cpu_alloc_delta = 110592
+04/19/2021 23:02:45 - INFO - __main__ -     eval_mem_gpu_alloc_delta = 0
+04/19/2021 23:02:45 - INFO - __main__ -     eval_mem_cpu_peaked_delta = 0
+04/19/2021 23:02:45 - INFO - __main__ -     eval_mem_gpu_peaked_delta = 18905088
+wandb: Waiting for W&B process to finish, PID 1672191
+wandb: Program ended successfully.
+wandb: - 0.01MB of 0.01MB uploaded (0.00MB deduped)wandb: \ 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Find user logs for this run at: /home/as11919/wandb/run-20210419_230230-v4gvibve/logs/debug.log
+wandb: Find internal logs for this run at: /home/as11919/wandb/run-20210419_230230-v4gvibve/logs/debug-internal.log
+wandb: Run summary:
+wandb:                       train/loss 2.287
+wandb:              train/learning_rate 5e-05
+wandb:                      train/epoch 100.0
+wandb:                train/global_step 100
+wandb:                         _runtime 15
+wandb:                       _timestamp 1618887765
+wandb:                            _step 2
+wandb:              train/train_runtime 12.6334
+wandb:   train/train_samples_per_second 7.916
+wandb:                 train/total_flos 9527958604800.0
+wandb:                        eval/loss 8e-05
+wandb:              eval/accuracy_score 1.0
+wandb:                   eval/precision 0
+wandb:                      eval/recall 0
+wandb:                          eval/f1 0
+wandb:                     eval/runtime 0.0317
+wandb:          eval/samples_per_second 31.575
+wandb: Run history:
+wandb:                       train/loss ▁
+wandb:              train/learning_rate ▁
+wandb:                      train/epoch ▁██
+wandb:                train/global_step ▁██
+wandb:                         _runtime ▁▇█
+wandb:                       _timestamp ▁▇█
+wandb:                            _step ▁▅█
+wandb:              train/train_runtime ▁
+wandb:   train/train_samples_per_second ▁
+wandb:                 train/total_flos ▁
+wandb:                        eval/loss ▁
+wandb:              eval/accuracy_score ▁
+wandb:                   eval/precision ▁
+wandb:                      eval/recall ▁
+wandb:                          eval/f1 ▁
+wandb:                     eval/runtime ▁
+wandb:          eval/samples_per_second ▁
+wandb: 
+wandb: Synced 5 W&B file(s), 1 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: 
+wandb: Synced Testing: https://wandb.ai/thatdramebaazguy/huggingface/runs/v4gvibve

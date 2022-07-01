@@ -1,0 +1,108 @@
+04/20/2021 14:27:00 - WARNING - __main__ -   Process rank: -1, device: cuda:0, n_gpu: 2distributed training: False, 16-bits training: False
+04/20/2021 14:27:00 - INFO - __main__ -   Training/evaluation parameters TrainingArguments(output_dir=/scratch/as11919/Domain-Adaptation/models/plain_roberta_on_squadv1, overwrite_output_dir=True, do_train=True, do_eval=True, do_predict=False, evaluation_strategy=IntervalStrategy.STEPS, prediction_loss_only=False, per_device_train_batch_size=32, per_device_eval_batch_size=20, gradient_accumulation_steps=1, eval_accumulation_steps=None, learning_rate=5e-05, weight_decay=0.0, adam_beta1=0.9, adam_beta2=0.999, adam_epsilon=1e-08, max_grad_norm=1.0, num_train_epochs=100.0, max_steps=-1, lr_scheduler_type=SchedulerType.LINEAR, warmup_ratio=0.0, warmup_steps=0, logging_dir=runs/Apr20_14-27-00_gr006.nyu.cluster, logging_strategy=IntervalStrategy.STEPS, logging_first_step=True, logging_steps=500, save_strategy=IntervalStrategy.STEPS, save_steps=2000, save_total_limit=None, no_cuda=False, seed=42, fp16=False, fp16_opt_level=O1, fp16_backend=auto, fp16_full_eval=False, local_rank=-1, tpu_num_cores=None, tpu_metrics_debug=False, debug=False, dataloader_drop_last=False, eval_steps=1000, dataloader_num_workers=0, past_index=-1, run_name=Training, disable_tqdm=False, remove_unused_columns=True, label_names=None, load_best_model_at_end=False, metric_for_best_model=None, greater_is_better=None, ignore_data_skip=False, sharded_ddp=[], deepspeed=None, label_smoothing_factor=0.0, adafactor=False, group_by_length=False, length_column_name=length, report_to=['tensorboard', 'wandb'], ddp_find_unused_parameters=None, dataloader_pin_memory=True, skip_memory_metrics=False, _n_gpu=2, mp_parameters=)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 5.9932, 'learning_rate': 4.99996387283237e-05, 'epoch': 0.0}
+{'loss': 1.3458, 'learning_rate': 4.9819364161849715e-05, 'epoch': 0.36}
+{'loss': 0.9884, 'learning_rate': 4.963872832369942e-05, 'epoch': 0.72}
+
+04/20/2021 14:45:10 - INFO - utils_qa -   Post-processing 10570 example predictions split into 10790 features.
+04/20/2021 14:45:31 - INFO - utils_qa -   Saving predictions to /scratch/as11919/Domain-Adaptation/models/plain_roberta_on_squadv1/eval_predictions.json.
+04/20/2021 14:45:31 - INFO - utils_qa -   Saving nbest_preds to /scratch/as11919/Domain-Adaptation/models/plain_roberta_on_squadv1/eval_nbest_predictions.json.
+{'exact_match': 83.50993377483444, 'f1': 90.45911233528999, 'epoch': 0.72}
+{'loss': 0.8923, 'learning_rate': 4.945809248554913e-05, 'epoch': 1.08}
+{'loss': 0.7392, 'learning_rate': 4.9277456647398845e-05, 'epoch': 1.45}
+04/20/2021 15:02:36 - INFO - utils_qa -   Post-processing 10570 example predictions split into 10790 features.
+04/20/2021 15:02:57 - INFO - utils_qa -   Saving predictions to /scratch/as11919/Domain-Adaptation/models/plain_roberta_on_squadv1/eval_predictions.json.
+04/20/2021 15:02:57 - INFO - utils_qa -   Saving nbest_preds to /scratch/as11919/Domain-Adaptation/models/plain_roberta_on_squadv1/eval_nbest_predictions.json.
+{'exact_match': 84.27625354777673, 'f1': 91.012869792495, 'epoch': 1.45}
+{'loss': 0.7448, 'learning_rate': 4.909682080924856e-05, 'epoch': 1.81}
+{'loss': 0.6505, 'learning_rate': 4.8916184971098263e-05, 'epoch': 2.17}
+04/20/2021 15:20:07 - INFO - utils_qa -   Post-processing 10570 example predictions split into 10790 features.
+04/20/2021 15:20:28 - INFO - utils_qa -   Saving predictions to /scratch/as11919/Domain-Adaptation/models/plain_roberta_on_squadv1/eval_predictions.json.
+04/20/2021 15:20:28 - INFO - utils_qa -   Saving nbest_preds to /scratch/as11919/Domain-Adaptation/models/plain_roberta_on_squadv1/eval_nbest_predictions.json.
+{'exact_match': 84.05865657521286, 'f1': 90.65026692969721, 'epoch': 2.17}
+{'loss': 0.5715, 'learning_rate': 4.8735549132947976e-05, 'epoch': 2.53}
+{'loss': 0.5911, 'learning_rate': 4.855491329479769e-05, 'epoch': 2.89}
+04/20/2021 15:37:33 - INFO - utils_qa -   Post-processing 10570 example predictions split into 10790 features.
+04/20/2021 15:37:54 - INFO - utils_qa -   Saving predictions to /scratch/as11919/Domain-Adaptation/models/plain_roberta_on_squadv1/eval_predictions.json.
+04/20/2021 15:37:54 - INFO - utils_qa -   Saving nbest_preds to /scratch/as11919/Domain-Adaptation/models/plain_roberta_on_squadv1/eval_nbest_predictions.json.
+{'exact_match': 84.63576158940397, 'f1': 91.17001408198404, 'epoch': 2.89}
+{'loss': 0.4861, 'learning_rate': 4.83742774566474e-05, 'epoch': 3.25}
+{'loss': 0.4565, 'learning_rate': 4.8193641618497106e-05, 'epoch': 3.61}
+04/20/2021 15:55:04 - INFO - utils_qa -   Post-processing 10570 example predictions split into 10790 features.
+04/20/2021 15:55:24 - INFO - utils_qa -   Saving predictions to /scratch/as11919/Domain-Adaptation/models/plain_roberta_on_squadv1/eval_predictions.json.
+04/20/2021 15:55:24 - INFO - utils_qa -   Saving nbest_preds to /scratch/as11919/Domain-Adaptation/models/plain_roberta_on_squadv1/eval_nbest_predictions.json.
+{'exact_match': 84.01135288552507, 'f1': 90.74633993882664, 'epoch': 3.61}
+{'loss': 0.4713, 'learning_rate': 4.8013005780346826e-05, 'epoch': 3.97}
+{'loss': 0.3575, 'learning_rate': 4.783236994219654e-05, 'epoch': 4.34}
+04/20/2021 16:12:30 - INFO - utils_qa -   Post-processing 10570 example predictions split into 10790 features.
+04/20/2021 16:12:51 - INFO - utils_qa -   Saving predictions to /scratch/as11919/Domain-Adaptation/models/plain_roberta_on_squadv1/eval_predictions.json.
+04/20/2021 16:12:51 - INFO - utils_qa -   Saving nbest_preds to /scratch/as11919/Domain-Adaptation/models/plain_roberta_on_squadv1/eval_nbest_predictions.json.
+{'exact_match': 83.46263008514664, 'f1': 90.72573490813303, 'epoch': 4.34}
+{'loss': 0.3705, 'learning_rate': 4.765173410404625e-05, 'epoch': 4.7}
+{'loss': 0.3722, 'learning_rate': 4.7471098265895956e-05, 'epoch': 5.06}
+04/20/2021 16:30:00 - INFO - utils_qa -   Post-processing 10570 example predictions split into 10790 features.
+04/20/2021 16:30:21 - INFO - utils_qa -   Saving predictions to /scratch/as11919/Domain-Adaptation/models/plain_roberta_on_squadv1/eval_predictions.json.
+04/20/2021 16:30:21 - INFO - utils_qa -   Saving nbest_preds to /scratch/as11919/Domain-Adaptation/models/plain_roberta_on_squadv1/eval_nbest_predictions.json.
+{'exact_match': 83.45316934720908, 'f1': 90.72435527851717, 'epoch': 5.06}
+{'loss': 0.3001, 'learning_rate': 4.729046242774567e-05, 'epoch': 5.42}
+{'loss': 0.3065, 'learning_rate': 4.710982658959538e-05, 'epoch': 5.78}
+04/20/2021 16:47:27 - INFO - utils_qa -   Post-processing 10570 example predictions split into 10790 features.
+04/20/2021 16:47:47 - INFO - utils_qa -   Saving predictions to /scratch/as11919/Domain-Adaptation/models/plain_roberta_on_squadv1/eval_predictions.json.
+04/20/2021 16:47:47 - INFO - utils_qa -   Saving nbest_preds to /scratch/as11919/Domain-Adaptation/models/plain_roberta_on_squadv1/eval_nbest_predictions.json.
+{'exact_match': 83.6329233680227, 'f1': 90.69527981303972, 'epoch': 5.78}
+{'loss': 0.2802, 'learning_rate': 4.692919075144509e-05, 'epoch': 6.14}
+{'loss': 0.2452, 'learning_rate': 4.67485549132948e-05, 'epoch': 6.5}
+04/20/2021 17:05:03 - INFO - utils_qa -   Post-processing 10570 example predictions split into 10790 features.
+04/20/2021 17:05:24 - INFO - utils_qa -   Saving predictions to /scratch/as11919/Domain-Adaptation/models/plain_roberta_on_squadv1/eval_predictions.json.
+04/20/2021 17:05:24 - INFO - utils_qa -   Saving nbest_preds to /scratch/as11919/Domain-Adaptation/models/plain_roberta_on_squadv1/eval_nbest_predictions.json.
+{'exact_match': 82.62062440870388, 'f1': 90.34586406967503, 'epoch': 6.5}
+{'loss': 0.2587, 'learning_rate': 4.656791907514451e-05, 'epoch': 6.86}
+{'loss': 0.2132, 'learning_rate': 4.6387283236994224e-05, 'epoch': 7.23}
+04/20/2021 17:22:30 - INFO - utils_qa -   Post-processing 10570 example predictions split into 10790 features.
+04/20/2021 17:22:50 - INFO - utils_qa -   Saving predictions to /scratch/as11919/Domain-Adaptation/models/plain_roberta_on_squadv1/eval_predictions.json.
+04/20/2021 17:22:50 - INFO - utils_qa -   Saving nbest_preds to /scratch/as11919/Domain-Adaptation/models/plain_roberta_on_squadv1/eval_nbest_predictions.json.
+{'exact_match': 83.33017975402082, 'f1': 90.53887314975115, 'epoch': 7.23}
+{'loss': 0.2008, 'learning_rate': 4.6206647398843936e-05, 'epoch': 7.59}
+{'loss': 0.218, 'learning_rate': 4.602601156069364e-05, 'epoch': 7.95}
+04/20/2021 17:40:31 - INFO - utils_qa -   Post-processing 10570 example predictions split into 10790 features.
+04/20/2021 17:40:52 - INFO - utils_qa -   Saving predictions to /scratch/as11919/Domain-Adaptation/models/plain_roberta_on_squadv1/eval_predictions.json.
+04/20/2021 17:40:52 - INFO - utils_qa -   Saving nbest_preds to /scratch/as11919/Domain-Adaptation/models/plain_roberta_on_squadv1/eval_nbest_predictions.json.
+{'exact_match': 81.68401135288552, 'f1': 89.87420820031079, 'epoch': 7.95}
+{'loss': 0.1688, 'learning_rate': 4.5845375722543354e-05, 'epoch': 8.31}
+{'loss': 0.1717, 'learning_rate': 4.566473988439307e-05, 'epoch': 8.67}
+04/20/2021 17:57:57 - INFO - utils_qa -   Post-processing 10570 example predictions split into 10790 features.
+04/20/2021 17:58:18 - INFO - utils_qa -   Saving predictions to /scratch/as11919/Domain-Adaptation/models/plain_roberta_on_squadv1/eval_predictions.json.
+04/20/2021 17:58:18 - INFO - utils_qa -   Saving nbest_preds to /scratch/as11919/Domain-Adaptation/models/plain_roberta_on_squadv1/eval_nbest_predictions.json.
+{'exact_match': 82.52601702932829, 'f1': 90.3145044637046, 'epoch': 8.67}
+{'loss': 0.1808, 'learning_rate': 4.548410404624278e-05, 'epoch': 9.03}
+{'loss': 0.1364, 'learning_rate': 4.5303468208092485e-05, 'epoch': 9.39}
+04/20/2021 18:15:39 - INFO - utils_qa -   Post-processing 10570 example predictions split into 10790 features.
+04/20/2021 18:16:00 - INFO - utils_qa -   Saving predictions to /scratch/as11919/Domain-Adaptation/models/plain_roberta_on_squadv1/eval_predictions.json.
+04/20/2021 18:16:00 - INFO - utils_qa -   Saving nbest_preds to /scratch/as11919/Domain-Adaptation/models/plain_roberta_on_squadv1/eval_nbest_predictions.json.
+{'exact_match': 82.19489120151371, 'f1': 90.01555349306638, 'epoch': 9.39}
+{'loss': 0.1509, 'learning_rate': 4.51228323699422e-05, 'epoch': 9.75}
+{'loss': 0.1444, 'learning_rate': 4.494219653179191e-05, 'epoch': 10.12}
+04/20/2021 18:33:08 - INFO - utils_qa -   Post-processing 10570 example predictions split into 10790 features.
+04/20/2021 18:33:29 - INFO - utils_qa -   Saving predictions to /scratch/as11919/Domain-Adaptation/models/plain_roberta_on_squadv1/eval_predictions.json.
+04/20/2021 18:33:29 - INFO - utils_qa -   Saving nbest_preds to /scratch/as11919/Domain-Adaptation/models/plain_roberta_on_squadv1/eval_nbest_predictions.json.
+{'exact_match': 82.1286660359508, 'f1': 89.80968252074902, 'epoch': 10.12}

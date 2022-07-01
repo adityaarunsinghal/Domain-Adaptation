@@ -1,0 +1,61 @@
+04/21/2021 00:56:49 - WARNING - __main__ -   Process rank: -1, device: cuda:0, n_gpu: 2distributed training: False, 16-bits training: False
+04/21/2021 00:56:49 - INFO - __main__ -   Training/evaluation parameters TrainingArguments(output_dir=/scratch/as11919/Domain-Adaptation/models/plain_roberta_on_squadv1, overwrite_output_dir=True, do_train=True, do_eval=True, do_predict=False, evaluation_strategy=IntervalStrategy.STEPS, prediction_loss_only=False, per_device_train_batch_size=32, per_device_eval_batch_size=20, gradient_accumulation_steps=1, eval_accumulation_steps=None, learning_rate=5e-05, weight_decay=0.0, adam_beta1=0.9, adam_beta2=0.999, adam_epsilon=1e-08, max_grad_norm=1.0, num_train_epochs=10.0, max_steps=-1, lr_scheduler_type=SchedulerType.LINEAR, warmup_ratio=0.0, warmup_steps=0, logging_dir=runs/Apr21_00-56-49_gr060.nyu.cluster, logging_strategy=IntervalStrategy.STEPS, logging_first_step=True, logging_steps=500, save_strategy=IntervalStrategy.STEPS, save_steps=7500, save_total_limit=None, no_cuda=False, seed=42, fp16=False, fp16_opt_level=O1, fp16_backend=auto, fp16_full_eval=False, local_rank=-1, tpu_num_cores=None, tpu_metrics_debug=False, debug=False, dataloader_drop_last=False, eval_steps=7500, dataloader_num_workers=0, past_index=-1, run_name=Roberta, disable_tqdm=False, remove_unused_columns=True, label_names=None, load_best_model_at_end=False, metric_for_best_model=None, greater_is_better=None, ignore_data_skip=False, sharded_ddp=[], deepspeed=None, label_smoothing_factor=0.0, adafactor=False, group_by_length=False, length_column_name=length, report_to=['tensorboard', 'wandb'], ddp_find_unused_parameters=None, dataloader_pin_memory=True, skip_memory_metrics=False, _n_gpu=2, mp_parameters=)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 5.9932, 'learning_rate': 4.9996387283236995e-05, 'epoch': 0.0}
+{'loss': 1.3402, 'learning_rate': 4.8193641618497106e-05, 'epoch': 0.36}
+{'loss': 0.9796, 'learning_rate': 4.6387283236994224e-05, 'epoch': 0.72}
+{'loss': 0.8833, 'learning_rate': 4.458092485549133e-05, 'epoch': 1.08}
+{'loss': 0.726, 'learning_rate': 4.2774566473988445e-05, 'epoch': 1.45}
+{'loss': 0.7331, 'learning_rate': 4.096820809248555e-05, 'epoch': 1.81}
+{'loss': 0.633, 'learning_rate': 3.916184971098266e-05, 'epoch': 2.17}
+{'loss': 0.5501, 'learning_rate': 3.735549132947977e-05, 'epoch': 2.53}
+{'loss': 0.5546, 'learning_rate': 3.554913294797688e-05, 'epoch': 2.89}
+{'loss': 0.4616, 'learning_rate': 3.374277456647399e-05, 'epoch': 3.25}
+{'loss': 0.4353, 'learning_rate': 3.19364161849711e-05, 'epoch': 3.61}
+{'loss': 0.4391, 'learning_rate': 3.013005780346821e-05, 'epoch': 3.97}
+{'loss': 0.3316, 'learning_rate': 2.832369942196532e-05, 'epoch': 4.34}
+{'loss': 0.3371, 'learning_rate': 2.651734104046243e-05, 'epoch': 4.7}
+{'loss': 0.3272, 'learning_rate': 2.471098265895954e-05, 'epoch': 5.06}
+{'loss': 0.2481, 'learning_rate': 2.290462427745665e-05, 'epoch': 5.42}
+
+04/21/2021 02:58:45 - INFO - utils_qa -   Post-processing 10570 example predictions split into 10790 features.
+04/21/2021 02:59:07 - INFO - utils_qa -   Saving predictions to /scratch/as11919/Domain-Adaptation/models/plain_roberta_on_squadv1/eval_predictions.json.
+04/21/2021 02:59:07 - INFO - utils_qa -   Saving nbest_preds to /scratch/as11919/Domain-Adaptation/models/plain_roberta_on_squadv1/eval_nbest_predictions.json.
+{'exact_match': 83.75591296121098, 'f1': 91.08839144165006, 'epoch': 5.42}
+{'loss': 0.2544, 'learning_rate': 2.1098265895953757e-05, 'epoch': 5.78}
+{'loss': 0.2302, 'learning_rate': 1.9291907514450868e-05, 'epoch': 6.14}
+{'loss': 0.1856, 'learning_rate': 1.748554913294798e-05, 'epoch': 6.5}
+{'loss': 0.1957, 'learning_rate': 1.567919075144509e-05, 'epoch': 6.86}
+{'loss': 0.1605, 'learning_rate': 1.3872832369942197e-05, 'epoch': 7.23}
+{'loss': 0.1488, 'learning_rate': 1.2066473988439307e-05, 'epoch': 7.59}
+{'loss': 0.1449, 'learning_rate': 1.0260115606936416e-05, 'epoch': 7.95}
+{'loss': 0.1139, 'learning_rate': 8.453757225433527e-06, 'epoch': 8.31}
+{'loss': 0.111, 'learning_rate': 6.647398843930635e-06, 'epoch': 8.67}
+{'loss': 0.1041, 'learning_rate': 4.841040462427745e-06, 'epoch': 9.03}
+{'loss': 0.0869, 'learning_rate': 3.0346820809248555e-06, 'epoch': 9.39}
+{'loss': 0.0873, 'learning_rate': 1.2283236994219654e-06, 'epoch': 9.75}
+{'train_runtime': 13779.5574, 'train_samples_per_second': 1.004, 'epoch': 10.0}
+04/21/2021 04:52:10 - INFO - __main__ -   *** Evaluate ***
+04/21/2021 04:53:16 - INFO - utils_qa -   Post-processing 10570 example predictions split into 10790 features.
+04/21/2021 04:53:37 - INFO - utils_qa -   Saving predictions to /scratch/as11919/Domain-Adaptation/models/plain_roberta_on_squadv1/eval_predictions.json.
+04/21/2021 04:53:37 - INFO - utils_qa -   Saving nbest_preds to /scratch/as11919/Domain-Adaptation/models/plain_roberta_on_squadv1/eval_nbest_predictions.json.
+

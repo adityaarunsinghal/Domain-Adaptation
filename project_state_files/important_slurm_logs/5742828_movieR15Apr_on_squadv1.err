@@ -1,0 +1,146 @@
+2021-04-21 02:43:09.647317: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+Reusing dataset squad (/home/as11919/.cache/huggingface/datasets/squad/plain_text/1.0.0/1244d044b266a5e4dbd4174d23cb995eead372fbca31a03edc3f8a132787af41)
+[INFO|configuration_utils.py:488] 2021-04-21 02:43:12,370 >> loading configuration file /scratch/as11919/Domain-Adaptation/models/movie_roberta/movie_roberta_15April2021/config.json
+[INFO|configuration_utils.py:526] 2021-04-21 02:43:12,371 >> Model config RobertaConfig {
+  "_name_or_path": "/scratch/as11919/Domain-Adaptation/movie_roberta/movie_roberta_15April2021/",
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.6.0.dev0",
+  "type_vocab_size": 1,
+  "use_cache": true,
+  "vocab_size": 50265
+}
+
+[INFO|configuration_utils.py:488] 2021-04-21 02:43:12,371 >> loading configuration file /scratch/as11919/Domain-Adaptation/models/movie_roberta/movie_roberta_15April2021/config.json
+[INFO|configuration_utils.py:526] 2021-04-21 02:43:12,371 >> Model config RobertaConfig {
+  "_name_or_path": "/scratch/as11919/Domain-Adaptation/movie_roberta/movie_roberta_15April2021/",
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.6.0.dev0",
+  "type_vocab_size": 1,
+  "use_cache": true,
+  "vocab_size": 50265
+}
+
+[INFO|tokenization_utils_base.py:1647] 2021-04-21 02:43:12,387 >> Didn't find file /scratch/as11919/Domain-Adaptation/models/movie_roberta/movie_roberta_15April2021/tokenizer.json. We won't load it.
+[INFO|tokenization_utils_base.py:1647] 2021-04-21 02:43:12,387 >> Didn't find file /scratch/as11919/Domain-Adaptation/models/movie_roberta/movie_roberta_15April2021/added_tokens.json. We won't load it.
+[INFO|tokenization_utils_base.py:1711] 2021-04-21 02:43:12,387 >> loading file /scratch/as11919/Domain-Adaptation/models/movie_roberta/movie_roberta_15April2021/vocab.json
+[INFO|tokenization_utils_base.py:1711] 2021-04-21 02:43:12,387 >> loading file /scratch/as11919/Domain-Adaptation/models/movie_roberta/movie_roberta_15April2021/merges.txt
+[INFO|tokenization_utils_base.py:1711] 2021-04-21 02:43:12,387 >> loading file None
+[INFO|tokenization_utils_base.py:1711] 2021-04-21 02:43:12,387 >> loading file None
+[INFO|tokenization_utils_base.py:1711] 2021-04-21 02:43:12,387 >> loading file /scratch/as11919/Domain-Adaptation/models/movie_roberta/movie_roberta_15April2021/special_tokens_map.json
+[INFO|tokenization_utils_base.py:1711] 2021-04-21 02:43:12,387 >> loading file /scratch/as11919/Domain-Adaptation/models/movie_roberta/movie_roberta_15April2021/tokenizer_config.json
+[INFO|modeling_utils.py:1050] 2021-04-21 02:43:12,511 >> loading weights file /scratch/as11919/Domain-Adaptation/models/movie_roberta/movie_roberta_15April2021/pytorch_model.bin
+[WARNING|modeling_utils.py:1159] 2021-04-21 02:43:16,350 >> Some weights of the model checkpoint at /scratch/as11919/Domain-Adaptation/models/movie_roberta/movie_roberta_15April2021 were not used when initializing RobertaForQuestionAnswering: ['lm_head.bias', 'lm_head.dense.weight', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.layer_norm.bias', 'lm_head.decoder.weight', 'lm_head.decoder.bias']
+- This IS expected if you are initializing RobertaForQuestionAnswering from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing RobertaForQuestionAnswering from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[WARNING|modeling_utils.py:1170] 2021-04-21 02:43:16,351 >> Some weights of RobertaForQuestionAnswering were not initialized from the model checkpoint at /scratch/as11919/Domain-Adaptation/models/movie_roberta/movie_roberta_15April2021 and are newly initialized: ['qa_outputs.weight', 'qa_outputs.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+  0%|          | 0/88 [00:00<?, ?ba/s]  1%|          | 1/88 [00:00<00:26,  3.29ba/s]  2%|▏         | 2/88 [00:00<00:24,  3.57ba/s]  3%|▎         | 3/88 [00:00<00:27,  3.09ba/s]  5%|▍         | 4/88 [00:01<00:24,  3.44ba/s]  6%|▌         | 5/88 [00:01<00:22,  3.70ba/s]  7%|▋         | 6/88 [00:01<00:20,  3.92ba/s]  8%|▊         | 7/88 [00:01<00:19,  4.09ba/s]  9%|▉         | 8/88 [00:02<00:18,  4.28ba/s] 10%|█         | 9/88 [00:02<00:21,  3.76ba/s] 11%|█▏        | 10/88 [00:02<00:19,  4.01ba/s] 12%|█▎        | 11/88 [00:02<00:18,  4.22ba/s] 14%|█▎        | 12/88 [00:03<00:17,  4.34ba/s] 15%|█▍        | 13/88 [00:03<00:16,  4.44ba/s] 16%|█▌        | 14/88 [00:03<00:16,  4.55ba/s] 17%|█▋        | 15/88 [00:03<00:15,  4.64ba/s] 18%|█▊        | 16/88 [00:03<00:17,  4.22ba/s] 19%|█▉        | 17/88 [00:04<00:16,  4.35ba/s] 20%|██        | 18/88 [00:04<00:15,  4.49ba/s] 22%|██▏       | 19/88 [00:04<00:15,  4.57ba/s] 23%|██▎       | 20/88 [00:04<00:14,  4.63ba/s] 24%|██▍       | 21/88 [00:04<00:14,  4.64ba/s] 25%|██▌       | 22/88 [00:05<00:15,  4.19ba/s] 26%|██▌       | 23/88 [00:05<00:14,  4.36ba/s] 27%|██▋       | 24/88 [00:05<00:14,  4.36ba/s] 28%|██▊       | 25/88 [00:05<00:14,  4.42ba/s] 30%|██▉       | 26/88 [00:06<00:13,  4.49ba/s] 31%|███       | 27/88 [00:06<00:13,  4.42ba/s] 32%|███▏      | 28/88 [00:06<00:15,  3.91ba/s] 33%|███▎      | 29/88 [00:06<00:14,  4.04ba/s] 34%|███▍      | 30/88 [00:07<00:14,  4.08ba/s] 35%|███▌      | 31/88 [00:07<00:13,  4.11ba/s] 36%|███▋      | 32/88 [00:07<00:13,  4.10ba/s] 38%|███▊      | 33/88 [00:07<00:13,  4.16ba/s] 39%|███▊      | 34/88 [00:08<00:14,  3.67ba/s] 40%|███▉      | 35/88 [00:08<00:13,  3.85ba/s] 41%|████      | 36/88 [00:08<00:13,  3.92ba/s] 42%|████▏     | 37/88 [00:08<00:12,  4.03ba/s] 43%|████▎     | 38/88 [00:09<00:12,  4.11ba/s] 44%|████▍     | 39/88 [00:09<00:11,  4.13ba/s] 45%|████▌     | 40/88 [00:09<00:13,  3.66ba/s] 47%|████▋     | 41/88 [00:09<00:12,  3.85ba/s] 48%|████▊     | 42/88 [00:10<00:11,  3.99ba/s] 49%|████▉     | 43/88 [00:10<00:10,  4.11ba/s] 50%|█████     | 44/88 [00:10<00:10,  4.17ba/s] 51%|█████     | 45/88 [00:10<00:10,  4.20ba/s] 52%|█████▏    | 46/88 [00:11<00:11,  3.71ba/s] 53%|█████▎    | 47/88 [00:11<00:10,  3.85ba/s] 55%|█████▍    | 48/88 [00:11<00:09,  4.01ba/s] 56%|█████▌    | 49/88 [00:11<00:09,  4.10ba/s] 57%|█████▋    | 50/88 [00:12<00:09,  4.15ba/s] 58%|█████▊    | 51/88 [00:12<00:08,  4.18ba/s] 59%|█████▉    | 52/88 [00:12<00:10,  3.54ba/s] 60%|██████    | 53/88 [00:13<00:09,  3.75ba/s] 61%|██████▏   | 54/88 [00:13<00:08,  3.92ba/s] 62%|██████▎   | 55/88 [00:13<00:08,  3.99ba/s] 64%|██████▎   | 56/88 [00:13<00:07,  4.09ba/s] 65%|██████▍   | 57/88 [00:13<00:07,  4.16ba/s] 66%|██████▌   | 58/88 [00:14<00:08,  3.70ba/s] 67%|██████▋   | 59/88 [00:14<00:07,  3.86ba/s] 68%|██████▊   | 60/88 [00:14<00:07,  3.96ba/s] 69%|██████▉   | 61/88 [00:14<00:06,  4.07ba/s] 70%|███████   | 62/88 [00:15<00:06,  4.13ba/s] 72%|███████▏  | 63/88 [00:15<00:05,  4.18ba/s] 73%|███████▎  | 64/88 [00:15<00:05,  4.23ba/s] 74%|███████▍  | 65/88 [00:16<00:06,  3.74ba/s] 75%|███████▌  | 66/88 [00:16<00:05,  3.82ba/s] 76%|███████▌  | 67/88 [00:16<00:05,  3.97ba/s] 77%|███████▋  | 68/88 [00:16<00:04,  4.10ba/s] 78%|███████▊  | 69/88 [00:16<00:04,  4.15ba/s] 80%|███████▉  | 70/88 [00:17<00:04,  4.20ba/s] 81%|████████  | 71/88 [00:17<00:04,  3.66ba/s] 82%|████████▏ | 72/88 [00:17<00:04,  3.84ba/s] 83%|████████▎ | 73/88 [00:18<00:03,  3.98ba/s] 84%|████████▍ | 74/88 [00:18<00:03,  4.05ba/s] 85%|████████▌ | 75/88 [00:18<00:03,  4.15ba/s] 86%|████████▋ | 76/88 [00:18<00:02,  4.22ba/s] 88%|████████▊ | 77/88 [00:19<00:02,  3.82ba/s] 89%|████████▊ | 78/88 [00:19<00:02,  3.95ba/s] 90%|████████▉ | 79/88 [00:19<00:02,  4.04ba/s] 91%|█████████ | 80/88 [00:19<00:01,  4.15ba/s] 92%|█████████▏| 81/88 [00:19<00:01,  4.25ba/s] 93%|█████████▎| 82/88 [00:20<00:01,  4.29ba/s] 94%|█████████▍| 83/88 [00:20<00:01,  3.81ba/s] 95%|█████████▌| 84/88 [00:20<00:01,  3.95ba/s] 97%|█████████▋| 85/88 [00:20<00:00,  4.09ba/s] 98%|█████████▊| 86/88 [00:21<00:00,  4.20ba/s] 99%|█████████▉| 87/88 [00:21<00:00,  4.27ba/s]100%|██████████| 88/88 [00:21<00:00,  4.85ba/s]100%|██████████| 88/88 [00:21<00:00,  4.08ba/s]
+  0%|          | 0/11 [00:00<?, ?ba/s]  9%|▉         | 1/11 [00:00<00:09,  1.06ba/s] 18%|█▊        | 2/11 [00:01<00:08,  1.06ba/s] 27%|██▋       | 3/11 [00:02<00:07,  1.11ba/s] 36%|███▋      | 4/11 [00:03<00:06,  1.10ba/s] 45%|████▌     | 5/11 [00:04<00:05,  1.03ba/s] 55%|█████▍    | 6/11 [00:05<00:04,  1.02ba/s] 64%|██████▎   | 7/11 [00:06<00:03,  1.02ba/s] 73%|███████▎  | 8/11 [00:07<00:02,  1.03ba/s] 82%|████████▏ | 9/11 [00:08<00:01,  1.03ba/s] 91%|█████████ | 10/11 [00:09<00:00,  1.08ba/s]100%|██████████| 11/11 [00:09<00:00,  1.25ba/s]100%|██████████| 11/11 [00:09<00:00,  1.10ba/s]
+[INFO|trainer.py:490] 2021-04-21 02:44:55,955 >> The following columns in the evaluation set  don't have a corresponding argument in `RobertaForQuestionAnswering.forward` and have been ignored: offset_mapping, example_id.
+[INFO|trainer.py:921] 2021-04-21 02:44:56,166 >> Loading model from /scratch/as11919/Domain-Adaptation/models/movie_roberta/movie_roberta_15April2021).
+[INFO|configuration_utils.py:488] 2021-04-21 02:44:56,167 >> loading configuration file /scratch/as11919/Domain-Adaptation/models/movie_roberta/movie_roberta_15April2021/config.json
+[INFO|configuration_utils.py:526] 2021-04-21 02:44:56,167 >> Model config RobertaConfig {
+  "_name_or_path": "/scratch/as11919/Domain-Adaptation/movie_roberta/movie_roberta_15April2021/",
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.6.0.dev0",
+  "type_vocab_size": 1,
+  "use_cache": true,
+  "vocab_size": 50265
+}
+
+[INFO|modeling_utils.py:1050] 2021-04-21 02:44:56,167 >> loading weights file /scratch/as11919/Domain-Adaptation/models/movie_roberta/movie_roberta_15April2021/pytorch_model.bin
+[WARNING|modeling_utils.py:1159] 2021-04-21 02:45:00,078 >> Some weights of the model checkpoint at /scratch/as11919/Domain-Adaptation/models/movie_roberta/movie_roberta_15April2021 were not used when initializing RobertaForQuestionAnswering: ['lm_head.bias', 'lm_head.dense.weight', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.layer_norm.bias', 'lm_head.decoder.weight', 'lm_head.decoder.bias']
+- This IS expected if you are initializing RobertaForQuestionAnswering from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing RobertaForQuestionAnswering from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[WARNING|modeling_utils.py:1170] 2021-04-21 02:45:00,079 >> Some weights of RobertaForQuestionAnswering were not initialized from the model checkpoint at /scratch/as11919/Domain-Adaptation/models/movie_roberta/movie_roberta_15April2021 and are newly initialized: ['qa_outputs.weight', 'qa_outputs.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[INFO|trainer.py:1013] 2021-04-21 02:45:00,223 >> ***** Running training *****
+[INFO|trainer.py:1014] 2021-04-21 02:45:00,223 >>   Num examples = 88567
+[INFO|trainer.py:1015] 2021-04-21 02:45:00,223 >>   Num Epochs = 10
+[INFO|trainer.py:1016] 2021-04-21 02:45:00,223 >>   Instantaneous batch size per device = 32
+[INFO|trainer.py:1017] 2021-04-21 02:45:00,224 >>   Total train batch size (w. parallel, distributed & accumulation) = 64
+[INFO|trainer.py:1018] 2021-04-21 02:45:00,224 >>   Gradient Accumulation steps = 1
+[INFO|trainer.py:1019] 2021-04-21 02:45:00,224 >>   Total optimization steps = 13840
+[INFO|trainer.py:1038] 2021-04-21 02:45:00,240 >>   Continuing training from checkpoint, will skip to saved global_step
+[INFO|trainer.py:1039] 2021-04-21 02:45:00,240 >>   Continuing training from epoch 86
+[INFO|trainer.py:1040] 2021-04-21 02:45:00,240 >>   Continuing training from global step 119182
+[INFO|trainer.py:1042] 2021-04-21 02:45:00,240 >>   Will skip the first 86 epochs then the first 158 batches in the first epoch.
+[INFO|integrations.py:586] 2021-04-21 02:45:57,849 >> Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+wandb: Currently logged in as: thatdramebaazguy (use `wandb login --relogin` to force relogin)
+Traceback (most recent call last):
+  File "/scratch/as11919/transformers/examples/question-answering/run_qa.py", line 609, in <module>
+    main()
+  File "/scratch/as11919/transformers/examples/question-answering/run_qa.py", line 566, in main
+    train_result = trainer.train(resume_from_checkpoint=checkpoint)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/transformers/trainer.py", line 1069, in train
+    self.control = self.callback_handler.on_train_begin(self.args, self.state, self.control)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/transformers/trainer_callback.py", line 340, in on_train_begin
+    return self.call_event("on_train_begin", args, state, control)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/transformers/trainer_callback.py", line 378, in call_event
+    result = getattr(callback, event)(
+  File "/ext3/miniconda3/lib/python3.8/site-packages/transformers/integrations.py", line 629, in on_train_begin
+    self.setup(args, state, model, **kwargs)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/transformers/integrations.py", line 603, in setup
+    self._wandb.init(
+  File "/ext3/miniconda3/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 743, in init
+    run = wi.init()
+  File "/ext3/miniconda3/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 511, in init
+    raise UsageError(error_message)
+wandb.errors.error.UsageError: Error communicating with wandb process
+try: wandb.init(settings=wandb.Settings(start_method='fork'))
+or:  wandb.init(settings=wandb.Settings(start_method='thread'))
+For more info see: https://docs.wandb.ai/library/init#init-start-error

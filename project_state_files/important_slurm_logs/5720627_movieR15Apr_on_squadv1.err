@@ -1,0 +1,32 @@
+2021-04-21 02:00:20.973137: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+Reusing dataset squad (/home/as11919/.cache/huggingface/datasets/squad/plain_text/1.0.0/1244d044b266a5e4dbd4174d23cb995eead372fbca31a03edc3f8a132787af41)
+[ERROR|configuration_utils.py:471] 2021-04-21 02:00:31,831 >> 404 Client Error: Not Found for url: https://huggingface.co//scratch/as11919/Domain-Adaptation/movie_roberta/movie_roberta_15April2021/resolve/main/config.json
+Traceback (most recent call last):
+  File "/ext3/miniconda3/lib/python3.8/site-packages/transformers/configuration_utils.py", line 457, in get_config_dict
+    resolved_config_file = cached_path(
+  File "/ext3/miniconda3/lib/python3.8/site-packages/transformers/file_utils.py", line 1133, in cached_path
+    output_path = get_from_cache(
+  File "/ext3/miniconda3/lib/python3.8/site-packages/transformers/file_utils.py", line 1304, in get_from_cache
+    r.raise_for_status()
+  File "/ext3/miniconda3/lib/python3.8/site-packages/requests/models.py", line 941, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://huggingface.co//scratch/as11919/Domain-Adaptation/movie_roberta/movie_roberta_15April2021/resolve/main/config.json
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/scratch/as11919/transformers/examples/question-answering/run_qa.py", line 609, in <module>
+    main()
+  File "/scratch/as11919/transformers/examples/question-answering/run_qa.py", line 281, in main
+    config = AutoConfig.from_pretrained(
+  File "/ext3/miniconda3/lib/python3.8/site-packages/transformers/models/auto/configuration_auto.py", line 398, in from_pretrained
+    config_dict, _ = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/transformers/configuration_utils.py", line 477, in get_config_dict
+    raise EnvironmentError(msg)
+OSError: Can't load config for '/scratch/as11919/Domain-Adaptation/movie_roberta/movie_roberta_15April2021'. Make sure that:
+
+- '/scratch/as11919/Domain-Adaptation/movie_roberta/movie_roberta_15April2021' is a correct model identifier listed on 'https://huggingface.co/models'
+
+- or '/scratch/as11919/Domain-Adaptation/movie_roberta/movie_roberta_15April2021' is the correct path to a directory containing a config.json file
+
+

@@ -1,0 +1,3 @@
+{'loss': 2.287, 'learning_rate': 4.9500000000000004e-05, 'epoch': 1.0}
+{'train_runtime': 12.6334, 'train_samples_per_second': 7.916, 'epoch': 100.0}
+

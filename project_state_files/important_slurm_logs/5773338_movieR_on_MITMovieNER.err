@@ -1,0 +1,322 @@
+2021-04-21 11:27:57.940446: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+Using custom data configuration default
+Reusing dataset json (/home/as11919/.cache/huggingface/datasets/json/default-2e9441ca4f0c0ab7/0.0.0/fb88b12bd94767cb0cc7eedcd82ea1f402d2162addc03a37e81d4f8dc7313ad9)
+[INFO|configuration_utils.py:488] 2021-04-21 11:28:11,481 >> loading configuration file /scratch/as11919/Domain-Adaptation/models/movie_roberta/movie_roberta_15April2021/config.json
+[INFO|configuration_utils.py:526] 2021-04-21 11:28:11,482 >> Model config RobertaConfig {
+  "_name_or_path": "/scratch/as11919/Domain-Adaptation/movie_roberta/movie_roberta_15April2021/",
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "finetuning_task": "ner",
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2",
+    "3": "LABEL_3",
+    "4": "LABEL_4",
+    "5": "LABEL_5",
+    "6": "LABEL_6",
+    "7": "LABEL_7",
+    "8": "LABEL_8",
+    "9": "LABEL_9",
+    "10": "LABEL_10",
+    "11": "LABEL_11",
+    "12": "LABEL_12",
+    "13": "LABEL_13",
+    "14": "LABEL_14",
+    "15": "LABEL_15",
+    "16": "LABEL_16",
+    "17": "LABEL_17",
+    "18": "LABEL_18",
+    "19": "LABEL_19",
+    "20": "LABEL_20",
+    "21": "LABEL_21",
+    "22": "LABEL_22",
+    "23": "LABEL_23",
+    "24": "LABEL_24"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_10": 10,
+    "LABEL_11": 11,
+    "LABEL_12": 12,
+    "LABEL_13": 13,
+    "LABEL_14": 14,
+    "LABEL_15": 15,
+    "LABEL_16": 16,
+    "LABEL_17": 17,
+    "LABEL_18": 18,
+    "LABEL_19": 19,
+    "LABEL_2": 2,
+    "LABEL_20": 20,
+    "LABEL_21": 21,
+    "LABEL_22": 22,
+    "LABEL_23": 23,
+    "LABEL_24": 24,
+    "LABEL_3": 3,
+    "LABEL_4": 4,
+    "LABEL_5": 5,
+    "LABEL_6": 6,
+    "LABEL_7": 7,
+    "LABEL_8": 8,
+    "LABEL_9": 9
+  },
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.6.0.dev0",
+  "type_vocab_size": 1,
+  "use_cache": true,
+  "vocab_size": 50265
+}
+
+[INFO|configuration_utils.py:488] 2021-04-21 11:28:11,482 >> loading configuration file /scratch/as11919/Domain-Adaptation/models/movie_roberta/movie_roberta_15April2021/config.json
+[INFO|configuration_utils.py:526] 2021-04-21 11:28:11,482 >> Model config RobertaConfig {
+  "_name_or_path": "/scratch/as11919/Domain-Adaptation/movie_roberta/movie_roberta_15April2021/",
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.6.0.dev0",
+  "type_vocab_size": 1,
+  "use_cache": true,
+  "vocab_size": 50265
+}
+
+[INFO|tokenization_utils_base.py:1647] 2021-04-21 11:28:11,483 >> Didn't find file /scratch/as11919/Domain-Adaptation/models/movie_roberta/movie_roberta_15April2021/tokenizer.json. We won't load it.
+[INFO|tokenization_utils_base.py:1647] 2021-04-21 11:28:11,483 >> Didn't find file /scratch/as11919/Domain-Adaptation/models/movie_roberta/movie_roberta_15April2021/added_tokens.json. We won't load it.
+[INFO|tokenization_utils_base.py:1711] 2021-04-21 11:28:11,484 >> loading file /scratch/as11919/Domain-Adaptation/models/movie_roberta/movie_roberta_15April2021/vocab.json
+[INFO|tokenization_utils_base.py:1711] 2021-04-21 11:28:11,485 >> loading file /scratch/as11919/Domain-Adaptation/models/movie_roberta/movie_roberta_15April2021/merges.txt
+[INFO|tokenization_utils_base.py:1711] 2021-04-21 11:28:11,485 >> loading file None
+[INFO|tokenization_utils_base.py:1711] 2021-04-21 11:28:11,485 >> loading file None
+[INFO|tokenization_utils_base.py:1711] 2021-04-21 11:28:11,485 >> loading file /scratch/as11919/Domain-Adaptation/models/movie_roberta/movie_roberta_15April2021/special_tokens_map.json
+[INFO|tokenization_utils_base.py:1711] 2021-04-21 11:28:11,485 >> loading file /scratch/as11919/Domain-Adaptation/models/movie_roberta/movie_roberta_15April2021/tokenizer_config.json
+[INFO|modeling_utils.py:1050] 2021-04-21 11:28:11,638 >> loading weights file /scratch/as11919/Domain-Adaptation/models/movie_roberta/movie_roberta_15April2021/pytorch_model.bin
+[WARNING|modeling_utils.py:1159] 2021-04-21 11:28:15,886 >> Some weights of the model checkpoint at /scratch/as11919/Domain-Adaptation/models/movie_roberta/movie_roberta_15April2021 were not used when initializing RobertaForTokenClassification: ['lm_head.bias', 'lm_head.dense.weight', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.layer_norm.bias', 'lm_head.decoder.weight', 'lm_head.decoder.bias']
+- This IS expected if you are initializing RobertaForTokenClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing RobertaForTokenClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[WARNING|modeling_utils.py:1170] 2021-04-21 11:28:15,886 >> Some weights of RobertaForTokenClassification were not initialized from the model checkpoint at /scratch/as11919/Domain-Adaptation/models/movie_roberta/movie_roberta_15April2021 and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+  0%|          | 0/7 [00:00<?, ?ba/s] 29%|██▊       | 2/7 [00:00<00:00, 13.05ba/s] 57%|█████▋    | 4/7 [00:00<00:00, 14.24ba/s] 71%|███████▏  | 5/7 [00:00<00:00,  9.84ba/s]100%|██████████| 7/7 [00:00<00:00, 13.69ba/s]
+  0%|          | 0/2 [00:00<?, ?ba/s]100%|██████████| 2/2 [00:00<00:00, 22.01ba/s]
+[INFO|trainer.py:490] 2021-04-21 11:28:25,069 >> The following columns in the training set  don't have a corresponding argument in `RobertaForTokenClassification.forward` and have been ignored: id, tokens, ner_tags.
+[INFO|trainer.py:490] 2021-04-21 11:28:25,070 >> The following columns in the evaluation set  don't have a corresponding argument in `RobertaForTokenClassification.forward` and have been ignored: id, tokens, ner_tags.
+[INFO|trainer.py:921] 2021-04-21 11:28:25,274 >> Loading model from /scratch/as11919/Domain-Adaptation/models/movie_roberta/movie_roberta_15April2021).
+[INFO|configuration_utils.py:488] 2021-04-21 11:28:25,275 >> loading configuration file /scratch/as11919/Domain-Adaptation/models/movie_roberta/movie_roberta_15April2021/config.json
+[INFO|configuration_utils.py:526] 2021-04-21 11:28:25,275 >> Model config RobertaConfig {
+  "_name_or_path": "/scratch/as11919/Domain-Adaptation/movie_roberta/movie_roberta_15April2021/",
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.6.0.dev0",
+  "type_vocab_size": 1,
+  "use_cache": true,
+  "vocab_size": 50265
+}
+
+[INFO|modeling_utils.py:1050] 2021-04-21 11:28:25,275 >> loading weights file /scratch/as11919/Domain-Adaptation/models/movie_roberta/movie_roberta_15April2021/pytorch_model.bin
+[WARNING|modeling_utils.py:1159] 2021-04-21 11:28:29,219 >> Some weights of the model checkpoint at /scratch/as11919/Domain-Adaptation/models/movie_roberta/movie_roberta_15April2021 were not used when initializing RobertaForTokenClassification: ['lm_head.bias', 'lm_head.dense.weight', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.layer_norm.bias', 'lm_head.decoder.weight', 'lm_head.decoder.bias']
+- This IS expected if you are initializing RobertaForTokenClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing RobertaForTokenClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[WARNING|modeling_utils.py:1170] 2021-04-21 11:28:29,219 >> Some weights of RobertaForTokenClassification were not initialized from the model checkpoint at /scratch/as11919/Domain-Adaptation/models/movie_roberta/movie_roberta_15April2021 and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[INFO|trainer.py:1013] 2021-04-21 11:28:29,358 >> ***** Running training *****
+[INFO|trainer.py:1014] 2021-04-21 11:28:29,358 >>   Num examples = 6253
+[INFO|trainer.py:1015] 2021-04-21 11:28:29,359 >>   Num Epochs = 10
+[INFO|trainer.py:1016] 2021-04-21 11:28:29,359 >>   Instantaneous batch size per device = 64
+[INFO|trainer.py:1017] 2021-04-21 11:28:29,359 >>   Total train batch size (w. parallel, distributed & accumulation) = 128
+[INFO|trainer.py:1018] 2021-04-21 11:28:29,359 >>   Gradient Accumulation steps = 1
+[INFO|trainer.py:1019] 2021-04-21 11:28:29,359 >>   Total optimization steps = 490
+[INFO|trainer.py:1038] 2021-04-21 11:28:29,373 >>   Continuing training from checkpoint, will skip to saved global_step
+[INFO|trainer.py:1039] 2021-04-21 11:28:29,373 >>   Continuing training from epoch 2432
+[INFO|trainer.py:1040] 2021-04-21 11:28:29,373 >>   Continuing training from global step 119182
+[INFO|trainer.py:1042] 2021-04-21 11:28:29,373 >>   Will skip the first 2432 epochs then the first 14 batches in the first epoch.
+[INFO|integrations.py:586] 2021-04-21 11:28:29,408 >> Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+wandb: Currently logged in as: thatdramebaazguy (use `wandb login --relogin` to force relogin)
+wandb: wandb version 0.10.27 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+2021-04-21 11:28:30.438367: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+wandb: Tracking run with wandb version 0.10.21
+wandb: Syncing run Testing
+wandb: ⭐️ View project at https://wandb.ai/thatdramebaazguy/huggingface
+wandb: 🚀 View run at https://wandb.ai/thatdramebaazguy/huggingface/runs/r7ezuf2f
+wandb: Run data is saved locally in /home/as11919/wandb/run-20210421_112829-r7ezuf2f
+wandb: Run `wandb offline` to turn off syncing.
+  0%|          | 0/490 [00:00<?, ?it/s][INFO|trainer.py:1196] 2021-04-21 11:29:01,224 >> 
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+                                         0%|          | 0/490 [00:29<?, ?it/s]  0%|          | 0/490 [00:29<?, ?it/s]
+[INFO|trainer.py:1648] 2021-04-21 11:29:01,312 >> Saving model checkpoint to /scratch/as11919/Domain-Adaptation/models/movieR_on_MITMovieNER/
+[INFO|configuration_utils.py:329] 2021-04-21 11:29:01,313 >> Configuration saved in /scratch/as11919/Domain-Adaptation/models/movieR_on_MITMovieNER/config.json
+[INFO|modeling_utils.py:831] 2021-04-21 11:29:02,447 >> Model weights saved in /scratch/as11919/Domain-Adaptation/models/movieR_on_MITMovieNER/pytorch_model.bin
+[INFO|tokenization_utils_base.py:1907] 2021-04-21 11:29:02,448 >> tokenizer config file saved in /scratch/as11919/Domain-Adaptation/models/movieR_on_MITMovieNER/tokenizer_config.json
+[INFO|tokenization_utils_base.py:1913] 2021-04-21 11:29:02,449 >> Special tokens file saved in /scratch/as11919/Domain-Adaptation/models/movieR_on_MITMovieNER/special_tokens_map.json
+[INFO|trainer_pt_utils.py:722] 2021-04-21 11:29:02,521 >> ***** train metrics *****
+[INFO|trainer_pt_utils.py:727] 2021-04-21 11:29:02,521 >>   epoch                      =        2.0
+[INFO|trainer_pt_utils.py:727] 2021-04-21 11:29:02,521 >>   init_mem_cpu_alloc_delta   =     1876MB
+[INFO|trainer_pt_utils.py:727] 2021-04-21 11:29:02,521 >>   init_mem_cpu_peaked_delta  =      142MB
+[INFO|trainer_pt_utils.py:727] 2021-04-21 11:29:02,521 >>   init_mem_gpu_alloc_delta   =      474MB
+[INFO|trainer_pt_utils.py:727] 2021-04-21 11:29:02,521 >>   init_mem_gpu_peaked_delta  =        0MB
+[INFO|trainer_pt_utils.py:727] 2021-04-21 11:29:02,522 >>   train_mem_cpu_alloc_delta  =      519MB
+[INFO|trainer_pt_utils.py:727] 2021-04-21 11:29:02,522 >>   train_mem_cpu_peaked_delta =      278MB
+[INFO|trainer_pt_utils.py:727] 2021-04-21 11:29:02,522 >>   train_mem_gpu_alloc_delta  =      474MB
+[INFO|trainer_pt_utils.py:727] 2021-04-21 11:29:02,522 >>   train_mem_gpu_peaked_delta =        0MB
+[INFO|trainer_pt_utils.py:727] 2021-04-21 11:29:02,522 >>   train_runtime              = 0:00:31.86
+[INFO|trainer_pt_utils.py:727] 2021-04-21 11:29:02,522 >>   train_samples              =       6253
+[INFO|trainer_pt_utils.py:727] 2021-04-21 11:29:02,522 >>   train_samples_per_second   =     15.377
+[INFO|trainer.py:1865] 2021-04-21 11:29:02,623 >> ***** Running Evaluation *****
+[INFO|trainer.py:1866] 2021-04-21 11:29:02,623 >>   Num examples = 1563
+[INFO|trainer.py:1867] 2021-04-21 11:29:02,623 >>   Batch size = 40
+/ext3/miniconda3/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:64: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [1,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [2,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [3,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [4,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [5,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [6,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [7,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [8,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [9,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [10,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [11,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [12,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [13,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [14,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [15,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [16,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [17,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [18,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [19,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [20,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [21,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [1,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [2,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [3,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [4,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [5,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [6,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [7,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [8,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [10,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [11,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [12,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [13,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [14,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [15,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [16,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [18,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [19,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [20,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [21,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [22,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:108: cunn_ClassNLLCriterion_updateOutput_kernel: block: [0,0,0], thread: [23,0,0] Assertion `t >= 0 && t < n_classes` failed.
+Traceback (most recent call last):
+  File "/scratch/as11919/Domain-Adaptation/scripts/run_ner_roberta.py", line 506, in <module>
+    main()
+  File "/scratch/as11919/Domain-Adaptation/scripts/run_ner_roberta.py", line 468, in main
+    metrics = trainer.evaluate()
+  File "/ext3/miniconda3/lib/python3.8/site-packages/transformers/trainer.py", line 1757, in evaluate
+    output = self.prediction_loop(
+  File "/ext3/miniconda3/lib/python3.8/site-packages/transformers/trainer.py", line 1895, in prediction_loop
+    loss, logits, labels = self.prediction_step(model, inputs, prediction_loss_only, ignore_keys=ignore_keys)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/transformers/trainer.py", line 2031, in prediction_step
+    loss, outputs = self.compute_loss(model, inputs, return_outputs=True)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/transformers/trainer.py", line 1556, in compute_loss
+    outputs = model(**inputs)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/torch/nn/parallel/data_parallel.py", line 162, in forward
+    return self.gather(outputs, self.output_device)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/torch/nn/parallel/data_parallel.py", line 174, in gather
+    return gather(outputs, output_device, dim=self.dim)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/torch/nn/parallel/scatter_gather.py", line 68, in gather
+    res = gather_map(outputs)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/torch/nn/parallel/scatter_gather.py", line 61, in gather_map
+    return type(out)(((k, gather_map([d[k] for d in outputs]))
+  File "<string>", line 7, in __init__
+  File "/ext3/miniconda3/lib/python3.8/site-packages/transformers/file_utils.py", line 1551, in __post_init__
+    for element in iterator:
+  File "/ext3/miniconda3/lib/python3.8/site-packages/torch/nn/parallel/scatter_gather.py", line 61, in <genexpr>
+    return type(out)(((k, gather_map([d[k] for d in outputs]))
+  File "/ext3/miniconda3/lib/python3.8/site-packages/torch/nn/parallel/scatter_gather.py", line 55, in gather_map
+    return Gather.apply(target_device, dim, *outputs)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/torch/nn/parallel/_functions.py", line 71, in forward
+    return comm.gather(inputs, ctx.dim, ctx.target_device)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/torch/nn/parallel/comm.py", line 230, in gather
+    return torch._C._gather(tensors, dim, destination)
+RuntimeError: CUDA error: device-side assert triggered
+wandb: Waiting for W&B process to finish, PID 866976
+wandb: Program failed with code 1.  Press ctrl-c to abort syncing.
+wandb: - 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb: \ 0.02MB of 0.02MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Find user logs for this run at: /home/as11919/wandb/run-20210421_112829-r7ezuf2f/logs/debug.log
+wandb: Find internal logs for this run at: /home/as11919/wandb/run-20210421_112829-r7ezuf2f/logs/debug-internal.log
+wandb: Run summary:
+wandb:              train/train_runtime 31.8656
+wandb:   train/train_samples_per_second 15.377
+wandb:                 train/total_flos 2.574965354595975e+18
+wandb:                      train/epoch 2.0
+wandb:                train/global_step 119182
+wandb:                         _runtime 32
+wandb:                       _timestamp 1619018941
+wandb:                            _step 0
+wandb: Run history:
+wandb:              train/train_runtime ▁
+wandb:   train/train_samples_per_second ▁
+wandb:                 train/total_flos ▁
+wandb:                      train/epoch ▁
+wandb:                train/global_step ▁
+wandb:                         _runtime ▁
+wandb:                       _timestamp ▁
+wandb:                            _step ▁
+wandb: 
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: 
+wandb: Synced Testing: https://wandb.ai/thatdramebaazguy/huggingface/runs/r7ezuf2f
